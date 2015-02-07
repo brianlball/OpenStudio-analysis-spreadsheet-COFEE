@@ -1848,6 +1848,43 @@ def create_json_v2(structure_id, building_type, year, system_type)
 
 end
 
+namespace :resources do
+  task :write_space_types do
+    require 'json'
+    # convert these from case statement above with regex
+    # (?s)when ('[A-z]*')((?!when).)*$
+    building_types = 
+    [ 'AssistedLiving',
+      'AutoRepair',
+      'AutoSales',
+      'Bank',
+      'ChildCare',
+      'FullServiceRestaurant',
+      'GasStation',
+      'Hospital',
+      'Laboratory',
+      'LargeHotel',
+      'MidriseApartment',
+      'Office',
+      'OfficeData',
+      'Outpatient',
+      'PrimarySchool',
+      'QuickServiceRestaurant',
+      'Retail',
+      'SecondarySchool',
+      'SingleMultiPlexRes',
+      'SmallHotel',
+      'StripMall',
+      'SuperMarket',
+      'Warehouse']
+    hash = {}
+    building_types.each do |b|
+      hash[b] = populate_space_type_data(b)
+    end
+    File.open('../cofee-rails/lib/assets/space_type_hash.json', 'w') { |f| f.write(JSON.pretty_generate(hash)) }
+  end
+end
+
 namespace :test_models do
   RAILS = false
   #MEASURES_ROOT_DIRECTORY = "../cofee-measures"
