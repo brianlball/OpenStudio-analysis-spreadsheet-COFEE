@@ -3,9 +3,8 @@ def properties_by_building_type(building_type)
   # load from json
   require 'json'
   json = File.read('../cofee-rails/lib/assets/space_type_hash.json')
-  lookup = JSON.parse(json)
-  # pp lookup
-  lookup[building_type]
+  lookup = JSON.parse(json, :symbolize_names => true)
+  lookup[building_type.to_sym]
 end
 def populate_test_hash()
 
@@ -143,9 +142,9 @@ end
 
 def create_json(structure_id, building_type, year, system_type)
   props = properties_by_building_type(building_type)
-  space_type_hash = props['spaces']
-  building_static_hoo_start = props['building_static_hoo_start']
-  building_static_hoo_finish = props['building_static_hoo_finish']
+  space_type_hash = props[:spaces]
+  building_static_hoo_start = props[:building_static_hoo_start]
+  building_static_hoo_finish = props[:building_static_hoo_finish]
 
   # setup
   measures = []
