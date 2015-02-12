@@ -1,6 +1,6 @@
 
 OS:Version,
-  {4b7c128b-fbc1-4607-87dd-00b6d111c31c}, !- Handle
+  {3ed1770d-c5a1-4064-9f7f-12c0d2537f34}, !- Handle
   1.5.5;                                  !- Version Identifier
 
 OS:ClimateZones,
@@ -120,7 +120,7 @@ OS:Building,
   ,                                       !- Nominal Floor to Floor Height {m}
   ,                                       !- Space Type Name
   ,                                       !- Default Construction Set Name
-  {5aafb795-8550-4604-82c3-40a99f355957}, !- Default Schedule Set Name
+  {438fbc01-e3a7-4d11-9e75-3c714fe998ac}, !- Default Schedule Set Name
   ,                                       !- Standards Number of Stories
   ,                                       !- Standards Number of Above Ground Stories
   StripMall;                              !- Standards Building Type
@@ -146,34 +146,34 @@ OS:Facility,
   {3ba8e45b-b833-44eb-a723-ea6c3946dc96}; !- Handle
 
 OS:SpaceType,
-  {65a9e244-4ed7-431d-8f33-7a97971e3669}, !- Handle
+  {287ee868-8af8-4586-baea-0960e7a78119}, !- Handle
   StripMall|WholeBuilding|DOE Ref 2004|ASHRAE 169-2006-5A, !- Name
-  {d3b47a81-7b01-417e-9bfe-120a5db5d5a7}, !- Default Construction Set Name
-  {449d0869-81f5-455a-946a-448740576494}, !- Default Schedule Set Name
-  {950413b9-1be9-449f-bc4d-fb77c7ccfbdb}, !- Group Rendering Name
-  {ac4ebd2a-1df2-45c8-9965-11d5314d690a}, !- Design Specification Outdoor Air Object Name
+  {effef698-635e-4dd3-bdca-a0863913fa0c}, !- Default Construction Set Name
+  {ac9bf5ac-67b9-4006-9a77-fbf2e44c43f5}, !- Default Schedule Set Name
+  {bb17df7c-8e4c-4f19-a0a1-7355025a18f1}, !- Group Rendering Name
+  {a6441227-cd66-48e8-b216-c5ac5e4d5255}, !- Design Specification Outdoor Air Object Name
   StripMall,                              !- Standards Building Type
   WholeBuilding;                          !- Standards Space Type
 
 OS:Rendering:Color,
-  {950413b9-1be9-449f-bc4d-fb77c7ccfbdb}, !- Handle
+  {bb17df7c-8e4c-4f19-a0a1-7355025a18f1}, !- Handle
   Rendering Color 1,                      !- Name
   171,                                    !- Rendering Red Value
   222,                                    !- Rendering Green Value
   78;                                     !- Rendering Blue Value
 
 OS:Schedule:Ruleset,
-  {dc375bd7-d22a-4b27-a492-4cc04a211d88}, !- Handle
+  {b085d072-1164-4cb0-b731-af66855c4c53}, !- Handle
   0700|2100|StripMall|default|hoo,        !- Name
-  {87996eea-0250-4d6f-ada8-2845171f5d4d}, !- Schedule Type Limits Name
-  {3a192c0b-14a2-494f-85aa-16b0f7890328}, !- Default Day Schedule Name
-  {89e2017d-19b3-4842-ad72-c35d08618c39}, !- Summer Design Day Schedule Name
-  {89f37eda-5599-48a4-9bd5-502a2cce40c6}; !- Winter Design Day Schedule Name
+  {d2ea1712-b472-4209-b6a3-095efcc1f9b1}, !- Schedule Type Limits Name
+  {64ea73fd-6398-427d-95fb-96a4743fb52c}, !- Default Day Schedule Name
+  {9e0aa00e-a922-4ac9-8b62-0f2b95835472}, !- Summer Design Day Schedule Name
+  {92bd66ab-f85f-4378-98d6-0ef7447c5f48}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {3a192c0b-14a2-494f-85aa-16b0f7890328}, !- Handle
+  {64ea73fd-6398-427d-95fb-96a4743fb52c}, !- Handle
   0700|2100|StripMall|default|hoo Schedule Week Day, !- Name
-  {87996eea-0250-4d6f-ada8-2845171f5d4d}, !- Schedule Type Limits Name
+  {d2ea1712-b472-4209-b6a3-095efcc1f9b1}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -186,7 +186,7 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 3
 
 OS:Schedule:Day,
-  {92ddd822-f669-41bb-8992-1e7503b67568}, !- Handle
+  {1f43dffc-a649-43dc-a6ea-3b63c1d32112}, !- Handle
   Schedule Day 2,                         !- Name
   ,                                       !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
@@ -195,16 +195,16 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {89f37eda-5599-48a4-9bd5-502a2cce40c6}, !- Handle
+  {92bd66ab-f85f-4378-98d6-0ef7447c5f48}, !- Handle
   0700|2100|StripMall|default|hoo Winter Design Day, !- Name
-  {87996eea-0250-4d6f-ada8-2845171f5d4d}, !- Schedule Type Limits Name
+  {d2ea1712-b472-4209-b6a3-095efcc1f9b1}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {ea449166-535a-4714-8129-642f5907ba95}, !- Handle
+  {9f1c020e-79e1-47b4-9991-ab4f41772b81}, !- Handle
   Schedule Day 3,                         !- Name
   ,                                       !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
@@ -213,18 +213,18 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {89e2017d-19b3-4842-ad72-c35d08618c39}, !- Handle
+  {9e0aa00e-a922-4ac9-8b62-0f2b95835472}, !- Handle
   0700|2100|StripMall|default|hoo Summer Design Day, !- Name
-  {87996eea-0250-4d6f-ada8-2845171f5d4d}, !- Schedule Type Limits Name
+  {d2ea1712-b472-4209-b6a3-095efcc1f9b1}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   1;                                      !- Value Until Time 1
 
 OS:DefaultScheduleSet,
-  {5aafb795-8550-4604-82c3-40a99f355957}, !- Handle
+  {438fbc01-e3a7-4d11-9e75-3c714fe998ac}, !- Handle
   Building Hours of Operation,            !- Name
-  {dc375bd7-d22a-4b27-a492-4cc04a211d88}, !- Hours of Operation Schedule Name
+  {b085d072-1164-4cb0-b731-af66855c4c53}, !- Hours of Operation Schedule Name
   ,                                       !- Number of People Schedule Name
   ,                                       !- People Activity Level Schedule Name
   ,                                       !- Lighting Schedule Name
@@ -236,7 +236,7 @@ OS:DefaultScheduleSet,
   ;                                       !- Other Equipment Schedule Name
 
 OS:ScheduleTypeLimits,
-  {87996eea-0250-4d6f-ada8-2845171f5d4d}, !- Handle
+  {d2ea1712-b472-4209-b6a3-095efcc1f9b1}, !- Handle
   OnOff,                                  !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
@@ -244,183 +244,15 @@ OS:ScheduleTypeLimits,
   Availability;                           !- Unit Type
 
 OS:Schedule:Ruleset,
-  {6ffe1bc3-d1d6-4b93-adae-9305ff81e532}, !- Handle
-  0700|2100|StripMall|default|htg_setpoint, !- Name
-  {38edf6dd-8043-4dd5-bd1d-2889d6c0d9b8}, !- Schedule Type Limits Name
-  {85419012-8fae-499f-8cf3-9da796a7b3a6}, !- Default Day Schedule Name
-  {de3b109f-f10c-4725-aebc-54151fdbc244}, !- Summer Design Day Schedule Name
-  {31368169-1606-4701-943e-631daaace1a4}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {38edf6dd-8043-4dd5-bd1d-2889d6c0d9b8}, !- Handle
-  Thermostat Heating Setpoint Schedule Type Limits, !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  100,                                    !- Upper Limit Value {BasedOnField A4}
-  Continuous,                             !- Numeric Type
-  Temperature;                            !- Unit Type
-
-OS:Schedule:Day,
-  {85419012-8fae-499f-8cf3-9da796a7b3a6}, !- Handle
-  0700|2100|StripMall|default|htg_setpoint |default, !- Name
-  {38edf6dd-8043-4dd5-bd1d-2889d6c0d9b8}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  15.6,                                   !- Value Until Time 1
-  21,                                     !- Hour 2
-  0,                                      !- Minute 2
-  21.0000000000001,                       !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  15.6;                                   !- Value Until Time 3
-
-OS:Schedule:Day,
-  {de3b109f-f10c-4725-aebc-54151fdbc244}, !- Handle
-  0700|2100|StripMall|default|htg_setpoint Summer Design Day, !- Name
-  {38edf6dd-8043-4dd5-bd1d-2889d6c0d9b8}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  15.6,                                   !- Value Until Time 1
-  21,                                     !- Hour 2
-  0,                                      !- Minute 2
-  21.0000000000001,                       !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  15.6;                                   !- Value Until Time 3
-
-OS:Schedule:Day,
-  {31368169-1606-4701-943e-631daaace1a4}, !- Handle
-  0700|2100|StripMall|default|htg_setpoint Winter Design Day, !- Name
-  {38edf6dd-8043-4dd5-bd1d-2889d6c0d9b8}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  15.6;                                   !- Value Until Time 1
-
-OS:Schedule:Rule,
-  {e2199991-5f9b-4a71-8d8c-8e6bc821c3a4}, !- Handle
-  0700|2100|StripMall|default|htg_setpoint |1/1-12/31|Sat Rule, !- Name
-  {6ffe1bc3-d1d6-4b93-adae-9305ff81e532}, !- Schedule Ruleset Name
-  0,                                      !- Rule Order
-  {aa51a7ef-902d-4e98-b832-1625c9faead6}, !- Day Schedule Name
-  ,                                       !- Apply Sunday
-  ,                                       !- Apply Monday
-  ,                                       !- Apply Tuesday
-  ,                                       !- Apply Wednesday
-  ,                                       !- Apply Thursday
-  ,                                       !- Apply Friday
-  Yes,                                    !- Apply Saturday
-  ,                                       !- Apply Holiday
-  DateRange,                              !- Date Specification Type
-  1,                                      !- Start Month
-  1,                                      !- Start Day
-  12,                                     !- End Month
-  31;                                     !- End Day
-
-OS:Schedule:Day,
-  {aa51a7ef-902d-4e98-b832-1625c9faead6}, !- Handle
-  0700|2100|StripMall|default|htg_setpoint |1/1-12/31|Sat, !- Name
-  {38edf6dd-8043-4dd5-bd1d-2889d6c0d9b8}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  15.6,                                   !- Value Until Time 1
-  22,                                     !- Hour 2
-  0,                                      !- Minute 2
-  21.0000000000001,                       !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  15.6;                                   !- Value Until Time 3
-
-OS:Schedule:Rule,
-  {ca51c51c-9c02-4d0e-a425-82518afc6a8a}, !- Handle
-  0700|2100|StripMall|default|htg_setpoint |1/1-12/31|Sun Rule, !- Name
-  {6ffe1bc3-d1d6-4b93-adae-9305ff81e532}, !- Schedule Ruleset Name
-  1,                                      !- Rule Order
-  {4adb9f6f-f2fd-421b-8572-c817223fac32}, !- Day Schedule Name
-  Yes,                                    !- Apply Sunday
-  ,                                       !- Apply Monday
-  ,                                       !- Apply Tuesday
-  ,                                       !- Apply Wednesday
-  ,                                       !- Apply Thursday
-  ,                                       !- Apply Friday
-  ,                                       !- Apply Saturday
-  ,                                       !- Apply Holiday
-  DateRange,                              !- Date Specification Type
-  1,                                      !- Start Month
-  1,                                      !- Start Day
-  12,                                     !- End Month
-  31;                                     !- End Day
-
-OS:Schedule:Day,
-  {4adb9f6f-f2fd-421b-8572-c817223fac32}, !- Handle
-  0700|2100|StripMall|default|htg_setpoint |1/1-12/31|Sun, !- Name
-  {38edf6dd-8043-4dd5-bd1d-2889d6c0d9b8}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  8,                                      !- Hour 1
-  0,                                      !- Minute 1
-  15.6,                                   !- Value Until Time 1
-  19,                                     !- Hour 2
-  0,                                      !- Minute 2
-  21.0000000000001,                       !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  15.6;                                   !- Value Until Time 3
-
-OS:Schedule:Ruleset,
-  {91aae72b-6b4d-46fa-9354-0ec9b982438d}, !- Handle
-  0700|2100|StripMall|default|activity,   !- Name
-  {ee1ec591-2efd-4b84-aed3-04402c00985c}, !- Schedule Type Limits Name
-  {0d93dc0b-647d-4a06-8c10-adfc84fd8323}, !- Default Day Schedule Name
-  {90d23783-d3b4-45d9-a25b-589edf381eae}, !- Summer Design Day Schedule Name
-  {fe651c30-9126-4cd6-b732-ee86d2c95135}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {ee1ec591-2efd-4b84-aed3-04402c00985c}, !- Handle
-  People Activity Type Limits,            !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  ,                                       !- Upper Limit Value {BasedOnField A4}
-  Continuous,                             !- Numeric Type
-  ActivityLevel;                          !- Unit Type
-
-OS:Schedule:Day,
-  {0d93dc0b-647d-4a06-8c10-adfc84fd8323}, !- Handle
-  0700|2100|StripMall|default|activity |default, !- Name
-  {ee1ec591-2efd-4b84-aed3-04402c00985c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  120;                                    !- Value Until Time 1
-
-OS:Schedule:Day,
-  {90d23783-d3b4-45d9-a25b-589edf381eae}, !- Handle
-  0700|2100|StripMall|default|activity Summer Design Day, !- Name
-  {ee1ec591-2efd-4b84-aed3-04402c00985c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  120;                                    !- Value Until Time 1
-
-OS:Schedule:Day,
-  {fe651c30-9126-4cd6-b732-ee86d2c95135}, !- Handle
-  0700|2100|StripMall|default|activity Winter Design Day, !- Name
-  {ee1ec591-2efd-4b84-aed3-04402c00985c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  120;                                    !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {cebffee3-9a57-4678-9282-7e65226b0f20}, !- Handle
+  {fba9eccf-96f7-405f-a3d7-dbd0ae0b4848}, !- Handle
   0700|2100|StripMall|default|thermal_ctrl, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
-  {0764ecec-dd0d-4e6a-9814-4178466ae36a}, !- Default Day Schedule Name
-  {de1381ae-fffb-4971-8d23-97968e61c346}, !- Summer Design Day Schedule Name
-  {04f573e1-9ddf-4f4f-a49f-9a1553498bd2}; !- Winter Design Day Schedule Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  {59464d72-cbda-4c08-a52b-9dccbfe890a4}, !- Default Day Schedule Name
+  {107942fa-5b91-428b-bd58-9ba6e750c506}, !- Summer Design Day Schedule Name
+  {1549a1d8-1fe6-47e5-aae5-2fedcf1700ff}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Handle
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Handle
   Dimensionless Schedule Type Limits,     !- Name
   ,                                       !- Lower Limit Value {BasedOnField A4}
   ,                                       !- Upper Limit Value {BasedOnField A4}
@@ -428,114 +260,108 @@ OS:ScheduleTypeLimits,
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {0764ecec-dd0d-4e6a-9814-4178466ae36a}, !- Handle
+  {59464d72-cbda-4c08-a52b-9dccbfe890a4}, !- Handle
   0700|2100|StripMall|default|thermal_ctrl |default, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   4;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {de1381ae-fffb-4971-8d23-97968e61c346}, !- Handle
+  {107942fa-5b91-428b-bd58-9ba6e750c506}, !- Handle
   0700|2100|StripMall|default|thermal_ctrl Summer Design Day, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   4;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {04f573e1-9ddf-4f4f-a49f-9a1553498bd2}, !- Handle
+  {1549a1d8-1fe6-47e5-aae5-2fedcf1700ff}, !- Handle
   0700|2100|StripMall|default|thermal_ctrl Winter Design Day, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   4;                                      !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {b065fc5a-b416-4801-94fc-549711a9d673}, !- Handle
-  0700|2100|StripMall|default|lighting,   !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
-  {c76873f8-3742-45c7-9f21-7a7c6d1d2a3f}, !- Default Day Schedule Name
-  {69689ae1-2024-425e-b5df-00c56203321c}, !- Summer Design Day Schedule Name
-  {8973a87a-a0ab-4abc-bf61-cc8a5071053a}; !- Winter Design Day Schedule Name
+  {c9823c0d-c7c3-4a7d-acc1-4a7110f74abc}, !- Handle
+  0700|2100|StripMall|default|elec_equip, !- Name
+  {a8ce9a3c-dcd8-42d8-b6e6-18946fb60249}, !- Schedule Type Limits Name
+  {f44d2051-ca5d-41c7-affa-aa2a067857a4}, !- Default Day Schedule Name
+  {3170dd96-a06f-4998-b8e0-5e29ea9beae1}, !- Summer Design Day Schedule Name
+  {f7e0e8e6-209b-4aac-b198-6fd0f52bafb5}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Handle
-  Lights Schedule Type Limits,            !- Name
+  {a8ce9a3c-dcd8-42d8-b6e6-18946fb60249}, !- Handle
+  Equipment Schedule Type Limits,         !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
   Continuous,                             !- Numeric Type
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {c76873f8-3742-45c7-9f21-7a7c6d1d2a3f}, !- Handle
-  0700|2100|StripMall|default|lighting |default, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
+  {f44d2051-ca5d-41c7-affa-aa2a067857a4}, !- Handle
+  0700|2100|StripMall|default|elec_equip |default, !- Name
+  {a8ce9a3c-dcd8-42d8-b6e6-18946fb60249}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
-  0.05,                                   !- Value Until Time 1
+  0.2,                                    !- Value Until Time 1
   8,                                      !- Hour 2
   0,                                      !- Minute 2
-  0.2,                                    !- Value Until Time 2
+  0.4,                                    !- Value Until Time 2
   9,                                      !- Hour 3
   0,                                      !- Minute 3
-  0.5,                                    !- Value Until Time 3
+  0.7,                                    !- Value Until Time 3
   18,                                     !- Hour 4
   0,                                      !- Minute 4
   0.9,                                    !- Value Until Time 4
   20,                                     !- Hour 5
   0,                                      !- Minute 5
-  0.6,                                    !- Value Until Time 5
+  0.8,                                    !- Value Until Time 5
   21,                                     !- Hour 6
   0,                                      !- Minute 6
-  0.5,                                    !- Value Until Time 6
+  0.7,                                    !- Value Until Time 6
   22,                                     !- Hour 7
   0,                                      !- Minute 7
-  0.2,                                    !- Value Until Time 7
+  0.4,                                    !- Value Until Time 7
   24,                                     !- Hour 8
   0,                                      !- Minute 8
-  0.05;                                   !- Value Until Time 8
+  0.2;                                    !- Value Until Time 8
 
 OS:Schedule:Day,
-  {69689ae1-2024-425e-b5df-00c56203321c}, !- Handle
-  0700|2100|StripMall|default|lighting Summer Design Day, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
+  {3170dd96-a06f-4998-b8e0-5e29ea9beae1}, !- Handle
+  0700|2100|StripMall|default|elec_equip Summer Design Day, !- Name
+  {a8ce9a3c-dcd8-42d8-b6e6-18946fb60249}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
-  0.05,                                   !- Value Until Time 1
-  8,                                      !- Hour 2
+  0.2,                                    !- Value Until Time 1
+  22,                                     !- Hour 2
   0,                                      !- Minute 2
-  0.2,                                    !- Value Until Time 2
-  21,                                     !- Hour 3
+  1,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
   0,                                      !- Minute 3
-  1,                                      !- Value Until Time 3
-  22,                                     !- Hour 4
-  0,                                      !- Minute 4
-  0.2,                                    !- Value Until Time 4
-  24,                                     !- Hour 5
-  0,                                      !- Minute 5
-  0.05;                                   !- Value Until Time 5
+  0.2;                                    !- Value Until Time 3
 
 OS:Schedule:Day,
-  {8973a87a-a0ab-4abc-bf61-cc8a5071053a}, !- Handle
-  0700|2100|StripMall|default|lighting Winter Design Day, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
+  {f7e0e8e6-209b-4aac-b198-6fd0f52bafb5}, !- Handle
+  0700|2100|StripMall|default|elec_equip Winter Design Day, !- Name
+  {a8ce9a3c-dcd8-42d8-b6e6-18946fb60249}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  0.05;                                   !- Value Until Time 1
+  0.2;                                    !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {acbb20b4-0238-4cda-8c19-3df9cc2f4b73}, !- Handle
-  0700|2100|StripMall|default|lighting |1/1-12/31|Sat Rule, !- Name
-  {b065fc5a-b416-4801-94fc-549711a9d673}, !- Schedule Ruleset Name
+  {5becc59e-7ed9-4d6b-afb8-ca2dbb0917dd}, !- Handle
+  0700|2100|StripMall|default|elec_equip |1/1-12/31|Sat Rule, !- Name
+  {c9823c0d-c7c3-4a7d-acc1-4a7110f74abc}, !- Schedule Ruleset Name
   0,                                      !- Rule Order
-  {99a42f05-55e1-420b-887f-778f880ff7a8}, !- Day Schedule Name
+  {d7956901-f490-49ce-b9d8-b5f3bcd9c42e}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -551,44 +377,44 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {99a42f05-55e1-420b-887f-778f880ff7a8}, !- Handle
-  0700|2100|StripMall|default|lighting |1/1-12/31|Sat, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
+  {d7956901-f490-49ce-b9d8-b5f3bcd9c42e}, !- Handle
+  0700|2100|StripMall|default|elec_equip |1/1-12/31|Sat, !- Name
+  {a8ce9a3c-dcd8-42d8-b6e6-18946fb60249}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
-  0.05,                                   !- Value Until Time 1
+  0.15,                                   !- Value Until Time 1
   8,                                      !- Hour 2
   0,                                      !- Minute 2
-  0.1,                                    !- Value Until Time 2
+  0.3,                                    !- Value Until Time 2
   9,                                      !- Hour 3
   0,                                      !- Minute 3
-  0.3,                                    !- Value Until Time 3
+  0.5,                                    !- Value Until Time 3
   10,                                     !- Hour 4
   0,                                      !- Minute 4
-  0.6,                                    !- Value Until Time 4
+  0.8,                                    !- Value Until Time 4
   18,                                     !- Hour 5
   0,                                      !- Minute 5
   0.9,                                    !- Value Until Time 5
   19,                                     !- Hour 6
   0,                                      !- Minute 6
-  0.5,                                    !- Value Until Time 6
+  0.7,                                    !- Value Until Time 6
   21,                                     !- Hour 7
   0,                                      !- Minute 7
-  0.3,                                    !- Value Until Time 7
+  0.5,                                    !- Value Until Time 7
   22,                                     !- Hour 8
   0,                                      !- Minute 8
-  0.1,                                    !- Value Until Time 8
+  0.3,                                    !- Value Until Time 8
   24,                                     !- Hour 9
   0,                                      !- Minute 9
-  0.05;                                   !- Value Until Time 9
+  0.15;                                   !- Value Until Time 9
 
 OS:Schedule:Rule,
-  {2dfe069e-40c7-4816-b45c-849a0bbf0d23}, !- Handle
-  0700|2100|StripMall|default|lighting |1/1-12/31|Sun Rule, !- Name
-  {b065fc5a-b416-4801-94fc-549711a9d673}, !- Schedule Ruleset Name
+  {ecb162a7-1ac7-4a50-a1c5-c6aaab46739c}, !- Handle
+  0700|2100|StripMall|default|elec_equip |1/1-12/31|Sun Rule, !- Name
+  {c9823c0d-c7c3-4a7d-acc1-4a7110f74abc}, !- Schedule Ruleset Name
   1,                                      !- Rule Order
-  {2662d40c-0bec-446c-a2e9-fb0939a0c645}, !- Day Schedule Name
+  {b329c6dc-2894-45a9-b37c-f02900520113}, !- Day Schedule Name
   Yes,                                    !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -604,42 +430,309 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {2662d40c-0bec-446c-a2e9-fb0939a0c645}, !- Handle
-  0700|2100|StripMall|default|lighting |1/1-12/31|Sun, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
+  {b329c6dc-2894-45a9-b37c-f02900520113}, !- Handle
+  0700|2100|StripMall|default|elec_equip |1/1-12/31|Sun, !- Name
+  {a8ce9a3c-dcd8-42d8-b6e6-18946fb60249}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   8,                                      !- Hour 1
   0,                                      !- Minute 1
-  0.05,                                   !- Value Until Time 1
+  0.15,                                   !- Value Until Time 1
   10,                                     !- Hour 2
   0,                                      !- Minute 2
-  0.1,                                    !- Value Until Time 2
+  0.3,                                    !- Value Until Time 2
   12,                                     !- Hour 3
   0,                                      !- Minute 3
-  0.4,                                    !- Value Until Time 3
+  0.6,                                    !- Value Until Time 3
   17,                                     !- Hour 4
   0,                                      !- Minute 4
-  0.6,                                    !- Value Until Time 4
+  0.8,                                    !- Value Until Time 4
   18,                                     !- Hour 5
   0,                                      !- Minute 5
-  0.4,                                    !- Value Until Time 5
+  0.6,                                    !- Value Until Time 5
   19,                                     !- Hour 6
   0,                                      !- Minute 6
-  0.2,                                    !- Value Until Time 6
+  0.4,                                    !- Value Until Time 6
   24,                                     !- Hour 7
   0,                                      !- Minute 7
-  0.05;                                   !- Value Until Time 7
+  0.15;                                   !- Value Until Time 7
 
 OS:Schedule:Ruleset,
-  {ce6ca97c-4ef0-432f-860b-7b421f518008}, !- Handle
-  0700|2100|StripMall|default|clg_setpoint, !- Name
-  {da89623a-f881-418f-8f94-3a4cced0ff67}, !- Schedule Type Limits Name
-  {5ee18020-1fa4-498c-8bd0-f43dac111784}, !- Default Day Schedule Name
-  {623ceb90-bab3-4220-acdd-2874a46ba3f2}, !- Summer Design Day Schedule Name
-  {64881801-16a4-47e1-a2e6-547229352247}; !- Winter Design Day Schedule Name
+  {d65290e3-8d5b-4209-ad5d-59077cca28b4}, !- Handle
+  0700|2100|StripMall|default|htg_setpoint, !- Name
+  {de267d25-d452-4eb8-a6b3-1c6cef33652e}, !- Schedule Type Limits Name
+  {9e7d9ffd-0690-4f16-b2d6-52c6834fbf66}, !- Default Day Schedule Name
+  {c384afd5-697f-43a1-bb30-690c432c63ed}, !- Summer Design Day Schedule Name
+  {fd4a84c0-09b8-4f9a-9542-8636fe134f4c}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {da89623a-f881-418f-8f94-3a4cced0ff67}, !- Handle
+  {de267d25-d452-4eb8-a6b3-1c6cef33652e}, !- Handle
+  Thermostat Heating Setpoint Schedule Type Limits, !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  100,                                    !- Upper Limit Value {BasedOnField A4}
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Schedule:Day,
+  {9e7d9ffd-0690-4f16-b2d6-52c6834fbf66}, !- Handle
+  0700|2100|StripMall|default|htg_setpoint |default, !- Name
+  {de267d25-d452-4eb8-a6b3-1c6cef33652e}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  21.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {c384afd5-697f-43a1-bb30-690c432c63ed}, !- Handle
+  0700|2100|StripMall|default|htg_setpoint Summer Design Day, !- Name
+  {de267d25-d452-4eb8-a6b3-1c6cef33652e}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  21.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {fd4a84c0-09b8-4f9a-9542-8636fe134f4c}, !- Handle
+  0700|2100|StripMall|default|htg_setpoint Winter Design Day, !- Name
+  {de267d25-d452-4eb8-a6b3-1c6cef33652e}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  21.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Rule,
+  {008a1847-0246-4f3e-ae04-e5501d71207f}, !- Handle
+  0700|2100|StripMall|default|htg_setpoint |1/1-12/31|Sat Rule, !- Name
+  {d65290e3-8d5b-4209-ad5d-59077cca28b4}, !- Schedule Ruleset Name
+  0,                                      !- Rule Order
+  {052169ad-02b1-4b77-aaa4-7d5e2e82ce12}, !- Day Schedule Name
+  ,                                       !- Apply Sunday
+  ,                                       !- Apply Monday
+  ,                                       !- Apply Tuesday
+  ,                                       !- Apply Wednesday
+  ,                                       !- Apply Thursday
+  ,                                       !- Apply Friday
+  Yes,                                    !- Apply Saturday
+  ,                                       !- Apply Holiday
+  DateRange,                              !- Date Specification Type
+  1,                                      !- Start Month
+  1,                                      !- Start Day
+  12,                                     !- End Month
+  31;                                     !- End Day
+
+OS:Schedule:Day,
+  {052169ad-02b1-4b77-aaa4-7d5e2e82ce12}, !- Handle
+  0700|2100|StripMall|default|htg_setpoint |1/1-12/31|Sat, !- Name
+  {de267d25-d452-4eb8-a6b3-1c6cef33652e}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  21.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Rule,
+  {0bdee385-bb79-4f3e-af5b-8cf5e86f532f}, !- Handle
+  0700|2100|StripMall|default|htg_setpoint |1/1-12/31|Sun Rule, !- Name
+  {d65290e3-8d5b-4209-ad5d-59077cca28b4}, !- Schedule Ruleset Name
+  1,                                      !- Rule Order
+  {935c71e9-ce71-498c-ac0f-bf38f08f22f5}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  ,                                       !- Apply Monday
+  ,                                       !- Apply Tuesday
+  ,                                       !- Apply Wednesday
+  ,                                       !- Apply Thursday
+  ,                                       !- Apply Friday
+  ,                                       !- Apply Saturday
+  ,                                       !- Apply Holiday
+  DateRange,                              !- Date Specification Type
+  1,                                      !- Start Month
+  1,                                      !- Start Day
+  12,                                     !- End Month
+  31;                                     !- End Day
+
+OS:Schedule:Day,
+  {935c71e9-ce71-498c-ac0f-bf38f08f22f5}, !- Handle
+  0700|2100|StripMall|default|htg_setpoint |1/1-12/31|Sun, !- Name
+  {de267d25-d452-4eb8-a6b3-1c6cef33652e}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  21.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {9c47caa3-22b5-43e0-9b01-02c1f182adad}, !- Handle
+  0700|2100|StripMall|default|rh,         !- Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  {8bf4e7fe-0f93-4ddd-8acc-b5d7a75270ce}, !- Default Day Schedule Name
+  {6facc05f-44e5-4a31-a815-46830f027140}, !- Summer Design Day Schedule Name
+  {d9c92729-096f-47f5-a611-3b7d0cd6644f}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {8bf4e7fe-0f93-4ddd-8acc-b5d7a75270ce}, !- Handle
+  0700|2100|StripMall|default|rh |default, !- Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  50;                                     !- Value Until Time 1
+
+OS:Schedule:Day,
+  {6facc05f-44e5-4a31-a815-46830f027140}, !- Handle
+  0700|2100|StripMall|default|rh Summer Design Day, !- Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  50;                                     !- Value Until Time 1
+
+OS:Schedule:Day,
+  {d9c92729-096f-47f5-a611-3b7d0cd6644f}, !- Handle
+  0700|2100|StripMall|default|rh Winter Design Day, !- Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  50;                                     !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {0866d751-e85b-44ef-8546-5a6a6e69b81d}, !- Handle
+  0700|2100|StripMall|default|infiltration, !- Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
+  {574d1b7a-1341-4165-9c80-386258969ae7}, !- Default Day Schedule Name
+  {04d05e64-2491-43c6-9adc-be6383871cd2}, !- Summer Design Day Schedule Name
+  {594b7f64-0899-4a5e-9425-5c9da2cfa5c3}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Handle
+  Fraction Schedule Type Limits,          !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  1,                                      !- Upper Limit Value {BasedOnField A4}
+  Continuous,                             !- Numeric Type
+  Dimensionless;                          !- Unit Type
+
+OS:Schedule:Day,
+  {574d1b7a-1341-4165-9c80-386258969ae7}, !- Handle
+  0700|2100|StripMall|default|infiltration |default, !- Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  6,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  21,                                     !- Hour 2
+  0,                                      !- Minute 2
+  0.5,                                    !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
+
+OS:Schedule:Day,
+  {04d05e64-2491-43c6-9adc-be6383871cd2}, !- Handle
+  0700|2100|StripMall|default|infiltration Summer Design Day, !- Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  6,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  21,                                     !- Hour 2
+  0,                                      !- Minute 2
+  0.5,                                    !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
+
+OS:Schedule:Day,
+  {594b7f64-0899-4a5e-9425-5c9da2cfa5c3}, !- Handle
+  0700|2100|StripMall|default|infiltration Winter Design Day, !- Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  6,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  21,                                     !- Hour 2
+  0,                                      !- Minute 2
+  0.5,                                    !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
+
+OS:Schedule:Rule,
+  {2a04ce1d-4201-4a39-961b-60be427256f1}, !- Handle
+  0700|2100|StripMall|default|infiltration |1/1-12/31|Sat Rule, !- Name
+  {0866d751-e85b-44ef-8546-5a6a6e69b81d}, !- Schedule Ruleset Name
+  0,                                      !- Rule Order
+  {6d864d8b-8d15-45fc-b57b-5673fb467b84}, !- Day Schedule Name
+  ,                                       !- Apply Sunday
+  ,                                       !- Apply Monday
+  ,                                       !- Apply Tuesday
+  ,                                       !- Apply Wednesday
+  ,                                       !- Apply Thursday
+  ,                                       !- Apply Friday
+  Yes,                                    !- Apply Saturday
+  ,                                       !- Apply Holiday
+  DateRange,                              !- Date Specification Type
+  1,                                      !- Start Month
+  1,                                      !- Start Day
+  12,                                     !- End Month
+  31;                                     !- End Day
+
+OS:Schedule:Day,
+  {6d864d8b-8d15-45fc-b57b-5673fb467b84}, !- Handle
+  0700|2100|StripMall|default|infiltration |1/1-12/31|Sat, !- Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  6,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  22,                                     !- Hour 2
+  0,                                      !- Minute 2
+  0.5,                                    !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
+
+OS:Schedule:Rule,
+  {97455d57-2126-474f-88f5-90337967922a}, !- Handle
+  0700|2100|StripMall|default|infiltration |1/1-12/31|Sun Rule, !- Name
+  {0866d751-e85b-44ef-8546-5a6a6e69b81d}, !- Schedule Ruleset Name
+  1,                                      !- Rule Order
+  {4c7b3a64-3626-4de2-9ce1-7b6a0e992fbb}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  ,                                       !- Apply Monday
+  ,                                       !- Apply Tuesday
+  ,                                       !- Apply Wednesday
+  ,                                       !- Apply Thursday
+  ,                                       !- Apply Friday
+  ,                                       !- Apply Saturday
+  ,                                       !- Apply Holiday
+  DateRange,                              !- Date Specification Type
+  1,                                      !- Start Month
+  1,                                      !- Start Day
+  12,                                     !- End Month
+  31;                                     !- End Day
+
+OS:Schedule:Day,
+  {4c7b3a64-3626-4de2-9ce1-7b6a0e992fbb}, !- Handle
+  0700|2100|StripMall|default|infiltration |1/1-12/31|Sun, !- Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  8,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  17,                                     !- Hour 2
+  0,                                      !- Minute 2
+  0.5,                                    !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
+
+OS:Schedule:Ruleset,
+  {a80c03e9-d2cd-4972-b988-7ac8595013b7}, !- Handle
+  0700|2100|StripMall|default|clg_setpoint, !- Name
+  {8d6d9dbe-102e-4833-839f-9e425827590a}, !- Schedule Type Limits Name
+  {806a5488-7226-41e9-939a-fc43cd65ab1c}, !- Default Day Schedule Name
+  {16925ddb-f71f-4526-a038-9dbba86d3a18}, !- Summer Design Day Schedule Name
+  {c21f9096-13f1-41a5-b88e-2abf1c1b399c}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {8d6d9dbe-102e-4833-839f-9e425827590a}, !- Handle
   Thermostat Cooling Setpoint Schedule Type Limits, !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   100,                                    !- Upper Limit Value {BasedOnField A4}
@@ -647,50 +740,38 @@ OS:ScheduleTypeLimits,
   Temperature;                            !- Unit Type
 
 OS:Schedule:Day,
-  {5ee18020-1fa4-498c-8bd0-f43dac111784}, !- Handle
+  {806a5488-7226-41e9-939a-fc43cd65ab1c}, !- Handle
   0700|2100|StripMall|default|clg_setpoint |default, !- Name
-  {da89623a-f881-418f-8f94-3a4cced0ff67}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  30.0000000000001,                       !- Value Until Time 1
-  21,                                     !- Hour 2
-  0,                                      !- Minute 2
-  24.0000000000001,                       !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  30.0000000000001;                       !- Value Until Time 3
-
-OS:Schedule:Day,
-  {623ceb90-bab3-4220-acdd-2874a46ba3f2}, !- Handle
-  0700|2100|StripMall|default|clg_setpoint Summer Design Day, !- Name
-  {da89623a-f881-418f-8f94-3a4cced0ff67}, !- Schedule Type Limits Name
+  {8d6d9dbe-102e-4833-839f-9e425827590a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  30.0000000000001;                       !- Value Until Time 1
+  24.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Day,
-  {64881801-16a4-47e1-a2e6-547229352247}, !- Handle
-  0700|2100|StripMall|default|clg_setpoint Winter Design Day, !- Name
-  {da89623a-f881-418f-8f94-3a4cced0ff67}, !- Schedule Type Limits Name
+  {16925ddb-f71f-4526-a038-9dbba86d3a18}, !- Handle
+  0700|2100|StripMall|default|clg_setpoint Summer Design Day, !- Name
+  {8d6d9dbe-102e-4833-839f-9e425827590a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
+  24,                                     !- Hour 1
   0,                                      !- Minute 1
-  30.0000000000001,                       !- Value Until Time 1
-  21,                                     !- Hour 2
-  0,                                      !- Minute 2
-  24.0000000000001,                       !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  30.0000000000001;                       !- Value Until Time 3
+  24.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {c21f9096-13f1-41a5-b88e-2abf1c1b399c}, !- Handle
+  0700|2100|StripMall|default|clg_setpoint Winter Design Day, !- Name
+  {8d6d9dbe-102e-4833-839f-9e425827590a}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  24.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {e2ba054a-1d50-4265-884e-6f14068e753c}, !- Handle
+  {a21d1239-ab7f-4f56-bda3-9b61d62130ab}, !- Handle
   0700|2100|StripMall|default|clg_setpoint |1/1-12/31|Sat Rule, !- Name
-  {ce6ca97c-4ef0-432f-860b-7b421f518008}, !- Schedule Ruleset Name
+  {a80c03e9-d2cd-4972-b988-7ac8595013b7}, !- Schedule Ruleset Name
   0,                                      !- Rule Order
-  {ab7185c3-3c19-4676-a01f-2c1d16279b65}, !- Day Schedule Name
+  {a16e0e0f-4648-4e73-91ad-fcd1ad1fcfee}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -706,26 +787,20 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {ab7185c3-3c19-4676-a01f-2c1d16279b65}, !- Handle
+  {a16e0e0f-4648-4e73-91ad-fcd1ad1fcfee}, !- Handle
   0700|2100|StripMall|default|clg_setpoint |1/1-12/31|Sat, !- Name
-  {da89623a-f881-418f-8f94-3a4cced0ff67}, !- Schedule Type Limits Name
+  {8d6d9dbe-102e-4833-839f-9e425827590a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
+  24,                                     !- Hour 1
   0,                                      !- Minute 1
-  30.0000000000001,                       !- Value Until Time 1
-  22,                                     !- Hour 2
-  0,                                      !- Minute 2
-  24.0000000000001,                       !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  30.0000000000001;                       !- Value Until Time 3
+  24.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {54bd6de6-e736-4c34-bda2-e7d1ef8ea670}, !- Handle
+  {ca2b277b-f890-4463-8a9b-db545bfefff5}, !- Handle
   0700|2100|StripMall|default|clg_setpoint |1/1-12/31|Sun Rule, !- Name
-  {ce6ca97c-4ef0-432f-860b-7b421f518008}, !- Schedule Ruleset Name
+  {a80c03e9-d2cd-4972-b988-7ac8595013b7}, !- Schedule Ruleset Name
   1,                                      !- Rule Order
-  {edbf4224-332b-4cb6-a814-164c3df789d8}, !- Day Schedule Name
+  {ba35acac-5ae4-4e1f-b414-4bf19be20443}, !- Day Schedule Name
   Yes,                                    !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -741,61 +816,90 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {edbf4224-332b-4cb6-a814-164c3df789d8}, !- Handle
+  {ba35acac-5ae4-4e1f-b414-4bf19be20443}, !- Handle
   0700|2100|StripMall|default|clg_setpoint |1/1-12/31|Sun, !- Name
-  {da89623a-f881-418f-8f94-3a4cced0ff67}, !- Schedule Type Limits Name
+  {8d6d9dbe-102e-4833-839f-9e425827590a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
-  8,                                      !- Hour 1
+  24,                                     !- Hour 1
   0,                                      !- Minute 1
-  30.0000000000001,                       !- Value Until Time 1
-  19,                                     !- Hour 2
-  0,                                      !- Minute 2
-  24.0000000000001,                       !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  30.0000000000001;                       !- Value Until Time 3
+  24.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {0e138d36-3d2c-4924-b866-151790fa5526}, !- Handle
+  {5a7b90c2-5f4e-4eb6-940a-77dc595d6300}, !- Handle
+  0700|2100|StripMall|default|air_velocity, !- Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  {b0186995-33b6-4f18-bb23-d3472dc8a2d5}, !- Default Day Schedule Name
+  {4288632f-af21-43cb-926d-e3c1c9bafc58}, !- Summer Design Day Schedule Name
+  {9fcd5705-3986-46a8-9133-230ef36d9479}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {b0186995-33b6-4f18-bb23-d3472dc8a2d5}, !- Handle
+  0700|2100|StripMall|default|air_velocity |default, !- Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.200152;                               !- Value Until Time 1
+
+OS:Schedule:Day,
+  {4288632f-af21-43cb-926d-e3c1c9bafc58}, !- Handle
+  0700|2100|StripMall|default|air_velocity Summer Design Day, !- Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.200152;                               !- Value Until Time 1
+
+OS:Schedule:Day,
+  {9fcd5705-3986-46a8-9133-230ef36d9479}, !- Handle
+  0700|2100|StripMall|default|air_velocity Winter Design Day, !- Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.200152;                               !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {1fc91ef0-e232-4237-8adc-ffb27f99f26d}, !- Handle
   0700|2100|StripMall|default|clothing,   !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
-  {197fa785-f33a-4724-a491-9305c8d63ad3}, !- Default Day Schedule Name
-  {d85c9f6d-e9c8-4b94-976d-c8300196d024}, !- Summer Design Day Schedule Name
-  {0becff7d-cd15-4af1-b5d9-5b53069e8e3e}; !- Winter Design Day Schedule Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
+  {e0dcff03-3d6f-4588-aa33-4affdef0efd0}, !- Default Day Schedule Name
+  {5c1b47c4-22ce-460e-9dc7-e66479d1664c}, !- Summer Design Day Schedule Name
+  {c10d296d-cfac-463b-b4d6-76912a4f1812}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {197fa785-f33a-4724-a491-9305c8d63ad3}, !- Handle
+  {e0dcff03-3d6f-4588-aa33-4affdef0efd0}, !- Handle
   0700|2100|StripMall|default|clothing |default, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   1;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {d85c9f6d-e9c8-4b94-976d-c8300196d024}, !- Handle
+  {5c1b47c4-22ce-460e-9dc7-e66479d1664c}, !- Handle
   0700|2100|StripMall|default|clothing Summer Design Day, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   1;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {0becff7d-cd15-4af1-b5d9-5b53069e8e3e}, !- Handle
+  {c10d296d-cfac-463b-b4d6-76912a4f1812}, !- Handle
   0700|2100|StripMall|default|clothing Winter Design Day, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   1;                                      !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {4aa0569c-b5e3-4cdd-b818-454e0114b787}, !- Handle
+  {75f58b35-e14d-4b62-8faa-9453e5e3cce9}, !- Handle
   0700|2100|StripMall|default|clothing |5/1-9/30|Sat/Sun|Mon/Tue/Wed/Thu/Fri Rule, !- Name
-  {0e138d36-3d2c-4924-b866-151790fa5526}, !- Schedule Ruleset Name
+  {1fc91ef0-e232-4237-8adc-ffb27f99f26d}, !- Schedule Ruleset Name
   0,                                      !- Rule Order
-  {f98c502a-7b8e-458e-a68f-6ce05b1cf990}, !- Day Schedule Name
+  {377da025-40fb-43b9-9c13-14877cc4e619}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   ,                                       !- Apply Monday
   Yes,                                    !- Apply Tuesday
@@ -811,20 +915,20 @@ OS:Schedule:Rule,
   30;                                     !- End Day
 
 OS:Schedule:Day,
-  {f98c502a-7b8e-458e-a68f-6ce05b1cf990}, !- Handle
+  {377da025-40fb-43b9-9c13-14877cc4e619}, !- Handle
   0700|2100|StripMall|default|clothing |5/1-9/30|Sat/Sun|Mon/Tue/Wed/Thu/Fri, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0.5;                                    !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {5c1ed756-d5a4-4c3a-a9b3-6e7c60440a2b}, !- Handle
+  {5abacea0-2c03-4233-ab9d-2226039e09b9}, !- Handle
   0700|2100|StripMall|default|clothing |10/1-12/31|Sat/Sun|Mon/Tue/Wed/Thu/Fri Rule, !- Name
-  {0e138d36-3d2c-4924-b866-151790fa5526}, !- Schedule Ruleset Name
+  {1fc91ef0-e232-4237-8adc-ffb27f99f26d}, !- Schedule Ruleset Name
   1,                                      !- Rule Order
-  {2bf284ad-47f0-4b24-aa4a-a805392b70e6}, !- Day Schedule Name
+  {f78f4e48-575f-4644-882f-80bede49d203}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   ,                                       !- Apply Monday
   Yes,                                    !- Apply Tuesday
@@ -840,59 +944,85 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {2bf284ad-47f0-4b24-aa4a-a805392b70e6}, !- Handle
+  {f78f4e48-575f-4644-882f-80bede49d203}, !- Handle
   0700|2100|StripMall|default|clothing |10/1-12/31|Sat/Sun|Mon/Tue/Wed/Thu/Fri, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {379e4eb7-5688-4ccc-8ebb-a39a682ba316}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   1;                                      !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {e103ec04-df25-4daf-bcb7-83f3bc2d1d9c}, !- Handle
-  0700|2100|StripMall|default|ext_lighting, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
-  {2764cec6-ac8a-4977-840e-e8aa4a2dd092}, !- Default Day Schedule Name
-  {23e59d0e-6b9c-449a-9e71-4c69b681f63f}, !- Summer Design Day Schedule Name
-  {b40783a0-5368-402b-9ea3-df7b1dd76ef6}; !- Winter Design Day Schedule Name
-
-OS:Schedule:Day,
-  {2764cec6-ac8a-4977-840e-e8aa4a2dd092}, !- Handle
-  0700|2100|StripMall|default|ext_lighting |default, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
-
-OS:Schedule:Day,
-  {23e59d0e-6b9c-449a-9e71-4c69b681f63f}, !- Handle
-  0700|2100|StripMall|default|ext_lighting Summer Design Day, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
-
-OS:Schedule:Day,
-  {b40783a0-5368-402b-9ea3-df7b1dd76ef6}, !- Handle
-  0700|2100|StripMall|default|ext_lighting Winter Design Day, !- Name
-  {8f8f2c6b-3496-4ec0-a0b2-673f5b910db2}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {1938caf7-840b-4145-8ad4-9dd71bdb296e}, !- Handle
-  0700|2100|StripMall|default|elevator,   !- Name
-  {232b5a96-42e0-4c3b-9dbb-a219226a420c}, !- Schedule Type Limits Name
-  {2f8c3835-6003-45bb-b5eb-a5c4432dc2e0}, !- Default Day Schedule Name
-  {f58e5cc6-707e-44e5-9c0b-e5075bd70e3e}, !- Summer Design Day Schedule Name
-  {03fc66db-2abf-4515-aff7-7d961c84bf45}; !- Winter Design Day Schedule Name
+  {00f6c271-9427-4b09-89d6-6ed4f3efa41a}, !- Handle
+  0700|2100|StripMall|default|hvac,       !- Name
+  {24aa4064-24d5-4ff5-bf86-2413aa759ff3}, !- Schedule Type Limits Name
+  {4489e59b-aaf5-4db5-8e38-c0f487cef5db}, !- Default Day Schedule Name
+  {38a80a58-ccab-4d8a-8df1-1e91607df6bb}, !- Summer Design Day Schedule Name
+  {9b99a12b-a41b-4bff-9893-afd9dac044ac}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {232b5a96-42e0-4c3b-9dbb-a219226a420c}, !- Handle
+  {24aa4064-24d5-4ff5-bf86-2413aa759ff3}, !- Handle
+  HVAC Operation Schedule Type Limits,    !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  1,                                      !- Upper Limit Value {BasedOnField A4}
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+
+OS:Schedule:Day,
+  {4489e59b-aaf5-4db5-8e38-c0f487cef5db}, !- Handle
+  0700|2100|StripMall|default|hvac |default, !- Name
+  {24aa4064-24d5-4ff5-bf86-2413aa759ff3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  8,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0,                                      !- Value Until Time 1
+  19,                                     !- Hour 2
+  0,                                      !- Minute 2
+  1,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  0;                                      !- Value Until Time 3
+
+OS:Schedule:Day,
+  {38a80a58-ccab-4d8a-8df1-1e91607df6bb}, !- Handle
+  0700|2100|StripMall|default|hvac Summer Design Day, !- Name
+  {24aa4064-24d5-4ff5-bf86-2413aa759ff3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  8,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0,                                      !- Value Until Time 1
+  19,                                     !- Hour 2
+  0,                                      !- Minute 2
+  1,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  0;                                      !- Value Until Time 3
+
+OS:Schedule:Day,
+  {9b99a12b-a41b-4bff-9893-afd9dac044ac}, !- Handle
+  0700|2100|StripMall|default|hvac Winter Design Day, !- Name
+  {24aa4064-24d5-4ff5-bf86-2413aa759ff3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  8,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0,                                      !- Value Until Time 1
+  19,                                     !- Hour 2
+  0,                                      !- Minute 2
+  1,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  0;                                      !- Value Until Time 3
+
+OS:Schedule:Ruleset,
+  {3d9f98f2-0fa4-4c85-bdb7-206a7a252e1f}, !- Handle
+  0700|2100|StripMall|default|elevator,   !- Name
+  {8c3cd60a-a78f-4840-80f1-76973464a516}, !- Schedule Type Limits Name
+  {e4a7bf7c-bd12-473a-8edb-b446d4d55a05}, !- Default Day Schedule Name
+  {96f99858-afb1-4d49-956e-24b04e767156}, !- Summer Design Day Schedule Name
+  {4b01f9c5-fbb9-4cbb-87ab-4ef936b94b82}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {8c3cd60a-a78f-4840-80f1-76973464a516}, !- Handle
   Elevators Schedule Type Limits,         !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
@@ -900,9 +1030,9 @@ OS:ScheduleTypeLimits,
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {2f8c3835-6003-45bb-b5eb-a5c4432dc2e0}, !- Handle
+  {e4a7bf7c-bd12-473a-8edb-b446d4d55a05}, !- Handle
   0700|2100|StripMall|default|elevator |default, !- Name
-  {232b5a96-42e0-4c3b-9dbb-a219226a420c}, !- Schedule Type Limits Name
+  {8c3cd60a-a78f-4840-80f1-76973464a516}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   6,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1014,9 +1144,9 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 36
 
 OS:Schedule:Day,
-  {f58e5cc6-707e-44e5-9c0b-e5075bd70e3e}, !- Handle
+  {96f99858-afb1-4d49-956e-24b04e767156}, !- Handle
   0700|2100|StripMall|default|elevator Summer Design Day, !- Name
-  {232b5a96-42e0-4c3b-9dbb-a219226a420c}, !- Schedule Type Limits Name
+  {8c3cd60a-a78f-4840-80f1-76973464a516}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   6,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1128,9 +1258,9 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 36
 
 OS:Schedule:Day,
-  {03fc66db-2abf-4515-aff7-7d961c84bf45}, !- Handle
+  {4b01f9c5-fbb9-4cbb-87ab-4ef936b94b82}, !- Handle
   0700|2100|StripMall|default|elevator Winter Design Day, !- Name
-  {232b5a96-42e0-4c3b-9dbb-a219226a420c}, !- Schedule Type Limits Name
+  {8c3cd60a-a78f-4840-80f1-76973464a516}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   6,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1242,11 +1372,11 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 36
 
 OS:Schedule:Rule,
-  {ab0f3c6e-4116-4a57-9f0d-b12721ffa8fc}, !- Handle
+  {d0d3116a-72df-4cd1-b5d1-b5876406f17d}, !- Handle
   0700|2100|StripMall|default|elevator |1/1-12/31|Sun Rule, !- Name
-  {1938caf7-840b-4145-8ad4-9dd71bdb296e}, !- Schedule Ruleset Name
+  {3d9f98f2-0fa4-4c85-bdb7-206a7a252e1f}, !- Schedule Ruleset Name
   0,                                      !- Rule Order
-  {5ae8dc9b-a248-43e1-93e4-eaad4eb40762}, !- Day Schedule Name
+  {ed2420da-81ac-4e08-b1ac-2d6e649cbc28}, !- Day Schedule Name
   Yes,                                    !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -1262,20 +1392,20 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {5ae8dc9b-a248-43e1-93e4-eaad4eb40762}, !- Handle
+  {ed2420da-81ac-4e08-b1ac-2d6e649cbc28}, !- Handle
   0700|2100|StripMall|default|elevator |1/1-12/31|Sun, !- Name
-  {232b5a96-42e0-4c3b-9dbb-a219226a420c}, !- Schedule Type Limits Name
+  {8c3cd60a-a78f-4840-80f1-76973464a516}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {4e75185d-5d6e-46f8-bdfb-407862e7399e}, !- Handle
+  {f3f12226-7478-44db-a5d3-03a35145ea2b}, !- Handle
   0700|2100|StripMall|default|elevator |1/1-12/31|Sat Rule, !- Name
-  {1938caf7-840b-4145-8ad4-9dd71bdb296e}, !- Schedule Ruleset Name
+  {3d9f98f2-0fa4-4c85-bdb7-206a7a252e1f}, !- Schedule Ruleset Name
   1,                                      !- Rule Order
-  {02cbf7d7-891b-4a6e-aa5b-8601b66ae738}, !- Day Schedule Name
+  {d8eaccf8-6266-4d42-8747-84213a57a2e4}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -1291,9 +1421,9 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {02cbf7d7-891b-4a6e-aa5b-8601b66ae738}, !- Handle
+  {d8eaccf8-6266-4d42-8747-84213a57a2e4}, !- Handle
   0700|2100|StripMall|default|elevator |1/1-12/31|Sat, !- Name
-  {232b5a96-42e0-4c3b-9dbb-a219226a420c}, !- Schedule Type Limits Name
+  {8c3cd60a-a78f-4840-80f1-76973464a516}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   6,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1384,81 +1514,87 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 29
 
 OS:Schedule:Ruleset,
-  {c2b13842-39f8-400b-8d72-27b5bc1c23f4}, !- Handle
-  0700|2100|StripMall|default|elec_equip, !- Name
-  {cb0bdbe2-9b40-4577-9df6-3cb13b9938da}, !- Schedule Type Limits Name
-  {3eaa865b-f206-4de9-ac4f-1c2241f0e635}, !- Default Day Schedule Name
-  {81327d3b-17bf-406b-b0e8-2204071876f3}, !- Summer Design Day Schedule Name
-  {46a81a67-7a59-46bb-b1da-e8865f1d8812}; !- Winter Design Day Schedule Name
+  {40ed883d-a264-45fd-8643-508a151ab842}, !- Handle
+  0700|2100|StripMall|default|lighting,   !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
+  {46ffbb45-92c1-446f-a908-29d60d09c6b3}, !- Default Day Schedule Name
+  {f3dcbe7e-dfd1-411a-a1f5-13ee3e8d8e3e}, !- Summer Design Day Schedule Name
+  {f9420a78-f818-48ed-baa2-6c48c17ca3fa}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {cb0bdbe2-9b40-4577-9df6-3cb13b9938da}, !- Handle
-  Equipment Schedule Type Limits,         !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Handle
+  Lights Schedule Type Limits,            !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
   Continuous,                             !- Numeric Type
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {3eaa865b-f206-4de9-ac4f-1c2241f0e635}, !- Handle
-  0700|2100|StripMall|default|elec_equip |default, !- Name
-  {cb0bdbe2-9b40-4577-9df6-3cb13b9938da}, !- Schedule Type Limits Name
+  {46ffbb45-92c1-446f-a908-29d60d09c6b3}, !- Handle
+  0700|2100|StripMall|default|lighting |default, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
-  0.2,                                    !- Value Until Time 1
+  0.05,                                   !- Value Until Time 1
   8,                                      !- Hour 2
   0,                                      !- Minute 2
-  0.4,                                    !- Value Until Time 2
+  0.2,                                    !- Value Until Time 2
   9,                                      !- Hour 3
   0,                                      !- Minute 3
-  0.7,                                    !- Value Until Time 3
+  0.5,                                    !- Value Until Time 3
   18,                                     !- Hour 4
   0,                                      !- Minute 4
   0.9,                                    !- Value Until Time 4
   20,                                     !- Hour 5
   0,                                      !- Minute 5
-  0.8,                                    !- Value Until Time 5
+  0.6,                                    !- Value Until Time 5
   21,                                     !- Hour 6
   0,                                      !- Minute 6
-  0.7,                                    !- Value Until Time 6
+  0.5,                                    !- Value Until Time 6
   22,                                     !- Hour 7
   0,                                      !- Minute 7
-  0.4,                                    !- Value Until Time 7
+  0.2,                                    !- Value Until Time 7
   24,                                     !- Hour 8
   0,                                      !- Minute 8
-  0.2;                                    !- Value Until Time 8
+  0.05;                                   !- Value Until Time 8
 
 OS:Schedule:Day,
-  {81327d3b-17bf-406b-b0e8-2204071876f3}, !- Handle
-  0700|2100|StripMall|default|elec_equip Summer Design Day, !- Name
-  {cb0bdbe2-9b40-4577-9df6-3cb13b9938da}, !- Schedule Type Limits Name
+  {f3dcbe7e-dfd1-411a-a1f5-13ee3e8d8e3e}, !- Handle
+  0700|2100|StripMall|default|lighting Summer Design Day, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
-  0.2,                                    !- Value Until Time 1
-  22,                                     !- Hour 2
+  0.05,                                   !- Value Until Time 1
+  8,                                      !- Hour 2
   0,                                      !- Minute 2
-  1,                                      !- Value Until Time 2
-  24,                                     !- Hour 3
+  0.2,                                    !- Value Until Time 2
+  21,                                     !- Hour 3
   0,                                      !- Minute 3
-  0.2;                                    !- Value Until Time 3
+  1,                                      !- Value Until Time 3
+  22,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.2,                                    !- Value Until Time 4
+  24,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.05;                                   !- Value Until Time 5
 
 OS:Schedule:Day,
-  {46a81a67-7a59-46bb-b1da-e8865f1d8812}, !- Handle
-  0700|2100|StripMall|default|elec_equip Winter Design Day, !- Name
-  {cb0bdbe2-9b40-4577-9df6-3cb13b9938da}, !- Schedule Type Limits Name
+  {f9420a78-f818-48ed-baa2-6c48c17ca3fa}, !- Handle
+  0700|2100|StripMall|default|lighting Winter Design Day, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  0.2;                                    !- Value Until Time 1
+  0.05;                                   !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {6a7ab80e-b8a2-41c4-81ab-e115f70abb35}, !- Handle
-  0700|2100|StripMall|default|elec_equip |1/1-12/31|Sat Rule, !- Name
-  {c2b13842-39f8-400b-8d72-27b5bc1c23f4}, !- Schedule Ruleset Name
+  {acd663b0-5d8d-4ca5-ba65-5cfbd233a157}, !- Handle
+  0700|2100|StripMall|default|lighting |1/1-12/31|Sat Rule, !- Name
+  {40ed883d-a264-45fd-8643-508a151ab842}, !- Schedule Ruleset Name
   0,                                      !- Rule Order
-  {9f6da9e1-31b1-49dd-8a20-84d2ece4bc50}, !- Day Schedule Name
+  {be53402a-6440-4117-97d1-16e41a2f2a19}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -1474,44 +1610,44 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {9f6da9e1-31b1-49dd-8a20-84d2ece4bc50}, !- Handle
-  0700|2100|StripMall|default|elec_equip |1/1-12/31|Sat, !- Name
-  {cb0bdbe2-9b40-4577-9df6-3cb13b9938da}, !- Schedule Type Limits Name
+  {be53402a-6440-4117-97d1-16e41a2f2a19}, !- Handle
+  0700|2100|StripMall|default|lighting |1/1-12/31|Sat, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
-  0.15,                                   !- Value Until Time 1
+  0.05,                                   !- Value Until Time 1
   8,                                      !- Hour 2
   0,                                      !- Minute 2
-  0.3,                                    !- Value Until Time 2
+  0.1,                                    !- Value Until Time 2
   9,                                      !- Hour 3
   0,                                      !- Minute 3
-  0.5,                                    !- Value Until Time 3
+  0.3,                                    !- Value Until Time 3
   10,                                     !- Hour 4
   0,                                      !- Minute 4
-  0.8,                                    !- Value Until Time 4
+  0.6,                                    !- Value Until Time 4
   18,                                     !- Hour 5
   0,                                      !- Minute 5
   0.9,                                    !- Value Until Time 5
   19,                                     !- Hour 6
   0,                                      !- Minute 6
-  0.7,                                    !- Value Until Time 6
+  0.5,                                    !- Value Until Time 6
   21,                                     !- Hour 7
   0,                                      !- Minute 7
-  0.5,                                    !- Value Until Time 7
+  0.3,                                    !- Value Until Time 7
   22,                                     !- Hour 8
   0,                                      !- Minute 8
-  0.3,                                    !- Value Until Time 8
+  0.1,                                    !- Value Until Time 8
   24,                                     !- Hour 9
   0,                                      !- Minute 9
-  0.15;                                   !- Value Until Time 9
+  0.05;                                   !- Value Until Time 9
 
 OS:Schedule:Rule,
-  {3fc4a695-c470-4102-a7e8-1eb817e3f502}, !- Handle
-  0700|2100|StripMall|default|elec_equip |1/1-12/31|Sun Rule, !- Name
-  {c2b13842-39f8-400b-8d72-27b5bc1c23f4}, !- Schedule Ruleset Name
+  {8af77e18-741b-40bd-992f-1ef9f623a88f}, !- Handle
+  0700|2100|StripMall|default|lighting |1/1-12/31|Sun Rule, !- Name
+  {40ed883d-a264-45fd-8643-508a151ab842}, !- Schedule Ruleset Name
   1,                                      !- Rule Order
-  {76965780-b713-4988-ad17-9f43244161a9}, !- Day Schedule Name
+  {6dcf2243-fbfd-4ecd-be1e-b237fddebcd4}, !- Day Schedule Name
   Yes,                                    !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -1527,208 +1663,77 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {76965780-b713-4988-ad17-9f43244161a9}, !- Handle
-  0700|2100|StripMall|default|elec_equip |1/1-12/31|Sun, !- Name
-  {cb0bdbe2-9b40-4577-9df6-3cb13b9938da}, !- Schedule Type Limits Name
+  {6dcf2243-fbfd-4ecd-be1e-b237fddebcd4}, !- Handle
+  0700|2100|StripMall|default|lighting |1/1-12/31|Sun, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   8,                                      !- Hour 1
   0,                                      !- Minute 1
-  0.15,                                   !- Value Until Time 1
+  0.05,                                   !- Value Until Time 1
   10,                                     !- Hour 2
   0,                                      !- Minute 2
-  0.3,                                    !- Value Until Time 2
+  0.1,                                    !- Value Until Time 2
   12,                                     !- Hour 3
   0,                                      !- Minute 3
-  0.6,                                    !- Value Until Time 3
+  0.4,                                    !- Value Until Time 3
   17,                                     !- Hour 4
   0,                                      !- Minute 4
-  0.8,                                    !- Value Until Time 4
+  0.6,                                    !- Value Until Time 4
   18,                                     !- Hour 5
   0,                                      !- Minute 5
-  0.6,                                    !- Value Until Time 5
+  0.4,                                    !- Value Until Time 5
   19,                                     !- Hour 6
   0,                                      !- Minute 6
-  0.4,                                    !- Value Until Time 6
+  0.2,                                    !- Value Until Time 6
   24,                                     !- Hour 7
   0,                                      !- Minute 7
-  0.15;                                   !- Value Until Time 7
+  0.05;                                   !- Value Until Time 7
 
 OS:Schedule:Ruleset,
-  {93f47db7-ae1c-4567-bff8-58348e86c76a}, !- Handle
-  0700|2100|StripMall|default|infiltration, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
-  {40fc1c2e-5ac8-45ee-82a1-ee254c2387a4}, !- Default Day Schedule Name
-  {94d41b96-3aa1-4398-ab83-0d5317cdbec6}, !- Summer Design Day Schedule Name
-  {e73aedae-b1b9-45ef-b5c9-a8338d445b43}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Handle
-  Fraction Schedule Type Limits,          !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  1,                                      !- Upper Limit Value {BasedOnField A4}
-  Continuous,                             !- Numeric Type
-  Dimensionless;                          !- Unit Type
-
-OS:Schedule:Day,
-  {40fc1c2e-5ac8-45ee-82a1-ee254c2387a4}, !- Handle
-  0700|2100|StripMall|default|infiltration |default, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  21,                                     !- Hour 2
-  0,                                      !- Minute 2
-  0.5,                                    !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Day,
-  {94d41b96-3aa1-4398-ab83-0d5317cdbec6}, !- Handle
-  0700|2100|StripMall|default|infiltration Summer Design Day, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  21,                                     !- Hour 2
-  0,                                      !- Minute 2
-  0.5,                                    !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Day,
-  {e73aedae-b1b9-45ef-b5c9-a8338d445b43}, !- Handle
-  0700|2100|StripMall|default|infiltration Winter Design Day, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  21,                                     !- Hour 2
-  0,                                      !- Minute 2
-  0.5,                                    !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Rule,
-  {1c9fdbb5-b461-4207-bb50-beaaa9b8538d}, !- Handle
-  0700|2100|StripMall|default|infiltration |1/1-12/31|Sat Rule, !- Name
-  {93f47db7-ae1c-4567-bff8-58348e86c76a}, !- Schedule Ruleset Name
-  0,                                      !- Rule Order
-  {aaf74faf-6eb2-4f10-aca1-b9237be92002}, !- Day Schedule Name
-  ,                                       !- Apply Sunday
-  ,                                       !- Apply Monday
-  ,                                       !- Apply Tuesday
-  ,                                       !- Apply Wednesday
-  ,                                       !- Apply Thursday
-  ,                                       !- Apply Friday
-  Yes,                                    !- Apply Saturday
-  ,                                       !- Apply Holiday
-  DateRange,                              !- Date Specification Type
-  1,                                      !- Start Month
-  1,                                      !- Start Day
-  12,                                     !- End Month
-  31;                                     !- End Day
-
-OS:Schedule:Day,
-  {aaf74faf-6eb2-4f10-aca1-b9237be92002}, !- Handle
-  0700|2100|StripMall|default|infiltration |1/1-12/31|Sat, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  22,                                     !- Hour 2
-  0,                                      !- Minute 2
-  0.5,                                    !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Rule,
-  {7ad1907f-5e99-45ba-8c2a-0fb5647572c6}, !- Handle
-  0700|2100|StripMall|default|infiltration |1/1-12/31|Sun Rule, !- Name
-  {93f47db7-ae1c-4567-bff8-58348e86c76a}, !- Schedule Ruleset Name
-  1,                                      !- Rule Order
-  {5b99a87c-d71d-48ea-877f-3a03f9fa8e72}, !- Day Schedule Name
-  Yes,                                    !- Apply Sunday
-  ,                                       !- Apply Monday
-  ,                                       !- Apply Tuesday
-  ,                                       !- Apply Wednesday
-  ,                                       !- Apply Thursday
-  ,                                       !- Apply Friday
-  ,                                       !- Apply Saturday
-  ,                                       !- Apply Holiday
-  DateRange,                              !- Date Specification Type
-  1,                                      !- Start Month
-  1,                                      !- Start Day
-  12,                                     !- End Month
-  31;                                     !- End Day
-
-OS:Schedule:Day,
-  {5b99a87c-d71d-48ea-877f-3a03f9fa8e72}, !- Handle
-  0700|2100|StripMall|default|infiltration |1/1-12/31|Sun, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  8,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  17,                                     !- Hour 2
-  0,                                      !- Minute 2
-  0.5,                                    !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Ruleset,
-  {9d9e304b-3d1f-40dd-bb1f-f6921da112d7}, !- Handle
+  {5122fbd5-626d-4e7c-a42d-bc13e3e1c6f5}, !- Handle
   0700|2100|StripMall|default|work_eff,   !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
-  {66bad437-d6bf-494e-ab60-91555ea465ae}, !- Default Day Schedule Name
-  {e337fb01-1fa3-4e2d-8066-7beea558ea95}, !- Summer Design Day Schedule Name
-  {814666d1-c504-4b36-bc28-1cc4c953e6ff}; !- Winter Design Day Schedule Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
+  {6c618faa-14bf-4aa9-b60f-003dc9d68ac9}, !- Default Day Schedule Name
+  {6c314494-ab86-4c1e-832a-f20ab9ca25ef}, !- Summer Design Day Schedule Name
+  {2f539d0d-0c5d-4c60-96ad-b6835509bb09}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {66bad437-d6bf-494e-ab60-91555ea465ae}, !- Handle
+  {6c618faa-14bf-4aa9-b60f-003dc9d68ac9}, !- Handle
   0700|2100|StripMall|default|work_eff |default, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {e337fb01-1fa3-4e2d-8066-7beea558ea95}, !- Handle
+  {6c314494-ab86-4c1e-832a-f20ab9ca25ef}, !- Handle
   0700|2100|StripMall|default|work_eff Summer Design Day, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {814666d1-c504-4b36-bc28-1cc4c953e6ff}, !- Handle
+  {2f539d0d-0c5d-4c60-96ad-b6835509bb09}, !- Handle
   0700|2100|StripMall|default|work_eff Winter Design Day, !- Name
-  {a0e63cea-68e5-471f-9895-51c3e8437acb}, !- Schedule Type Limits Name
+  {08c40c01-ebd3-4744-8246-49c82fea7abd}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {b2c3a3fc-7983-4865-b9b6-c64cf1397a0e}, !- Handle
+  {9c0357f5-7531-48c3-b3a8-30271b8557d0}, !- Handle
   0700|2100|StripMall|default|occ,        !- Name
-  {fd4b455a-6cf0-469b-9414-d77fa59a78e8}, !- Schedule Type Limits Name
-  {5284fb0b-fa7c-433a-8ced-8225865f5a51}, !- Default Day Schedule Name
-  {dfff3e28-76b8-444d-b987-1619f4733a7b}, !- Summer Design Day Schedule Name
-  {566e42c0-d8d4-466a-ae83-d82d8d74d8b1}; !- Winter Design Day Schedule Name
+  {d9789f16-0696-4358-b958-7a802aef7122}, !- Schedule Type Limits Name
+  {8cf1f43c-b399-4b1f-8a32-6237bf12300d}, !- Default Day Schedule Name
+  {76363981-9528-409c-af33-5bf0b692adcd}, !- Summer Design Day Schedule Name
+  {48e641eb-4079-4379-817c-a0f106230995}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {fd4b455a-6cf0-469b-9414-d77fa59a78e8}, !- Handle
+  {d9789f16-0696-4358-b958-7a802aef7122}, !- Handle
   Occupancy Schedule Type Limits,         !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
@@ -1736,9 +1741,9 @@ OS:ScheduleTypeLimits,
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {5284fb0b-fa7c-433a-8ced-8225865f5a51}, !- Handle
+  {8cf1f43c-b399-4b1f-8a32-6237bf12300d}, !- Handle
   0700|2100|StripMall|default|occ |default, !- Name
-  {fd4b455a-6cf0-469b-9414-d77fa59a78e8}, !- Schedule Type Limits Name
+  {d9789f16-0696-4358-b958-7a802aef7122}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1772,9 +1777,9 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 10
 
 OS:Schedule:Day,
-  {dfff3e28-76b8-444d-b987-1619f4733a7b}, !- Handle
+  {76363981-9528-409c-af33-5bf0b692adcd}, !- Handle
   0700|2100|StripMall|default|occ Summer Design Day, !- Name
-  {fd4b455a-6cf0-469b-9414-d77fa59a78e8}, !- Schedule Type Limits Name
+  {d9789f16-0696-4358-b958-7a802aef7122}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1793,20 +1798,20 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 5
 
 OS:Schedule:Day,
-  {566e42c0-d8d4-466a-ae83-d82d8d74d8b1}, !- Handle
+  {48e641eb-4079-4379-817c-a0f106230995}, !- Handle
   0700|2100|StripMall|default|occ Winter Design Day, !- Name
-  {fd4b455a-6cf0-469b-9414-d77fa59a78e8}, !- Schedule Type Limits Name
+  {d9789f16-0696-4358-b958-7a802aef7122}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {29ea056f-8e25-4503-bae2-c98e8af0dcdc}, !- Handle
+  {cd901106-4a68-4ea5-97b4-fed319ebc658}, !- Handle
   0700|2100|StripMall|default|occ |1/1-12/31|Sat Rule, !- Name
-  {b2c3a3fc-7983-4865-b9b6-c64cf1397a0e}, !- Schedule Ruleset Name
+  {9c0357f5-7531-48c3-b3a8-30271b8557d0}, !- Schedule Ruleset Name
   0,                                      !- Rule Order
-  {d696cee2-8809-40f9-9aa2-317457ce6dbb}, !- Day Schedule Name
+  {ea88dc15-c9b5-4a78-b5f2-3c99989fa11f}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -1822,9 +1827,9 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {d696cee2-8809-40f9-9aa2-317457ce6dbb}, !- Handle
+  {ea88dc15-c9b5-4a78-b5f2-3c99989fa11f}, !- Handle
   0700|2100|StripMall|default|occ |1/1-12/31|Sat, !- Name
-  {fd4b455a-6cf0-469b-9414-d77fa59a78e8}, !- Schedule Type Limits Name
+  {d9789f16-0696-4358-b958-7a802aef7122}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1858,11 +1863,11 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 10
 
 OS:Schedule:Rule,
-  {f26e4000-6f97-4b3f-a5d2-cf37e298e9bd}, !- Handle
+  {0f833417-0ed6-4481-954c-bf6d8e2929bf}, !- Handle
   0700|2100|StripMall|default|occ |1/1-12/31|Sun Rule, !- Name
-  {b2c3a3fc-7983-4865-b9b6-c64cf1397a0e}, !- Schedule Ruleset Name
+  {9c0357f5-7531-48c3-b3a8-30271b8557d0}, !- Schedule Ruleset Name
   1,                                      !- Rule Order
-  {4154b6d3-5e2f-477d-a37a-3a233648cf7d}, !- Day Schedule Name
+  {29f024b5-3904-467d-b634-200cf5589b55}, !- Day Schedule Name
   Yes,                                    !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -1878,9 +1883,9 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {4154b6d3-5e2f-477d-a37a-3a233648cf7d}, !- Handle
+  {29f024b5-3904-467d-b634-200cf5589b55}, !- Handle
   0700|2100|StripMall|default|occ |1/1-12/31|Sun, !- Name
-  {fd4b455a-6cf0-469b-9414-d77fa59a78e8}, !- Schedule Type Limits Name
+  {d9789f16-0696-4358-b958-7a802aef7122}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   9,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1905,85 +1910,93 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 7
 
 OS:Schedule:Ruleset,
-  {dbcdf068-6827-4cd4-bac6-e0a5af308e5a}, !- Handle
-  0700|2100|StripMall|default|rh,         !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
-  {992c9b83-8655-42e8-a6e5-58e6e6f95d3c}, !- Default Day Schedule Name
-  {6ece0b23-5a44-45a1-a737-995c142d31c1}, !- Summer Design Day Schedule Name
-  {c3ec9855-541f-4528-a061-47c82b061f0f}; !- Winter Design Day Schedule Name
+  {6bea302a-2e9c-4324-b073-68b9c4990ac4}, !- Handle
+  0700|2100|StripMall|default|ext_lighting, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
+  {e41635e3-640b-4527-a12d-29726b9f9592}, !- Default Day Schedule Name
+  {d7609e1a-dbed-4544-8e2b-bde19569fca9}, !- Summer Design Day Schedule Name
+  {17f84bce-3320-454c-8fb2-abb76e0aa74b}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {992c9b83-8655-42e8-a6e5-58e6e6f95d3c}, !- Handle
-  0700|2100|StripMall|default|rh |default, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {e41635e3-640b-4527-a12d-29726b9f9592}, !- Handle
+  0700|2100|StripMall|default|ext_lighting |default, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  50;                                     !- Value Until Time 1
+  1;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {6ece0b23-5a44-45a1-a737-995c142d31c1}, !- Handle
-  0700|2100|StripMall|default|rh Summer Design Day, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {d7609e1a-dbed-4544-8e2b-bde19569fca9}, !- Handle
+  0700|2100|StripMall|default|ext_lighting Summer Design Day, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  50;                                     !- Value Until Time 1
+  1;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {c3ec9855-541f-4528-a061-47c82b061f0f}, !- Handle
-  0700|2100|StripMall|default|rh Winter Design Day, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
+  {17f84bce-3320-454c-8fb2-abb76e0aa74b}, !- Handle
+  0700|2100|StripMall|default|ext_lighting Winter Design Day, !- Name
+  {b0dd3c83-78db-46d3-aeeb-011595d4c79a}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  50;                                     !- Value Until Time 1
+  1;                                      !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {44bad405-8d8d-45e9-aea6-fa6d2742caff}, !- Handle
-  0700|2100|StripMall|default|air_velocity, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
-  {9f73dad8-6973-44da-a1fd-3c006dc4a64b}, !- Default Day Schedule Name
-  {7573d03e-1db3-4c52-91be-761b7309f561}, !- Summer Design Day Schedule Name
-  {71613ea2-8b9f-46e0-9a93-70fefa8cfb27}; !- Winter Design Day Schedule Name
-
-OS:Schedule:Day,
-  {9f73dad8-6973-44da-a1fd-3c006dc4a64b}, !- Handle
-  0700|2100|StripMall|default|air_velocity |default, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.200152;                               !- Value Until Time 1
-
-OS:Schedule:Day,
-  {7573d03e-1db3-4c52-91be-761b7309f561}, !- Handle
-  0700|2100|StripMall|default|air_velocity Summer Design Day, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.200152;                               !- Value Until Time 1
-
-OS:Schedule:Day,
-  {71613ea2-8b9f-46e0-9a93-70fefa8cfb27}, !- Handle
-  0700|2100|StripMall|default|air_velocity Winter Design Day, !- Name
-  {c48935a0-58b9-4299-acde-d4b143af9d67}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.200152;                               !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {c3a8d0c7-31e2-426c-ade2-4763338dc25e}, !- Handle
-  0700|2100|StripMall|default|swh,        !- Name
-  {b262706d-4f7c-4477-b580-28bf938fcb96}, !- Schedule Type Limits Name
-  {06bf38fd-3601-45f1-a7e8-04e60006f6fe}, !- Default Day Schedule Name
-  {a90041ee-7d26-448a-b8ee-415d0dbe7ceb}, !- Summer Design Day Schedule Name
-  {5f930348-43b2-4a05-98d2-e2748f0a0069}; !- Winter Design Day Schedule Name
+  {84130af1-f1e3-41a3-964c-30c60d60a048}, !- Handle
+  0700|2100|StripMall|default|activity,   !- Name
+  {5bd48d15-c0b7-40ef-b678-23736ba56270}, !- Schedule Type Limits Name
+  {1ae9ba27-5a2a-4ef1-b233-bdb7f50cafb8}, !- Default Day Schedule Name
+  {0cb3c313-8d4b-4222-ac9c-7c304982f49a}, !- Summer Design Day Schedule Name
+  {363891ff-f5aa-4de9-b026-80fdff91f85a}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {b262706d-4f7c-4477-b580-28bf938fcb96}, !- Handle
+  {5bd48d15-c0b7-40ef-b678-23736ba56270}, !- Handle
+  People Activity Type Limits,            !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  ,                                       !- Upper Limit Value {BasedOnField A4}
+  Continuous,                             !- Numeric Type
+  ActivityLevel;                          !- Unit Type
+
+OS:Schedule:Day,
+  {1ae9ba27-5a2a-4ef1-b233-bdb7f50cafb8}, !- Handle
+  0700|2100|StripMall|default|activity |default, !- Name
+  {5bd48d15-c0b7-40ef-b678-23736ba56270}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  120;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {0cb3c313-8d4b-4222-ac9c-7c304982f49a}, !- Handle
+  0700|2100|StripMall|default|activity Summer Design Day, !- Name
+  {5bd48d15-c0b7-40ef-b678-23736ba56270}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  120;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {363891ff-f5aa-4de9-b026-80fdff91f85a}, !- Handle
+  0700|2100|StripMall|default|activity Winter Design Day, !- Name
+  {5bd48d15-c0b7-40ef-b678-23736ba56270}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  120;                                    !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {aac4cc4b-2fe7-4191-be3c-26aab2e1a972}, !- Handle
+  0700|2100|StripMall|default|swh,        !- Name
+  {711d5213-5d1b-4030-8d58-5f976b965c53}, !- Schedule Type Limits Name
+  {5d2db7dc-0cad-4de4-a179-ded0a5b52dfb}, !- Default Day Schedule Name
+  {8e109f92-ece6-4e7a-8d63-51ad6774d4b9}, !- Summer Design Day Schedule Name
+  {e3e7bdd6-0a5b-4be4-9d94-32592c2dfcdb}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {711d5213-5d1b-4030-8d58-5f976b965c53}, !- Handle
   Water Use Schedule Type Limits,         !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
@@ -1991,9 +2004,9 @@ OS:ScheduleTypeLimits,
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {06bf38fd-3601-45f1-a7e8-04e60006f6fe}, !- Handle
+  {5d2db7dc-0cad-4de4-a179-ded0a5b52dfb}, !- Handle
   0700|2100|StripMall|default|swh |default, !- Name
-  {b262706d-4f7c-4477-b580-28bf938fcb96}, !- Schedule Type Limits Name
+  {711d5213-5d1b-4030-8d58-5f976b965c53}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   10,                                     !- Hour 1
   0,                                      !- Minute 1
@@ -2024,9 +2037,9 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 9
 
 OS:Schedule:Day,
-  {a90041ee-7d26-448a-b8ee-415d0dbe7ceb}, !- Handle
+  {8e109f92-ece6-4e7a-8d63-51ad6774d4b9}, !- Handle
   0700|2100|StripMall|default|swh Summer Design Day, !- Name
-  {b262706d-4f7c-4477-b580-28bf938fcb96}, !- Schedule Type Limits Name
+  {711d5213-5d1b-4030-8d58-5f976b965c53}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   10,                                     !- Hour 1
   0,                                      !- Minute 1
@@ -2057,9 +2070,9 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 9
 
 OS:Schedule:Day,
-  {5f930348-43b2-4a05-98d2-e2748f0a0069}, !- Handle
+  {e3e7bdd6-0a5b-4be4-9d94-32592c2dfcdb}, !- Handle
   0700|2100|StripMall|default|swh Winter Design Day, !- Name
-  {b262706d-4f7c-4477-b580-28bf938fcb96}, !- Schedule Type Limits Name
+  {711d5213-5d1b-4030-8d58-5f976b965c53}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   10,                                     !- Hour 1
   0,                                      !- Minute 1
@@ -2090,11 +2103,11 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 9
 
 OS:Schedule:Rule,
-  {61f5e950-2840-47ba-b848-f46465fd04cd}, !- Handle
+  {9314f246-ecdc-405d-b655-3a002a99f25c}, !- Handle
   0700|2100|StripMall|default|swh |1/1-12/31|Mon/Tue/Wed/Thu/Fri Rule, !- Name
-  {c3a8d0c7-31e2-426c-ade2-4763338dc25e}, !- Schedule Ruleset Name
+  {aac4cc4b-2fe7-4191-be3c-26aab2e1a972}, !- Schedule Ruleset Name
   0,                                      !- Rule Order
-  {d3cd5fb7-9168-4670-8303-1a88b9a949d7}, !- Day Schedule Name
+  {25525d72-d055-4159-b9cc-336fce24ae3d}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   Yes,                                    !- Apply Monday
   Yes,                                    !- Apply Tuesday
@@ -2110,9 +2123,9 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {d3cd5fb7-9168-4670-8303-1a88b9a949d7}, !- Handle
+  {25525d72-d055-4159-b9cc-336fce24ae3d}, !- Handle
   0700|2100|StripMall|default|swh |1/1-12/31|Mon/Tue/Wed/Thu/Fri, !- Name
-  {b262706d-4f7c-4477-b580-28bf938fcb96}, !- Schedule Type Limits Name
+  {711d5213-5d1b-4030-8d58-5f976b965c53}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   9,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -2158,11 +2171,11 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 14
 
 OS:Schedule:Rule,
-  {84043d66-5ed4-46af-8a1f-a22c99d6fd71}, !- Handle
+  {12725e53-0d99-4142-b490-d6d0d424fd97}, !- Handle
   0700|2100|StripMall|default|swh |1/1-12/31|Sat Rule, !- Name
-  {c3a8d0c7-31e2-426c-ade2-4763338dc25e}, !- Schedule Ruleset Name
+  {aac4cc4b-2fe7-4191-be3c-26aab2e1a972}, !- Schedule Ruleset Name
   1,                                      !- Rule Order
-  {a2c6fa08-d3b9-4e47-9496-87fc0a9fe3d1}, !- Day Schedule Name
+  {b264114e-ff16-453a-9f2a-5e46e84163ca}, !- Day Schedule Name
   ,                                       !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -2178,9 +2191,9 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {a2c6fa08-d3b9-4e47-9496-87fc0a9fe3d1}, !- Handle
+  {b264114e-ff16-453a-9f2a-5e46e84163ca}, !- Handle
   0700|2100|StripMall|default|swh |1/1-12/31|Sat, !- Name
-  {b262706d-4f7c-4477-b580-28bf938fcb96}, !- Schedule Type Limits Name
+  {711d5213-5d1b-4030-8d58-5f976b965c53}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   9,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -2219,83 +2232,22 @@ OS:Schedule:Day,
   0,                                      !- Minute 12
   0;                                      !- Value Until Time 12
 
-OS:Schedule:Ruleset,
-  {fe9704df-5b46-41b8-9601-49de302bcabc}, !- Handle
-  0700|2100|StripMall|default|hvac,       !- Name
-  {706edf23-04fb-4553-8526-75951d270534}, !- Schedule Type Limits Name
-  {d0706b3d-16cb-4112-81ff-547fa623413d}, !- Default Day Schedule Name
-  {c91b2f3d-c252-4a74-ae6f-be72cd9c6e0d}, !- Summer Design Day Schedule Name
-  {4ef410e3-ff84-4815-bca8-844304e40eed}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {706edf23-04fb-4553-8526-75951d270534}, !- Handle
-  HVAC Operation Schedule Type Limits,    !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  1,                                      !- Upper Limit Value {BasedOnField A4}
-  Discrete,                               !- Numeric Type
-  Availability;                           !- Unit Type
-
-OS:Schedule:Day,
-  {d0706b3d-16cb-4112-81ff-547fa623413d}, !- Handle
-  0700|2100|StripMall|default|hvac |default, !- Name
-  {706edf23-04fb-4553-8526-75951d270534}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  8,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0,                                      !- Value Until Time 1
-  19,                                     !- Hour 2
-  0,                                      !- Minute 2
-  1,                                      !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  0;                                      !- Value Until Time 3
-
-OS:Schedule:Day,
-  {c91b2f3d-c252-4a74-ae6f-be72cd9c6e0d}, !- Handle
-  0700|2100|StripMall|default|hvac Summer Design Day, !- Name
-  {706edf23-04fb-4553-8526-75951d270534}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  8,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0,                                      !- Value Until Time 1
-  19,                                     !- Hour 2
-  0,                                      !- Minute 2
-  1,                                      !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  0;                                      !- Value Until Time 3
-
-OS:Schedule:Day,
-  {4ef410e3-ff84-4815-bca8-844304e40eed}, !- Handle
-  0700|2100|StripMall|default|hvac Winter Design Day, !- Name
-  {706edf23-04fb-4553-8526-75951d270534}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  8,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0,                                      !- Value Until Time 1
-  19,                                     !- Hour 2
-  0,                                      !- Minute 2
-  1,                                      !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  0;                                      !- Value Until Time 3
-
 OS:DefaultScheduleSet,
-  {449d0869-81f5-455a-946a-448740576494}, !- Handle
+  {ac9bf5ac-67b9-4006-9a77-fbf2e44c43f5}, !- Handle
   StripMall|WholeBuilding|DOE Ref 2004|ASHRAE 169-2006-5A|SchSet, !- Name
   ,                                       !- Hours of Operation Schedule Name
-  {b2c3a3fc-7983-4865-b9b6-c64cf1397a0e}, !- Number of People Schedule Name
-  {91aae72b-6b4d-46fa-9354-0ec9b982438d}, !- People Activity Level Schedule Name
-  {b065fc5a-b416-4801-94fc-549711a9d673}, !- Lighting Schedule Name
-  {c2b13842-39f8-400b-8d72-27b5bc1c23f4}, !- Electric Equipment Schedule Name
+  {9c0357f5-7531-48c3-b3a8-30271b8557d0}, !- Number of People Schedule Name
+  {84130af1-f1e3-41a3-964c-30c60d60a048}, !- People Activity Level Schedule Name
+  {40ed883d-a264-45fd-8643-508a151ab842}, !- Lighting Schedule Name
+  {c9823c0d-c7c3-4a7d-acc1-4a7110f74abc}, !- Electric Equipment Schedule Name
   ,                                       !- Gas Equipment Schedule Name
-  {c3a8d0c7-31e2-426c-ade2-4763338dc25e}, !- Hot Water Equipment Schedule Name
-  {93f47db7-ae1c-4567-bff8-58348e86c76a}, !- Infiltration Schedule Name
+  {aac4cc4b-2fe7-4191-be3c-26aab2e1a972}, !- Hot Water Equipment Schedule Name
+  {0866d751-e85b-44ef-8546-5a6a6e69b81d}, !- Infiltration Schedule Name
   ,                                       !- Steam Equipment Schedule Name
   ;                                       !- Other Equipment Schedule Name
 
 OS:People:Definition,
-  {5b1292bd-cbc6-4cf3-8952-5aeb2126aa32}, !- Handle
+  {cf929501-37cf-4476-b81f-2fb94bde1ec6}, !- Handle
   WholeBuilding|PeopleDef,                !- Name
   People/Area,                            !- Number of People Calculation Method
   ,                                       !- Number of People {people}
@@ -2304,13 +2256,13 @@ OS:People:Definition,
   0.3;                                    !- Fraction Radiant
 
 OS:People,
-  {c34e9194-5cea-47f7-9512-bfc98b838c97}, !- Handle
+  {3030b4bd-b951-4dcc-8cd7-c216c45395f3}, !- Handle
   WholeBuilding|PeopleInst,               !- Name
-  {5b1292bd-cbc6-4cf3-8952-5aeb2126aa32}, !- People Definition Name
-  {65a9e244-4ed7-431d-8f33-7a97971e3669}; !- Space or SpaceType Name
+  {cf929501-37cf-4476-b81f-2fb94bde1ec6}, !- People Definition Name
+  {287ee868-8af8-4586-baea-0960e7a78119}; !- Space or SpaceType Name
 
 OS:DesignSpecification:OutdoorAir,
-  {ac4ebd2a-1df2-45c8-9965-11d5314d690a}, !- Handle
+  {a6441227-cd66-48e8-b216-c5ac5e4d5255}, !- Handle
   StripMall|WholeBuilding|DOE Ref 2004|ASHRAE 169-2006-5A|OutdoorAir, !- Name
   Sum,                                    !- Outdoor Air Method
   0,                                      !- Outdoor Air Flow per Person {m3/s-person}
@@ -2320,10 +2272,10 @@ OS:DesignSpecification:OutdoorAir,
   ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
 
 OS:SpaceInfiltration:DesignFlowRate,
-  {636865b0-7ed9-49c3-a37b-162ce0664df8}, !- Handle
+  {08f6f92f-b348-4443-9a71-27aa7fd07229}, !- Handle
   WholeBuilding|Infiltration,             !- Name
-  {65a9e244-4ed7-431d-8f33-7a97971e3669}, !- Space or SpaceType Name
-  {93f47db7-ae1c-4567-bff8-58348e86c76a}, !- Schedule Name
+  {287ee868-8af8-4586-baea-0960e7a78119}, !- Space or SpaceType Name
+  {0866d751-e85b-44ef-8546-5a6a6e69b81d}, !- Schedule Name
   Flow/ExteriorArea,                      !- Design Flow Rate Calculation Method
   ,                                       !- Design Flow Rate {m3/s}
   ,                                       !- Flow per Space Floor Area {m3/s-m2}
@@ -2335,57 +2287,57 @@ OS:SpaceInfiltration:DesignFlowRate,
   ;                                       !- Velocity Squared Term Coefficient
 
 OS:DefaultConstructionSet,
-  {d3b47a81-7b01-417e-9bfe-120a5db5d5a7}, !- Handle
+  {effef698-635e-4dd3-bdca-a0863913fa0c}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|StripMall, !- Name
-  {fde2a237-2999-43f5-a86d-7f8399f9561a}, !- Default Exterior Surface Constructions Name
-  {cd3de037-251e-48a7-af3a-4f85fc6af5bb}, !- Default Interior Surface Constructions Name
-  {17d60562-e772-4f95-842e-d9ea6d4f48b4}, !- Default Ground Contact Surface Constructions Name
-  {60c032c2-997f-410a-ad5f-c913b820f712}, !- Default Exterior SubSurface Constructions Name
-  {d0ecc7da-a5c8-4118-ae62-aaf1d5a2e7f1}, !- Default Interior SubSurface Constructions Name
-  {cc8b2b2e-ca14-40af-bf63-6131ab17ed82}, !- Interior Partition Construction Name
+  {a3bb89a3-5a12-41df-869a-90c930566ca0}, !- Default Exterior Surface Constructions Name
+  {a1adf911-c0c1-4bca-90a8-37e095d0395f}, !- Default Interior Surface Constructions Name
+  {feaf9edd-58f9-4950-9a97-ef7b891e2f8c}, !- Default Ground Contact Surface Constructions Name
+  {fdcb82e7-21e7-4da3-9a32-d3cd659808a1}, !- Default Exterior SubSurface Constructions Name
+  {ee45649c-77bc-41e8-830b-ea6692b0498c}, !- Default Interior SubSurface Constructions Name
+  {c7df139b-caa1-41ca-b1f4-7414da2a1533}, !- Interior Partition Construction Name
   ,                                       !- Space Shading Construction Name
   ,                                       !- Building Shading Construction Name
   ;                                       !- Site Shading Construction Name
 
 OS:DefaultSurfaceConstructions,
-  {fde2a237-2999-43f5-a86d-7f8399f9561a}, !- Handle
+  {a3bb89a3-5a12-41df-869a-90c930566ca0}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|StripMall|ext_surf, !- Name
-  {d34548f2-2d40-4a24-a142-974ee11c859c}, !- Floor Construction Name
-  {578a2960-6081-4168-ae67-401ab648c880}, !- Wall Construction Name
-  {b1075d03-a64c-450e-80f9-4ed3f3717be9}; !- Roof Ceiling Construction Name
+  {4aa19451-f1df-42c5-826c-6e51b375ba30}, !- Floor Construction Name
+  {4fd10912-5639-4f45-b620-d3d533896e0e}, !- Wall Construction Name
+  {6cb3c50f-c897-4237-93df-80aa94d9ff01}; !- Roof Ceiling Construction Name
 
 OS:DefaultSurfaceConstructions,
-  {cd3de037-251e-48a7-af3a-4f85fc6af5bb}, !- Handle
+  {a1adf911-c0c1-4bca-90a8-37e095d0395f}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|StripMall|int_surf, !- Name
-  {7ad28a13-6338-435a-b612-8dd4315d40e8}, !- Floor Construction Name
-  {536b97be-a0f1-4a0c-85da-f32fbeafe0f9}, !- Wall Construction Name
-  {704f82e9-bdb9-47f6-a8ae-7f316efcaaee}; !- Roof Ceiling Construction Name
+  {229067ad-4511-4946-a1cd-0578ba76833f}, !- Floor Construction Name
+  {5f70fbed-4371-402a-ba9e-b0bf3109df8b}, !- Wall Construction Name
+  {44a51666-4d54-4575-8bb5-cf8f3faf6a9f}; !- Roof Ceiling Construction Name
 
 OS:DefaultSurfaceConstructions,
-  {17d60562-e772-4f95-842e-d9ea6d4f48b4}, !- Handle
+  {feaf9edd-58f9-4950-9a97-ef7b891e2f8c}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|StripMall|ground_surf, !- Name
-  {d34548f2-2d40-4a24-a142-974ee11c859c}, !- Floor Construction Name
-  {d34548f2-2d40-4a24-a142-974ee11c859c}, !- Wall Construction Name
-  {d34548f2-2d40-4a24-a142-974ee11c859c}; !- Roof Ceiling Construction Name
+  {4aa19451-f1df-42c5-826c-6e51b375ba30}, !- Floor Construction Name
+  {4aa19451-f1df-42c5-826c-6e51b375ba30}, !- Wall Construction Name
+  {4aa19451-f1df-42c5-826c-6e51b375ba30}; !- Roof Ceiling Construction Name
 
 OS:DefaultSubSurfaceConstructions,
-  {60c032c2-997f-410a-ad5f-c913b820f712}, !- Handle
+  {fdcb82e7-21e7-4da3-9a32-d3cd659808a1}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|StripMall|ext_sub, !- Name
-  {82998b84-e7f6-4390-bb71-c90bad1273fd}, !- Fixed Window Construction Name
-  {82998b84-e7f6-4390-bb71-c90bad1273fd}, !- Operable Window Construction Name
-  {f98ecab9-89b7-4211-9d8d-05f56769be6e}, !- Door Construction Name
+  {d9456278-bf66-4798-93d0-0cdd798c0359}, !- Fixed Window Construction Name
+  {d9456278-bf66-4798-93d0-0cdd798c0359}, !- Operable Window Construction Name
+  {c71e04ac-df96-459a-8e2d-a5d00423ee57}, !- Door Construction Name
   ,                                       !- Glass Door Construction Name
-  {077620ca-3001-4ca2-9a40-ede4944637cf}, !- Overhead Door Construction Name
-  {44f074be-435f-4e3c-99f6-b0be42264bd2}, !- Skylight Construction Name
-  {3d95ae8b-a8a3-48c0-9435-ee23a3266c20}, !- Tubular Daylight Dome Construction Name
-  {3d95ae8b-a8a3-48c0-9435-ee23a3266c20}; !- Tubular Daylight Diffuser Construction Name
+  {1136a259-c7f6-40a5-a1e3-d4a3bb476138}, !- Overhead Door Construction Name
+  {70d56f52-53e2-47d1-ba01-c3144153077c}, !- Skylight Construction Name
+  {ad92a752-7390-4271-9f91-248c73448cfd}, !- Tubular Daylight Dome Construction Name
+  {ad92a752-7390-4271-9f91-248c73448cfd}; !- Tubular Daylight Diffuser Construction Name
 
 OS:DefaultSubSurfaceConstructions,
-  {d0ecc7da-a5c8-4118-ae62-aaf1d5a2e7f1}, !- Handle
+  {ee45649c-77bc-41e8-830b-ea6692b0498c}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|StripMall|int_sub, !- Name
-  {3d95ae8b-a8a3-48c0-9435-ee23a3266c20}, !- Fixed Window Construction Name
-  {3d95ae8b-a8a3-48c0-9435-ee23a3266c20}, !- Operable Window Construction Name
-  {fb997ad2-5193-42b4-aafc-d2b98c0f754f}, !- Door Construction Name
+  {ad92a752-7390-4271-9f91-248c73448cfd}, !- Fixed Window Construction Name
+  {ad92a752-7390-4271-9f91-248c73448cfd}, !- Operable Window Construction Name
+  {a1bb2f5b-a219-41a4-a1dd-349881520734}, !- Door Construction Name
   ,                                       !- Glass Door Construction Name
   ,                                       !- Overhead Door Construction Name
   ,                                       !- Skylight Construction Name
@@ -2393,21 +2345,21 @@ OS:DefaultSubSurfaceConstructions,
   ;                                       !- Tubular Daylight Diffuser Construction Name
 
 OS:Construction,
-  {578a2960-6081-4168-ae67-401ab648c880}, !- Handle
+  {4fd10912-5639-4f45-b620-d3d533896e0e}, !- Handle
   ASHRAE 90.1-2004 ExtWall SteelFrame ClimateZone 5-6, !- Name
   ,                                       !- Surface Rendering Name
-  {e35eae4e-bcc2-44b4-a671-db98e6dcf6e8}, !- Layer 1
-  {62b45b34-f4b2-4119-bdba-a3844048896f}, !- Layer 2
-  {beeacfd5-e694-4bdf-b7e8-140a12d69213}; !- Layer 3
+  {532232be-b165-4957-9c9c-a5f9f625b7ef}, !- Layer 1
+  {273f1cf6-db43-401f-8835-85dc71296a8a}, !- Layer 2
+  {739b4981-eacd-4c34-9c0d-303f45114d46}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {eba6c78b-0e5e-4d0f-b1c3-f9b7cf81e6ee}, !- Handle
-  {578a2960-6081-4168-ae67-401ab648c880}, !- Construction Name
+  {37b94a9b-8093-468f-a81c-f3c9161dc989}, !- Handle
+  {4fd10912-5639-4f45-b620-d3d533896e0e}, !- Construction Name
   ExteriorWall,                           !- Intended Surface Type
   SteelFramed;                            !- Standards Construction Type
 
 OS:Material,
-  {e35eae4e-bcc2-44b4-a671-db98e6dcf6e8}, !- Handle
+  {532232be-b165-4957-9c9c-a5f9f625b7ef}, !- Handle
   Wood Siding,                            !- Name
   MediumSmooth,                           !- Roughness
   0.01,                                   !- Thickness {m}
@@ -2419,7 +2371,7 @@ OS:Material,
   0.78;                                   !- Visible Absorptance
 
 OS:Material,
-  {62b45b34-f4b2-4119-bdba-a3844048896f}, !- Handle
+  {273f1cf6-db43-401f-8835-85dc71296a8a}, !- Handle
   Steel Frame NonRes Wall Insulation-2.10, !- Name
   MediumRough,                            !- Roughness
   0.0870564552646046,                     !- Thickness {m}
@@ -2431,7 +2383,7 @@ OS:Material,
   0.7;                                    !- Visible Absorptance
 
 OS:Material,
-  {beeacfd5-e694-4bdf-b7e8-140a12d69213}, !- Handle
+  {739b4981-eacd-4c34-9c0d-303f45114d46}, !- Handle
   1/2IN Gypsum,                           !- Name
   Smooth,                                 !- Roughness
   0.0127,                                 !- Thickness {m}
@@ -2443,19 +2395,19 @@ OS:Material,
   0.4;                                    !- Visible Absorptance
 
 OS:Construction,
-  {d34548f2-2d40-4a24-a142-974ee11c859c}, !- Handle
+  {4aa19451-f1df-42c5-826c-6e51b375ba30}, !- Handle
   ExtSlab 4in ClimateZone 1-8,            !- Name
   ,                                       !- Surface Rendering Name
-  {be17c8ab-ac1b-44d6-bd1e-a75281662627}; !- Layer 1
+  {e30d301e-3f4a-40b3-bc82-be62ea7c6887}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {24ff583e-2399-4007-ad8c-33acf1907769}, !- Handle
-  {d34548f2-2d40-4a24-a142-974ee11c859c}, !- Construction Name
+  {ab3e1cfa-011f-453d-a8fd-2113b65bc6fd}, !- Handle
+  {4aa19451-f1df-42c5-826c-6e51b375ba30}, !- Construction Name
   ExteriorFloor,                          !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {be17c8ab-ac1b-44d6-bd1e-a75281662627}, !- Handle
+  {e30d301e-3f4a-40b3-bc82-be62ea7c6887}, !- Handle
   MAT-CC05 4 HW CONCRETE,                 !- Name
   Rough,                                  !- Roughness
   0.1016,                                 !- Thickness {m}
@@ -2467,21 +2419,21 @@ OS:Material,
   0.85;                                   !- Visible Absorptance
 
 OS:Construction,
-  {b1075d03-a64c-450e-80f9-4ed3f3717be9}, !- Handle
+  {6cb3c50f-c897-4237-93df-80aa94d9ff01}, !- Handle
   ASHRAE 90.1-2004 ExtRoof IEAD ClimateZone 5-6, !- Name
   ,                                       !- Surface Rendering Name
-  {7032a90a-0a9a-4acd-9bdc-942ed0ff1627}, !- Layer 1
-  {8a695dbd-3d2c-44d9-b11a-3ed34248cf35}, !- Layer 2
-  {d090d20c-12a0-4c08-8dea-7d8e6d2f8191}; !- Layer 3
+  {eb14e89f-cd77-467b-a4b1-b76bf98d4ca6}, !- Layer 1
+  {d9d78f07-861b-4490-b7a8-6a0374d97907}, !- Layer 2
+  {52a0a8f4-53dd-4cac-9d00-5e90d4c55285}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {2c5b89f0-9a1a-4e50-a197-bfcc59b6fc68}, !- Handle
-  {b1075d03-a64c-450e-80f9-4ed3f3717be9}, !- Construction Name
+  {51b75055-f4a3-49d1-8a93-783ab4ae3cba}, !- Handle
+  {6cb3c50f-c897-4237-93df-80aa94d9ff01}, !- Construction Name
   ExteriorRoof,                           !- Intended Surface Type
   IEAD;                                   !- Standards Construction Type
 
 OS:Material,
-  {7032a90a-0a9a-4acd-9bdc-942ed0ff1627}, !- Handle
+  {eb14e89f-cd77-467b-a4b1-b76bf98d4ca6}, !- Handle
   Roof Membrane,                          !- Name
   VeryRough,                              !- Roughness
   0.0095,                                 !- Thickness {m}
@@ -2493,7 +2445,7 @@ OS:Material,
   0.7;                                    !- Visible Absorptance
 
 OS:Material,
-  {8a695dbd-3d2c-44d9-b11a-3ed34248cf35}, !- Handle
+  {d9d78f07-861b-4490-b7a8-6a0374d97907}, !- Handle
   IEAD NonRes Roof Insulation-2.85,       !- Name
   MediumRough,                            !- Roughness
   0.127338688569477,                      !- Thickness {m}
@@ -2505,7 +2457,7 @@ OS:Material,
   0.7;                                    !- Visible Absorptance
 
 OS:Material,
-  {d090d20c-12a0-4c08-8dea-7d8e6d2f8191}, !- Handle
+  {52a0a8f4-53dd-4cac-9d00-5e90d4c55285}, !- Handle
   Metal Decking,                          !- Name
   MediumSmooth,                           !- Roughness
   0.0015,                                 !- Thickness {m}
@@ -2517,21 +2469,21 @@ OS:Material,
   0.6;                                    !- Visible Absorptance
 
 OS:Construction,
-  {536b97be-a0f1-4a0c-85da-f32fbeafe0f9}, !- Handle
+  {5f70fbed-4371-402a-ba9e-b0bf3109df8b}, !- Handle
   Interior Wall,                          !- Name
   ,                                       !- Surface Rendering Name
-  {a9e3301c-8fe3-4959-8e47-4a77f193a388}, !- Layer 1
-  {d0df40aa-b763-47aa-b5d2-d0e877826f21}, !- Layer 2
-  {a9e3301c-8fe3-4959-8e47-4a77f193a388}; !- Layer 3
+  {50cc65cf-0c3e-40dd-8f19-04cf471e8e0f}, !- Layer 1
+  {4723e5b3-5d96-43b0-a595-0471e5d68503}, !- Layer 2
+  {50cc65cf-0c3e-40dd-8f19-04cf471e8e0f}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {3b34aa19-3cce-45d2-b0a5-2081f9bde4dd}, !- Handle
-  {536b97be-a0f1-4a0c-85da-f32fbeafe0f9}, !- Construction Name
+  {b8d33fc4-78b0-437c-af77-33728c4c4a87}, !- Handle
+  {5f70fbed-4371-402a-ba9e-b0bf3109df8b}, !- Construction Name
   InteriorWall,                           !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {a9e3301c-8fe3-4959-8e47-4a77f193a388}, !- Handle
+  {50cc65cf-0c3e-40dd-8f19-04cf471e8e0f}, !- Handle
   G01a 19mm gypsum board,                 !- Name
   MediumSmooth,                           !- Roughness
   0.019,                                  !- Thickness {m}
@@ -2543,26 +2495,26 @@ OS:Material,
   0.4;                                    !- Visible Absorptance
 
 OS:Material:AirGap,
-  {d0df40aa-b763-47aa-b5d2-d0e877826f21}, !- Handle
+  {4723e5b3-5d96-43b0-a595-0471e5d68503}, !- Handle
   F04 Wall air space resistance,          !- Name
   0.15;                                   !- Thermal Resistance {m2-K/W}
 
 OS:Construction,
-  {7ad28a13-6338-435a-b612-8dd4315d40e8}, !- Handle
+  {229067ad-4511-4946-a1cd-0578ba76833f}, !- Handle
   Interior Floor,                         !- Name
   ,                                       !- Surface Rendering Name
-  {bba56760-ee95-47bd-97b7-584bf99ced72}, !- Layer 1
-  {6b87192e-48ef-4870-be29-f02fa2685725}, !- Layer 2
-  {cdf122a8-eaaa-425b-8b16-1ef397bee8e5}; !- Layer 3
+  {1270bf18-0619-4cc3-9095-ad81d7d37ede}, !- Layer 1
+  {93cef037-dc95-4e55-b91d-788b81f2278f}, !- Layer 2
+  {7cf3988b-051e-4941-85b3-d36340dd9baf}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {21bb847b-31ba-4f7a-ac38-19a5ce33ed8d}, !- Handle
-  {7ad28a13-6338-435a-b612-8dd4315d40e8}, !- Construction Name
+  {8d485728-8d97-465b-ad3d-9b90d3004616}, !- Handle
+  {229067ad-4511-4946-a1cd-0578ba76833f}, !- Construction Name
   InteriorFloor,                          !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {bba56760-ee95-47bd-97b7-584bf99ced72}, !- Handle
+  {1270bf18-0619-4cc3-9095-ad81d7d37ede}, !- Handle
   F16 Acoustic tile,                      !- Name
   MediumSmooth,                           !- Roughness
   0.0191,                                 !- Thickness {m}
@@ -2574,12 +2526,12 @@ OS:Material,
   0.3;                                    !- Visible Absorptance
 
 OS:Material:AirGap,
-  {6b87192e-48ef-4870-be29-f02fa2685725}, !- Handle
+  {93cef037-dc95-4e55-b91d-788b81f2278f}, !- Handle
   F05 Ceiling air space resistance,       !- Name
   0.18;                                   !- Thermal Resistance {m2-K/W}
 
 OS:Material,
-  {cdf122a8-eaaa-425b-8b16-1ef397bee8e5}, !- Handle
+  {7cf3988b-051e-4941-85b3-d36340dd9baf}, !- Handle
   M11 100mm lightweight concrete,         !- Name
   MediumRough,                            !- Roughness
   0.1016,                                 !- Thickness {m}
@@ -2591,53 +2543,53 @@ OS:Material,
   0.5;                                    !- Visible Absorptance
 
 OS:Construction,
-  {704f82e9-bdb9-47f6-a8ae-7f316efcaaee}, !- Handle
+  {44a51666-4d54-4575-8bb5-cf8f3faf6a9f}, !- Handle
   Interior Ceiling,                       !- Name
   ,                                       !- Surface Rendering Name
-  {cdf122a8-eaaa-425b-8b16-1ef397bee8e5}, !- Layer 1
-  {6b87192e-48ef-4870-be29-f02fa2685725}, !- Layer 2
-  {bba56760-ee95-47bd-97b7-584bf99ced72}; !- Layer 3
+  {7cf3988b-051e-4941-85b3-d36340dd9baf}, !- Layer 1
+  {93cef037-dc95-4e55-b91d-788b81f2278f}, !- Layer 2
+  {1270bf18-0619-4cc3-9095-ad81d7d37ede}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {5288ff14-93ac-472f-b0ce-2421fb01582d}, !- Handle
-  {704f82e9-bdb9-47f6-a8ae-7f316efcaaee}, !- Construction Name
+  {500c965c-1e41-4f74-989f-27171ba57ad4}, !- Handle
+  {44a51666-4d54-4575-8bb5-cf8f3faf6a9f}, !- Construction Name
   InteriorCeiling,                        !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Construction,
-  {82998b84-e7f6-4390-bb71-c90bad1273fd}, !- Handle
+  {d9456278-bf66-4798-93d0-0cdd798c0359}, !- Handle
   ASHRAE 90.1-2004 ExtWindow ClimateZone 4-6, !- Name
   ,                                       !- Surface Rendering Name
-  {68c01415-0140-4f40-913b-1fd170fb02a5}; !- Layer 1
+  {6d70b462-2966-43fd-8a52-75d26f7d540e}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {1a41f439-a137-4379-a48d-78142cdef813}, !- Handle
-  {82998b84-e7f6-4390-bb71-c90bad1273fd}, !- Construction Name
+  {df686627-d618-4103-a9bf-6f69d470db79}, !- Handle
+  {d9456278-bf66-4798-93d0-0cdd798c0359}, !- Construction Name
   ExteriorWindow,                         !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:WindowMaterial:SimpleGlazingSystem,
-  {68c01415-0140-4f40-913b-1fd170fb02a5}, !- Handle
+  {6d70b462-2966-43fd-8a52-75d26f7d540e}, !- Handle
   Fixed Window 3.24/0.39/0.31,            !- Name
   3.23646,                                !- U-Factor {W/m2-K}
   0.39,                                   !- Solar Heat Gain Coefficient
   0.31;                                   !- Visible Transmittance
 
 OS:Construction,
-  {f98ecab9-89b7-4211-9d8d-05f56769be6e}, !- Handle
+  {c71e04ac-df96-459a-8e2d-a5d00423ee57}, !- Handle
   Exterior Door,                          !- Name
   ,                                       !- Surface Rendering Name
-  {2cea72ed-44d1-4194-9c43-777940118394}, !- Layer 1
-  {58859871-8dc8-42a3-8c0b-d3dbbe435f34}; !- Layer 2
+  {703172d9-47c5-4eb1-b40e-7addc8d775e5}, !- Layer 1
+  {f10e6ab6-4c71-4b54-b8ea-d2b24f17e1ea}; !- Layer 2
 
 OS:StandardsInformation:Construction,
-  {a108e257-a885-4105-ab58-88f0edfe18ea}, !- Handle
-  {f98ecab9-89b7-4211-9d8d-05f56769be6e}, !- Construction Name
+  {8f7a4d5e-b364-4713-8aca-5cdce44a126d}, !- Handle
+  {c71e04ac-df96-459a-8e2d-a5d00423ee57}, !- Construction Name
   ExteriorDoor,                           !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {2cea72ed-44d1-4194-9c43-777940118394}, !- Handle
+  {703172d9-47c5-4eb1-b40e-7addc8d775e5}, !- Handle
   F08 Metal surface,                      !- Name
   Smooth,                                 !- Roughness
   0.0008,                                 !- Thickness {m}
@@ -2649,7 +2601,7 @@ OS:Material,
   0.7;                                    !- Visible Absorptance
 
 OS:Material,
-  {58859871-8dc8-42a3-8c0b-d3dbbe435f34}, !- Handle
+  {f10e6ab6-4c71-4b54-b8ea-d2b24f17e1ea}, !- Handle
   I01 25mm insulation board,              !- Name
   MediumRough,                            !- Roughness
   0.0254,                                 !- Thickness {m}
@@ -2661,20 +2613,20 @@ OS:Material,
   0.6;                                    !- Visible Absorptance
 
 OS:Construction,
-  {077620ca-3001-4ca2-9a40-ede4944637cf}, !- Handle
+  {1136a259-c7f6-40a5-a1e3-d4a3bb476138}, !- Handle
   Exterior Door - Non-Swinging,           !- Name
   ,                                       !- Surface Rendering Name
-  {2cea72ed-44d1-4194-9c43-777940118394}, !- Layer 1
-  {648c9525-9e93-442f-8532-7aa954c8054b}; !- Layer 2
+  {703172d9-47c5-4eb1-b40e-7addc8d775e5}, !- Layer 1
+  {21de0c29-436a-42a1-b413-ebd001bca73a}; !- Layer 2
 
 OS:StandardsInformation:Construction,
-  {911890e4-b693-42d2-bcbe-5a7a7d69e61c}, !- Handle
-  {077620ca-3001-4ca2-9a40-ede4944637cf}, !- Construction Name
+  {8d1d8a79-60ed-4cfc-8310-37881f002e69}, !- Handle
+  {1136a259-c7f6-40a5-a1e3-d4a3bb476138}, !- Construction Name
   ExteriorDoor,                           !- Intended Surface Type
   NonSwinging;                            !- Standards Construction Type
 
 OS:Material,
-  {648c9525-9e93-442f-8532-7aa954c8054b}, !- Handle
+  {21de0c29-436a-42a1-b413-ebd001bca73a}, !- Handle
   I02 50mm insulation board,              !- Name
   MediumRough,                            !- Roughness
   0.0508,                                 !- Thickness {m}
@@ -2686,38 +2638,38 @@ OS:Material,
   0.6;                                    !- Visible Absorptance
 
 OS:Construction,
-  {44f074be-435f-4e3c-99f6-b0be42264bd2}, !- Handle
+  {70d56f52-53e2-47d1-ba01-c3144153077c}, !- Handle
   ASHRAE 90.1-2004 Skylight ClimateZone 4-5, !- Name
   ,                                       !- Surface Rendering Name
-  {d40d7150-bc81-48af-95f5-5415a101a922}; !- Layer 1
+  {bce3f43b-c47c-4345-91fd-4068b35886a9}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {57c599dc-a344-4464-9f3a-49b75928e30d}, !- Handle
-  {44f074be-435f-4e3c-99f6-b0be42264bd2}, !- Construction Name
+  {604a47f6-d7d8-4c01-9b81-078d69169df8}, !- Handle
+  {70d56f52-53e2-47d1-ba01-c3144153077c}, !- Construction Name
   ExteriorWindow,                         !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:WindowMaterial:SimpleGlazingSystem,
-  {d40d7150-bc81-48af-95f5-5415a101a922}, !- Handle
+  {bce3f43b-c47c-4345-91fd-4068b35886a9}, !- Handle
   Skylight no curb 2.1-5 per 90.12004 CZ 4-5, !- Name
   3.91800170536831,                       !- U-Factor {W/m2-K}
   0.39,                                   !- Solar Heat Gain Coefficient
   0.2;                                    !- Visible Transmittance
 
 OS:Construction,
-  {3d95ae8b-a8a3-48c0-9435-ee23a3266c20}, !- Handle
+  {ad92a752-7390-4271-9f91-248c73448cfd}, !- Handle
   Interior Window,                        !- Name
   ,                                       !- Surface Rendering Name
-  {7175daa3-42b8-41fc-9826-18804f30f837}; !- Layer 1
+  {cec458ea-468c-4a2e-a938-bd7a244a535f}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {eb844b76-8149-4bda-b3fe-53671e7c2533}, !- Handle
-  {3d95ae8b-a8a3-48c0-9435-ee23a3266c20}, !- Construction Name
+  {9d49514a-e06e-4b35-b483-c6ed7881ed09}, !- Handle
+  {ad92a752-7390-4271-9f91-248c73448cfd}, !- Construction Name
   InteriorWindow,                         !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:WindowMaterial:Glazing,
-  {7175daa3-42b8-41fc-9826-18804f30f837}, !- Handle
+  {cec458ea-468c-4a2e-a938-bd7a244a535f}, !- Handle
   Clear 3mm,                              !- Name
   SpectralAverage,                        !- Optical Data Type
   ,                                       !- Window Glass Spectral Data Set Name
@@ -2736,19 +2688,19 @@ OS:WindowMaterial:Glazing,
   No;                                     !- Solar Diffusing
 
 OS:Construction,
-  {fb997ad2-5193-42b4-aafc-d2b98c0f754f}, !- Handle
+  {a1bb2f5b-a219-41a4-a1dd-349881520734}, !- Handle
   Interior Door,                          !- Name
   ,                                       !- Surface Rendering Name
-  {f4f5886e-2ee4-4d4d-b424-d0eb01fecf0d}; !- Layer 1
+  {0764a20b-a2c5-460f-8b86-1e7ce5ff5e0b}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {20d98028-26f7-4699-b38f-78d9e8b0a4c6}, !- Handle
-  {fb997ad2-5193-42b4-aafc-d2b98c0f754f}, !- Construction Name
+  {2efdb6a7-db02-4e55-8234-b351b2c47898}, !- Handle
+  {a1bb2f5b-a219-41a4-a1dd-349881520734}, !- Construction Name
   InteriorDoor,                           !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {f4f5886e-2ee4-4d4d-b424-d0eb01fecf0d}, !- Handle
+  {0764a20b-a2c5-460f-8b86-1e7ce5ff5e0b}, !- Handle
   G05 25mm wood,                          !- Name
   MediumSmooth,                           !- Roughness
   0.0254,                                 !- Thickness {m}
@@ -2760,14 +2712,14 @@ OS:Material,
   0.5;                                    !- Visible Absorptance
 
 OS:Construction,
-  {cc8b2b2e-ca14-40af-bf63-6131ab17ed82}, !- Handle
+  {c7df139b-caa1-41ca-b1f4-7414da2a1533}, !- Handle
   Interior Partition,                     !- Name
   ,                                       !- Surface Rendering Name
-  {f4f5886e-2ee4-4d4d-b424-d0eb01fecf0d}; !- Layer 1
+  {0764a20b-a2c5-460f-8b86-1e7ce5ff5e0b}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {50c6693c-cfab-42c4-a3e6-127888663a6d}, !- Handle
-  {cc8b2b2e-ca14-40af-bf63-6131ab17ed82}, !- Construction Name
+  {6ce91e21-fe20-4ce8-92b2-6f483554df37}, !- Handle
+  {c7df139b-caa1-41ca-b1f4-7414da2a1533}, !- Construction Name
   InteriorPartition,                      !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
