@@ -205,6 +205,7 @@ def populate_test_hash()
   hash["999999_o"] = ["Warehouse","2004",HVAC_SYSTEM_TYPE]  # eui 43, unmet_htg_and_clg 694/644, dur_sec 137, notes: no errors, dominant end use is heating
   #hash[46568] = "DK_????"
 
+=begin
   # pre 1980
   test_vintage = "1970"
   hash["1970_d_#{test_vintage}"] = ["AssistedLiving",test_vintage,HVAC_SYSTEM_TYPE]
@@ -298,6 +299,7 @@ def populate_test_hash()
   hash["999999_z"] = ["OfficeData","2004SysType6",'SysType 6'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
   hash["999999_aa"] = ["OfficeData","2004SysType7",'SysType 7'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
   hash["999999_ab"] = ["OfficeData","2004SysType8",'SysType 8'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+=end
 
   return hash
 
@@ -945,7 +947,24 @@ def create_json(structure_id, building_type, year, system_type)
           },
           {
               :name => 'run_measure',
-              :value => "Occupancy Controls and Daylighitng"
+              :value => 1
+          }
+      ]
+  }
+
+  measures << {
+      :name => 'EH08ProgrammableThermostats',
+      :desc => 'EH08: Programmable Thermostats',
+      :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'ee', 'EH08ProgrammableThermostats')}",
+      :variables => [],
+      :arguments => [
+          {
+              :name => 'use_case',
+              :value => "Apply EE to calibrated model"  # valid options are "Update M0 with Indemand data" or "Apply EE to calibrated model"
+          },
+          {
+              :name => 'run_measure',
+              :value => 1
           }
       ]
   }
@@ -957,6 +976,23 @@ def create_json(structure_id, building_type, year, system_type)
       :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'model0', 'hard_size_hvac')}",
       :variables => [],
       :arguments => []
+  }
+
+  measures << {
+      :name => 'EH01SinglePackageAndSplitSystemUnitaryAirConditioners',
+      :desc => 'EH01: Single Package And Split System Unitary Air Conditioners',
+      :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'ee', 'EH01SinglePackageAndSplitSystemUnitaryAirConditioners')}",
+      :variables => [],
+      :arguments => [
+          {
+              :name => 'use_case',
+              :value => "Apply EE to calibrated model"  # valid options are "Update M0 with Indemand data" or "Apply EE to calibrated model"
+          },
+          {
+              :name => 'run_measure',
+              :value => 'Tier 1'
+          }
+      ]
   }
 
   # start of energy plus measures
