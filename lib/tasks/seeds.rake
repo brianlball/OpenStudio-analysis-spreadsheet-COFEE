@@ -1,5 +1,3 @@
-require 'openstudio'
-require 'openstudio/ruleset/ShowRunnerOutput'
 require 'fileutils'
 
 def create_template(structure_id, building_type, year)
@@ -334,6 +332,10 @@ def create_template(structure_id, building_type, year)
   climate_zone =  "ASHRAE 169-2006-5A"
 
   puts "Creating #{building_type}_#{template}_#{climate_zone}.osm"
+
+  # add in necessary requires (these used to be at the top but should work here)
+  require 'openstudio'
+  require 'openstudio/ruleset/ShowRunnerOutput'
 
   # create an instance of a runner
   runner = OpenStudio::Ruleset::OSRunner.new
