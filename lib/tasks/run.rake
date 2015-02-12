@@ -1209,98 +1209,28 @@ def create_json_v2(structure_id, building_type, year, system_type)
       }
 
   measures << {
-      :name => 'general_space_type_calibration_measure',
-      :desc => 'General Space Type Calibration Measure',
-      :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'model0', 'general_space_type_calibration_measure')}",
-      :arguments => [],
-      :variables => [
-          {
-              :name => 'multiplier_occ',
-              :desc => 'Occupancy Multiplier',
-              :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
-  },
-      {
-          :name => 'multiplier_ventilation',
-          :desc => 'Ventilation Multiplier',
-          :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
-  },
-      {
-          :name => 'multiplier_infiltration',
-          :desc => 'Infiltration Multiplier',
-          :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
-  }
-  ]
-  }
-
-=begin
-  measures <<
-  {
-    :name => 'add_schedules_to_model',
-    :desc => 'Add Schedules to Model',
-    :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'model0', 'add_schedules_to_model')}",
-    :arguments => [
-      {
-        :name => 'hoo_start',
-        :value => building_static_hoo_start
-      },
-      {
-        :name => 'hoo_finish',
-        :value => building_static_hoo_finish
+          :name => 'general_space_type_calibration_measure',
+          :desc => 'General Space Type Calibration Measure',
+          :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'model0', 'general_space_type_calibration_measure')}",
+          :arguments => [],
+          :variables => [
+              {
+                  :name => 'multiplier_occ',
+                  :desc => 'Occupancy Multiplier',
+                  :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
+              },
+              {
+                  :name => 'multiplier_ventilation',
+                  :desc => 'Ventilation Multiplier',
+                  :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
+              },
+              {
+                  :name => 'multiplier_infiltration',
+                  :desc => 'Infiltration Multiplier',
+                  :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
+              }
+          ]
       }
-    ],
-    :variables => []
-  }
-
-  measures << {
-    :name => 'add_people_to_space_types',
-    :desc => 'Add People to Space Types',
-    :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'model0', 'add_people_to_space_types')}",
-    :arguments => [],
-    :variables => [
-      {
-        :name => 'multiplier_occ',
-        :desc => 'Occupancy Multiplier',
-        :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
-      }
-    ]
-  }
-
-  measures << {
-    :name => 'add_ventilation_to_space_types',
-    :desc => 'Add Ventilation to Space Types',
-    :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'model0', 'add_ventilation_to_space_types')}",
-    :arguments => [],
-    :variables => [
-      {
-        :name => 'multiplier_ventilation',
-        :desc => 'Ventilation Multiplier',
-        :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
-      }
-    ]
-  }
-
-  measures << {
-    :name => 'add_infiltration_to_space_types',
-    :desc => 'Add Infiltration to Space Types',
-    :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'model0', 'add_infiltration_to_space_types')}",
-    :arguments => [],
-    :variables => [
-      {
-        :name => 'multiplier_infiltration',
-        :desc => 'Infiltration Multiplier',
-        :value => {type: 'uniform', minimum: 0.1, maximum: 3, mean: 1, static_value: 1}
-      }
-    ]
-  }
-
-  measures << {
-    :name => 'add_constructions_to_space_types',
-    :desc => 'Add Constructions to Space Types',
-    :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'model0', 'add_constructions_to_space_types')}",
-    :arguments => [],
-    :variables => []
-  }
-=end
 
   measures << {
       :name => 'add_interior_constructions_to_adiabatic_surfaces',
@@ -1590,7 +1520,6 @@ def create_json_v2(structure_id, building_type, year, system_type)
 =end
 
 
-=begin
   # currently this gathers in demand data out of analytic record and stories it in resource.json for use by ee measures
   measures << {
     :name => 'gather_indemand_data',
@@ -1726,7 +1655,26 @@ def create_json_v2(structure_id, building_type, year, system_type)
       :variables => [],
       :arguments => []
   }
-=end
+
+  # start of post hard sizing ee measures
+  measures << {
+      :name => 'EH01SinglePackageAndSplitSystemUnitaryAirConditioners',
+      :desc => 'EH01: Single Package And Split System Unitary Air Conditioners',
+      :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'ee', 'EH01SinglePackageAndSplitSystemUnitaryAirConditioners')}",
+      :variables => [],
+      :arguments => [
+          {
+              :name => 'use_case',
+              :value => "Apply EE to calibrated model"  # valid options are "Update M0 with Indemand data" or "Apply EE to calibrated model"
+          },
+          {
+              :name => 'run_measure',
+              :value => "Tier 1"
+          }
+      ]
+  }
+
+
 
   # start of energy plus measures
   measures << {
@@ -1751,7 +1699,6 @@ def create_json_v2(structure_id, building_type, year, system_type)
       :arguments => []
   }
 
-=begin
   measures << {
     :name => 'schedule_profile_report',
     :desc => 'Schedule Profile Report',
@@ -1759,7 +1706,6 @@ def create_json_v2(structure_id, building_type, year, system_type)
     :variables => [],
     :arguments => []
   }
-=end
 
   outputs = [
       {
@@ -1881,7 +1827,8 @@ namespace :resources do
     building_types.each do |b|
       hash[b] = populate_space_type_data(b)
     end
-    File.open('../cofee-rails/lib/assets/space_type_hash.json', 'w') { |f| f.write(JSON.pretty_generate(hash)) }
+    #File.open('../cofee-rails/lib/assets/space_type_hash.json', 'w') { |f| f.write(JSON.pretty_generate(hash)) }
+    File.open('../../cofee-rails/lib/assets/space_type_hash.json', 'w') { |f| f.write(JSON.pretty_generate(hash)) }   # this is path I need to use - dfg
   end
 end
 
