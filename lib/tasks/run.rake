@@ -1643,6 +1643,24 @@ def create_json_v2(structure_id, building_type, year, system_type)
       ]
   }
 
+
+  measures << {
+      :name => 'EH08ProgrammableThermostats',
+      :desc => 'EH08: Programmable Thermostats',
+      :path => "#{File.join(MEASURES_ROOT_DIRECTORY, 'ee', 'EH08ProgrammableThermostats')}",
+      :variables => [],
+      :arguments => [
+          {
+              :name => 'use_case',
+              :value => "Apply EE to calibrated model"  # valid options are "Update M0 with Indemand data" or "Apply EE to calibrated model"
+          },
+          {
+              :name => 'run_measure',
+              :value => 1
+          }
+      ]
+  }
+
   measures << {
       :name => 'EL02LightingSystems',
       :desc => 'EL02:Lighting Systems',
