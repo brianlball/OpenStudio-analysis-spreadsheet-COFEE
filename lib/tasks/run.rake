@@ -1596,7 +1596,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
       },
       {
         :name => 'run_measure',
-        :value => true
+        :value => 1 # valid options are 0 or 1
       }
     ]
   }
@@ -1621,7 +1621,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           },
           {
               :name => 'run_measure',
-              :value => true
+              :value => 1 # valid options are 0 or 1
           }
       ]
   }
@@ -1638,7 +1638,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           },
           {
               :name => 'run_measure',
-              :value => true
+              :value => 1 # valid options are 0 or 1
           }
       ]
   }
@@ -1656,7 +1656,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           },
           {
               :name => 'run_measure',
-              :value => 1
+              :value => 1  # valid options are 0 through 2
           }
       ]
   }
@@ -1673,7 +1673,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           },
           {
               :name => 'run_measure',
-              :value => "LED Troffer"
+              :value => 1 # valid options are 0 through 2
           }
       ]
   }
@@ -1694,7 +1694,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           },
           {
               :name => 'run_measure',
-              :value => 1
+              :value => 1 # valid options are 0 through 3
           }
       ]
   }
@@ -1721,7 +1721,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           },
           {
               :name => 'run_measure',
-              :value => "Tier 1"
+              :value => 2 # valid options are 0 through 3
           }
       ]
   }
