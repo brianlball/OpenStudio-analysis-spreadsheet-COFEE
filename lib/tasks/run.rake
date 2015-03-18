@@ -178,7 +178,8 @@ def populate_test_hash()
   # note - date is only for me looking at what vintages have been tested. There isn't currently a measure argument that uses this, it gets pulled out of teh analytic record similar to area and num floors
   # comments at end of hash entry - eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes: list dominant loads, errors, and other comments here
 
-=begin  
+=begin
+
   hash["999999_d"] = ["AssistedLiving","2004",HVAC_SYSTEM_TYPE] # eui 96, unmet_htg_and_clg 354/691, dur_sec 154, notes: no errors, dominant end use is equip
   hash["999999_e"] = ["AutoRepair","2004",HVAC_SYSTEM_TYPE] # eui 115, unmet_htg_and_clg 673/6202, dur_sec 244, notes: no errors, dominant end use is equip, very high unmet cooling maybe due to garage on main system?
   hash["999999_f"] = ["AutoSales","2004",HVAC_SYSTEM_TYPE] # eui 141, unmet_htg_and_clg 1675/2097, dur_sec 176, notes: no errors, dominant end use is heating
@@ -290,17 +291,17 @@ def populate_test_hash()
   hash["999996"] = ["OfficeData","2004",HVAC_SYSTEM_TYPE] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
   hash["999995"] = ["OfficeData","2004",HVAC_SYSTEM_TYPE] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
 
-  # test different system types
-  hash["999999_u"] = ["OfficeData","2004SysType1",'SysType 1'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash["999999_v"] = ["OfficeData","2004SysType2",'SysType 2'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash["999999_w"] = ["OfficeData","2004SysType3",'SysType 3'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash["999999_x"] = ["OfficeData","2004SysType4",'SysType 4'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash["999999_y"] = ["OfficeData","2004SysType5",'SysType 5'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash["999999_z"] = ["OfficeData","2004SysType6",'SysType 6'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash["999999_aa"] = ["OfficeData","2004SysType7",'SysType 7'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
 =end
 
-  hash["999999_ab"] = ["OfficeData","2004SysType8",'SysType 8'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  # test different system types
+  hash["999999_u"] = ["OfficeData","2004SysType1",1] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash["999999_v"] = ["OfficeData","2004SysType2",2] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash["999999_w"] = ["OfficeData","2004SysType3",3] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash["999999_x"] = ["OfficeData","2004SysType4",4] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash["999999_y"] = ["OfficeData","2004SysType5",5] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash["999999_z"] = ["OfficeData","2004SysType6",6] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash["999999_aa"] = ["OfficeData","2004SysType7",7] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash["999999_ab"] = ["OfficeData","2004SysType8",8] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
 
   return hash
 
@@ -628,7 +629,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
   # written for whole building system type. Will have to update when there can be multiple in workflow
   case system_type
 
-    when "SysType 1"
+    when 1
       measures << {
           :name => 'add_system01_by_space_type',
           :desc => 'Add System 01 By Space Type',
@@ -637,7 +638,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           :arguments => []
       }
 
-    when "SysType 2"
+    when 2
       measures << {
           :name => 'add_system02_by_space_type',
           :desc => 'Add System 02 By Space Type',
@@ -646,7 +647,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           :arguments => []
       }
 
-    when "SysType 3"
+    when 3
       measures << {
           :name => 'add_system03_by_space_type',
           :desc => 'Add System 03 By Space Type',
@@ -655,7 +656,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           :arguments => []
       }
 
-    when "SysType 4"
+    when 4
       measures << {
           :name => 'add_system04_by_space_type',
           :desc => 'Add System 04 By Space Type',
@@ -664,7 +665,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           :arguments => []
       }
 
-    when "SysType 5"
+    when 5
       measures << {
           :name => 'add_system05_by_space_type',
           :desc => 'Add System 05 By Space Type',
@@ -673,7 +674,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           :arguments => []
       }
 
-    when "SysType 6"
+    when 6
       measures << {
           :name => 'add_system06_by_space_type',
           :desc => 'Add System 06 By Space Type',
@@ -682,7 +683,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           :arguments => []
       }
 
-    when "SysType 7"
+    when 7
       measures << {
           :name => 'add_system07_by_space_type',
           :desc => 'Add System 07 By Space Type',
@@ -691,7 +692,7 @@ def create_json_v2(structure_id, building_type, year, system_type)
           :arguments => []
       }
 
-    when "SysType 8"
+    when 8
       measures << {
           :name => 'add_system08_by_space_type',
           :desc => 'Add System 08 By Space Type',
@@ -1105,12 +1106,12 @@ namespace :test_models do
   MEASURES_ROOT_DIRECTORY = "../../GitHub/cofee-measures"  # this is path I need to use - dfg
   WEATHER_FILE_NAME = 'Lawrence109_2013CST.epw'
   WEATHER_FILES_DIRECTORY = 'weather_183871'
-  HVAC_SYSTEM_TYPE = 'SysType 7'
+  HVAC_SYSTEM_TYPE = 7
 
   ANALYSIS_TYPE = 'single_run'
-  #HOSTNAME = 'http://localhost:8080'
+  HOSTNAME = 'http://localhost:8080'
   #HOSTNAME = 'http://bball-130553.nrel.gov:8080' #nrel24a
-  HOSTNAME = 'http://bball-130590.nrel.gov:8080' #nrel24b
+  #HOSTNAME = 'http://bball-130590.nrel.gov:8080' #nrel24b
 
   #create_json(structure_id, building_type, year, system_type)
   desc 'run create analysis.json scripts'
