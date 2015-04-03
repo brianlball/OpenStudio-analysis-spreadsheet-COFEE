@@ -216,7 +216,7 @@ def create_template(structure_id, building_type, year)
     end
     measure[:arguments] << {
       name: 'hvac_system_type',
-      value: 'na' # not using this
+      value: 1 # even though not using this, I need to pass it a valid integer, vs. string it had been in the past
     }
     measures << measure
   end
@@ -348,7 +348,7 @@ def create_template(structure_id, building_type, year)
   # model = OpenStudio::Model::Model.new
 
   # delete resource.json before each building runs. Other wise keeps extending and breaks
-  FileUtils.rm('../resource.json')
+  FileUtils.rm('../resource.json', :force => true) # added to avoid error if file doesn't exist
 
   measures.each do |m|
     # load the measure
