@@ -97,8 +97,8 @@ def create_template(structure_id, building_type, year)
     when 'OfficeData'
       space_type_hash['Office BlendA'] = { is_primary: true, type: 'uniform', minimum: 0.0, maximum: 0.0, mean: 0.0, static_value: 0.0 }
       space_type_hash['Office BlendB'] = { is_primary: false, type: 'uniform', minimum: 0.05, maximum: 0.15, mean: 0.1, static_value: 0.1 }
-      space_type_hash['Office IT_Room'] = { is_primary: false, type: 'uniform', minimum: 0.35, maximum: 0.65, mean: 0.5, static_value: 0.5 }
-      space_type_hash['Office Elec/MechRoom'] = { is_primary: false, type: 'uniform', minimum: 0.05, maximum: 0.02, mean: 0.01, static_value: 0.01 }
+      space_type_hash['Office ITRoom'] = { is_primary: false, type: 'uniform', minimum: 0.35, maximum: 0.65, mean: 0.5, static_value: 0.5 }
+      space_type_hash['Office ElecMechRoom'] = { is_primary: false, type: 'uniform', minimum: 0.05, maximum: 0.02, mean: 0.01, static_value: 0.01 }
       space_type_hash['Office PrintRoom'] = { is_primary: false, type: 'uniform', minimum: 0.01, maximum: 0.02, mean: 0.015, static_value: 0.015 }
       space_type_hash['Office Restroom'] = { is_primary: false, type: 'uniform', minimum: 0.05, maximum: 0.01, mean: 0.04, static_value: 0.04 }
       building_static_hoo_start = 8
@@ -128,7 +128,7 @@ def create_template(structure_id, building_type, year)
       building_static_hoo_finish = 23
     when 'Retail'
       space_type_hash['Retail Retail'] = { is_primary: true, type: 'uniform', minimum: 0.0, maximum: 0.0, mean: 0.0, static_value: 0.0 }
-      space_type_hash['Retail Back_Space'] = { is_primary: false, type: 'uniform', minimum: 0.025, maximum: 0.5, mean: 0.166, static_value: 0.166 }
+      space_type_hash['Retail BackSpace'] = { is_primary: false, type: 'uniform', minimum: 0.025, maximum: 0.5, mean: 0.166, static_value: 0.166 }
       space_type_hash['Retail BlendFront'] = { is_primary: false, type: 'uniform', minimum: 0.025, maximum: 0.25, mean: 0.071, static_value: 0.071 }
       building_static_hoo_start = 7
       building_static_hoo_finish = 21
@@ -159,9 +159,9 @@ def create_template(structure_id, building_type, year)
       building_static_hoo_start = 7
       building_static_hoo_finish = 21
     when 'SuperMarket' # todo - I need to make schedules for this, missed it earlier in the week. Still won't have refrigeration
-      space_type_hash['SuperMarket Sales/Produce'] = { is_primary: true, type: 'uniform', minimum: 0.0, maximum: 0.0, mean: 0.0, static_value: 0.0 }
+      space_type_hash['SuperMarket SalesProduce'] = { is_primary: true, type: 'uniform', minimum: 0.0, maximum: 0.0, mean: 0.0, static_value: 0.0 }
       space_type_hash['SuperMarket DryStorage'] = { is_primary: false, type: 'uniform', minimum: 0.05, maximum: 0.25, mean: 0.149, static_value: 0.149 }
-      space_type_hash['SuperMarket Deli/Bakery'] = { is_primary: false, type: 'uniform', minimum: 0.05, maximum: 0.25, mean: 0.104, static_value: 0.104 }
+      space_type_hash['SuperMarket DeliBakery'] = { is_primary: false, type: 'uniform', minimum: 0.05, maximum: 0.25, mean: 0.104, static_value: 0.104 }
       space_type_hash['SuperMarket Office'] = { is_primary: false, type: 'uniform', minimum: 0.01, maximum: 0.05, mean: 0.021, static_value: 0.021 }
       building_static_hoo_start = 6
       building_static_hoo_finish = 22
