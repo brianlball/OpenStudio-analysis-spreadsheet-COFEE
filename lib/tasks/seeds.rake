@@ -34,7 +34,7 @@ def create_template(structure_id, building_type, year)
       building_static_hoo_finish = 20
     when 'Bank'
       space_type_hash['Bank BlendFront'] = { is_primary: true, type: 'uniform', minimum: 0.0, maximum: 0.0, mean: 0.0, static_value: 0.0 }
-      space_type_hash['Bank Elec/MechRoom'] = { is_primary: false, type: 'uniform', minimum: 0.02, maximum: 0.1, mean: 0.05, static_value: 0.05 }
+      space_type_hash['Bank ElecMechRoom'] = { is_primary: false, type: 'uniform', minimum: 0.02, maximum: 0.1, mean: 0.05, static_value: 0.05 }
       space_type_hash['Bank Restroom'] = { is_primary: false, type: 'uniform', minimum: 0.02, maximum: 0.1, mean: 0.05, static_value: 0.05 }
       space_type_hash['Bank Vault'] = { is_primary: false, type: 'uniform', minimum: 0.02, maximum: 0.1, mean: 0.05, static_value: 0.05 }
       building_static_hoo_start = 8
