@@ -1,7 +1,7 @@
 
 OS:Version,
-  {08d272d8-b0dc-4127-ae02-35483fafa44c}, !- Handle
-  1.5.5;                                  !- Version Identifier
+  {5c14a5ec-1370-4a76-b282-48fcd9693a0d}, !- Handle
+  1.6.0;                                  !- Version Identifier
 
 OS:ClimateZones,
   {135edfab-17e7-40db-a436-27d385a8cd6d}, !- Handle
@@ -120,7 +120,7 @@ OS:Building,
   ,                                       !- Nominal Floor to Floor Height {m}
   ,                                       !- Space Type Name
   ,                                       !- Default Construction Set Name
-  {78802374-ff63-4a49-8415-b459b7bffb82}, !- Default Schedule Set Name
+  {8669dfb8-d7a1-4983-a029-6ab70238248e}, !- Default Schedule Set Name
   ,                                       !- Standards Number of Stories
   ,                                       !- Standards Number of Above Ground Stories
   QuickServiceRestaurant;                 !- Standards Building Type
@@ -146,51 +146,51 @@ OS:Facility,
   {3ba8e45b-b833-44eb-a723-ea6c3946dc96}; !- Handle
 
 OS:SpaceType,
-  {2e08a0cf-3ea8-4db0-b5e8-6b448ca9ae11}, !- Handle
+  {3f036ace-d167-4f48-8a21-68cc0b966c2e}, !- Handle
   QuickServiceRestaurant|Dining|DOE Ref 2004|ASHRAE 169-2006-5A, !- Name
-  {9be92782-547a-438d-a836-9a85fc880826}, !- Default Construction Set Name
-  {7657490b-ac87-40c3-9bd2-996c59e39a45}, !- Default Schedule Set Name
-  {9fa2cc78-a433-4c6c-9fc0-7ba084736fdf}, !- Group Rendering Name
-  {ab8b6eec-23ec-4bda-bbc2-a75a10ac511c}, !- Design Specification Outdoor Air Object Name
+  {00c14bdd-aff0-460f-99ce-7878efe6f74d}, !- Default Construction Set Name
+  {50856d2a-6250-4a80-97ba-d82e9f57bd96}, !- Default Schedule Set Name
+  {eaee4aaf-b5fe-4db1-a687-a9cbe784e491}, !- Group Rendering Name
+  {f93b4d59-378f-4e55-9285-6f46ef674c41}, !- Design Specification Outdoor Air Object Name
   QuickServiceRestaurant,                 !- Standards Building Type
   Dining;                                 !- Standards Space Type
 
 OS:Rendering:Color,
-  {9fa2cc78-a433-4c6c-9fc0-7ba084736fdf}, !- Handle
+  {eaee4aaf-b5fe-4db1-a687-a9cbe784e491}, !- Handle
   Rendering Color 1,                      !- Name
   31,                                     !- Rendering Red Value
   169,                                    !- Rendering Green Value
   34;                                     !- Rendering Blue Value
 
 OS:SpaceType,
-  {9bb759d2-70ee-4da1-ab1f-f7e3a20ab32a}, !- Handle
+  {931f769d-7107-400b-83f5-cbc28c3cf343}, !- Handle
   QuickServiceRestaurant|Kitchen|DOE Ref 2004|ASHRAE 169-2006-5A, !- Name
-  {9be92782-547a-438d-a836-9a85fc880826}, !- Default Construction Set Name
-  {4cfe4976-191f-49ee-981f-52cfeca0b4f4}, !- Default Schedule Set Name
-  {b3e1cf7c-8f99-4c3f-8bcc-42727ac812e2}, !- Group Rendering Name
-  {c52af2e9-26a4-43f8-8860-6d954b818fb4}, !- Design Specification Outdoor Air Object Name
+  {00c14bdd-aff0-460f-99ce-7878efe6f74d}, !- Default Construction Set Name
+  {9d95c4ce-f471-41ca-a090-6ed6c87c2aed}, !- Default Schedule Set Name
+  {03bb985c-93ca-42a1-8740-546303234649}, !- Group Rendering Name
+  {1eb6d1a3-4550-4536-b7b1-c2bff3257aac}, !- Design Specification Outdoor Air Object Name
   QuickServiceRestaurant,                 !- Standards Building Type
   Kitchen;                                !- Standards Space Type
 
 OS:Rendering:Color,
-  {b3e1cf7c-8f99-4c3f-8bcc-42727ac812e2}, !- Handle
+  {03bb985c-93ca-42a1-8740-546303234649}, !- Handle
   Rendering Color 2,                      !- Name
   78,                                     !- Rendering Red Value
   222,                                    !- Rendering Green Value
   133;                                    !- Rendering Blue Value
 
 OS:Schedule:Ruleset,
-  {3fe55c7e-3070-4966-bda5-d48411366277}, !- Handle
+  {32b06d6c-0cd4-40f5-9dc8-92271f2a994c}, !- Handle
   0700|2300|QuickServiceRestaurant|default|hoo, !- Name
-  {1890c5b6-95c6-42ce-b32c-662a69c962dc}, !- Schedule Type Limits Name
-  {e2427cd7-d6dc-4fe3-bb1b-247718b91e3d}, !- Default Day Schedule Name
-  {5f651f4b-7d1f-42e5-abe8-47eb8640056d}, !- Summer Design Day Schedule Name
-  {c10278e4-53ab-4320-9927-e1385b85021d}; !- Winter Design Day Schedule Name
+  {83a59c1a-fc22-4393-aed6-f8eec52b24cc}, !- Schedule Type Limits Name
+  {e74a10dd-c469-40da-a1f0-29b9238d3a79}, !- Default Day Schedule Name
+  {f06064a5-422b-4928-b6b3-fc597a371736}, !- Summer Design Day Schedule Name
+  {0acc7090-1ed3-4426-a782-67b8480a1afd}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {e2427cd7-d6dc-4fe3-bb1b-247718b91e3d}, !- Handle
+  {e74a10dd-c469-40da-a1f0-29b9238d3a79}, !- Handle
   0700|2300|QuickServiceRestaurant|default|hoo Schedule Week Day, !- Name
-  {1890c5b6-95c6-42ce-b32c-662a69c962dc}, !- Schedule Type Limits Name
+  {83a59c1a-fc22-4393-aed6-f8eec52b24cc}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   7,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -203,7 +203,7 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 3
 
 OS:Schedule:Day,
-  {f1a92e8a-dd20-420b-81d6-5024e358bc34}, !- Handle
+  {c969d257-5f5f-45b9-b2f3-3cbd34288428}, !- Handle
   Schedule Day 2,                         !- Name
   ,                                       !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
@@ -212,16 +212,16 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {c10278e4-53ab-4320-9927-e1385b85021d}, !- Handle
+  {0acc7090-1ed3-4426-a782-67b8480a1afd}, !- Handle
   0700|2300|QuickServiceRestaurant|default|hoo Winter Design Day, !- Name
-  {1890c5b6-95c6-42ce-b32c-662a69c962dc}, !- Schedule Type Limits Name
+  {83a59c1a-fc22-4393-aed6-f8eec52b24cc}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {e2c00484-9195-48cf-8756-37f508dfdbb6}, !- Handle
+  {46581fc5-da6c-4024-9fbf-9e10ca2ff16b}, !- Handle
   Schedule Day 3,                         !- Name
   ,                                       !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
@@ -230,18 +230,18 @@ OS:Schedule:Day,
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Day,
-  {5f651f4b-7d1f-42e5-abe8-47eb8640056d}, !- Handle
+  {f06064a5-422b-4928-b6b3-fc597a371736}, !- Handle
   0700|2300|QuickServiceRestaurant|default|hoo Summer Design Day, !- Name
-  {1890c5b6-95c6-42ce-b32c-662a69c962dc}, !- Schedule Type Limits Name
+  {83a59c1a-fc22-4393-aed6-f8eec52b24cc}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   1;                                      !- Value Until Time 1
 
 OS:DefaultScheduleSet,
-  {78802374-ff63-4a49-8415-b459b7bffb82}, !- Handle
+  {8669dfb8-d7a1-4983-a029-6ab70238248e}, !- Handle
   Building Hours of Operation,            !- Name
-  {3fe55c7e-3070-4966-bda5-d48411366277}, !- Hours of Operation Schedule Name
+  {32b06d6c-0cd4-40f5-9dc8-92271f2a994c}, !- Hours of Operation Schedule Name
   ,                                       !- Number of People Schedule Name
   ,                                       !- People Activity Level Schedule Name
   ,                                       !- Lighting Schedule Name
@@ -253,7 +253,7 @@ OS:DefaultScheduleSet,
   ;                                       !- Other Equipment Schedule Name
 
 OS:ScheduleTypeLimits,
-  {1890c5b6-95c6-42ce-b32c-662a69c962dc}, !- Handle
+  {83a59c1a-fc22-4393-aed6-f8eec52b24cc}, !- Handle
   OnOff,                                  !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
@@ -261,58 +261,282 @@ OS:ScheduleTypeLimits,
   Availability;                           !- Unit Type
 
 OS:Schedule:Ruleset,
-  {68fd9571-6016-44f7-a1e8-84fd61afaea9}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|htg_setpoint, !- Name
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Schedule Type Limits Name
-  {092685fa-e1f5-4cdd-a14d-5a6260ea2b50}, !- Default Day Schedule Name
-  {73e170ec-e87b-4b48-8a88-b156bd0337c4}, !- Summer Design Day Schedule Name
-  {2867bccc-cdb5-4971-be09-a5f217131c97}; !- Winter Design Day Schedule Name
+  {72d9f6d5-844a-4a5c-b923-edcde0715e92}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh, !- Name
+  {e14a8de4-d7ec-434f-85dc-2e6a8ba306e7}, !- Schedule Type Limits Name
+  {b082fafd-8c8e-4869-b5fd-d7d432701c85}, !- Default Day Schedule Name
+  {284b70a7-6aa3-4ca4-8d45-b68b20f8ee57}, !- Summer Design Day Schedule Name
+  {89dd2654-4716-4e2c-a798-edab6a2881c9}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Handle
-  Thermostat Heating Setpoint Schedule Type Limits, !- Name
+  {e14a8de4-d7ec-434f-85dc-2e6a8ba306e7}, !- Handle
+  Water Use Schedule Type Limits,         !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
-  100,                                    !- Upper Limit Value {BasedOnField A4}
+  1,                                      !- Upper Limit Value {BasedOnField A4}
   Continuous,                             !- Numeric Type
-  Temperature;                            !- Unit Type
+  Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {092685fa-e1f5-4cdd-a14d-5a6260ea2b50}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|htg_setpoint |default, !- Name
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Schedule Type Limits Name
+  {b082fafd-8c8e-4869-b5fd-d7d432701c85}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh |default, !- Name
+  {e14a8de4-d7ec-434f-85dc-2e6a8ba306e7}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
+  6,                                      !- Hour 1
   0,                                      !- Minute 1
-  21.0000000000001;                       !- Value Until Time 1
+  0,                                      !- Value Until Time 1
+  8,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.15,                                   !- Value Until Time 2
+  9,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.33,                                   !- Value Until Time 3
+  10,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.13,                                   !- Value Until Time 4
+  11,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.1,                                    !- Value Until Time 5
+  12,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.72,                                   !- Value Until Time 6
+  13,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.31,                                   !- Value Until Time 7
+  14,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.98,                                   !- Value Until Time 8
+  15,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.92,                                   !- Value Until Time 9
+  16,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.22,                                   !- Value Until Time 10
+  17,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.31,                                   !- Value Until Time 11
+  18,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.23,                                   !- Value Until Time 12
+  19,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.16,                                   !- Value Until Time 13
+  20,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.1,                                    !- Value Until Time 14
+  21,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0.4,                                    !- Value Until Time 15
+  22,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0.42,                                   !- Value Until Time 16
+  23,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0.43,                                   !- Value Until Time 17
+  24,                                     !- Hour 18
+  0,                                      !- Minute 18
+  0.15;                                   !- Value Until Time 18
 
 OS:Schedule:Day,
-  {73e170ec-e87b-4b48-8a88-b156bd0337c4}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|htg_setpoint Summer Design Day, !- Name
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Schedule Type Limits Name
+  {284b70a7-6aa3-4ca4-8d45-b68b20f8ee57}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh Summer Design Day, !- Name
+  {e14a8de4-d7ec-434f-85dc-2e6a8ba306e7}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
+  6,                                      !- Hour 1
   0,                                      !- Minute 1
-  21.0000000000001;                       !- Value Until Time 1
+  0,                                      !- Value Until Time 1
+  8,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.15,                                   !- Value Until Time 2
+  9,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.33,                                   !- Value Until Time 3
+  10,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.13,                                   !- Value Until Time 4
+  11,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.1,                                    !- Value Until Time 5
+  12,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.72,                                   !- Value Until Time 6
+  13,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.31,                                   !- Value Until Time 7
+  14,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.98,                                   !- Value Until Time 8
+  15,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.92,                                   !- Value Until Time 9
+  16,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.22,                                   !- Value Until Time 10
+  17,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.31,                                   !- Value Until Time 11
+  18,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.23,                                   !- Value Until Time 12
+  19,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.16,                                   !- Value Until Time 13
+  20,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.1,                                    !- Value Until Time 14
+  21,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0.4,                                    !- Value Until Time 15
+  22,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0.42,                                   !- Value Until Time 16
+  23,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0.43,                                   !- Value Until Time 17
+  24,                                     !- Hour 18
+  0,                                      !- Minute 18
+  0.15;                                   !- Value Until Time 18
 
 OS:Schedule:Day,
-  {2867bccc-cdb5-4971-be09-a5f217131c97}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|htg_setpoint Winter Design Day, !- Name
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Schedule Type Limits Name
+  {89dd2654-4716-4e2c-a798-edab6a2881c9}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh Winter Design Day, !- Name
+  {e14a8de4-d7ec-434f-85dc-2e6a8ba306e7}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
+  6,                                      !- Hour 1
   0,                                      !- Minute 1
-  21.0000000000001;                       !- Value Until Time 1
+  0,                                      !- Value Until Time 1
+  8,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.15,                                   !- Value Until Time 2
+  9,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.33,                                   !- Value Until Time 3
+  10,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.13,                                   !- Value Until Time 4
+  11,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.1,                                    !- Value Until Time 5
+  12,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.72,                                   !- Value Until Time 6
+  13,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.31,                                   !- Value Until Time 7
+  14,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.98,                                   !- Value Until Time 8
+  15,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.92,                                   !- Value Until Time 9
+  16,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.22,                                   !- Value Until Time 10
+  17,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.31,                                   !- Value Until Time 11
+  18,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.23,                                   !- Value Until Time 12
+  19,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.16,                                   !- Value Until Time 13
+  20,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.1,                                    !- Value Until Time 14
+  21,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0.4,                                    !- Value Until Time 15
+  22,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0.42,                                   !- Value Until Time 16
+  23,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0.43,                                   !- Value Until Time 17
+  24,                                     !- Hour 18
+  0,                                      !- Minute 18
+  0.15;                                   !- Value Until Time 18
+
+OS:Schedule:Rule,
+  {be0d51b0-292a-43fe-b9d1-16f9532add2f}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh |1/1-12/31|Sat/Sun Rule, !- Name
+  {72d9f6d5-844a-4a5c-b923-edcde0715e92}, !- Schedule Ruleset Name
+  0,                                      !- Rule Order
+  {7f1491f5-a4fc-4842-a20d-5112cb5e4706}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  ,                                       !- Apply Monday
+  ,                                       !- Apply Tuesday
+  ,                                       !- Apply Wednesday
+  ,                                       !- Apply Thursday
+  ,                                       !- Apply Friday
+  Yes,                                    !- Apply Saturday
+  ,                                       !- Apply Holiday
+  DateRange,                              !- Date Specification Type
+  1,                                      !- Start Month
+  1,                                      !- Start Day
+  12,                                     !- End Month
+  31;                                     !- End Day
+
+OS:Schedule:Day,
+  {7f1491f5-a4fc-4842-a20d-5112cb5e4706}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh |1/1-12/31|Sat/Sun, !- Name
+  {e14a8de4-d7ec-434f-85dc-2e6a8ba306e7}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  7,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0,                                      !- Value Until Time 1
+  10,                                     !- Hour 2
+  0,                                      !- Minute 2
+  0.15,                                   !- Value Until Time 2
+  11,                                     !- Hour 3
+  0,                                      !- Minute 3
+  0.1,                                    !- Value Until Time 3
+  12,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.72,                                   !- Value Until Time 4
+  13,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.6,                                    !- Value Until Time 5
+  14,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.98,                                   !- Value Until Time 6
+  15,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.92,                                   !- Value Until Time 7
+  17,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.25,                                   !- Value Until Time 8
+  18,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.23,                                   !- Value Until Time 9
+  19,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.16,                                   !- Value Until Time 10
+  20,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.1,                                    !- Value Until Time 11
+  21,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.4,                                    !- Value Until Time 12
+  22,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.42,                                   !- Value Until Time 13
+  23,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.43,                                   !- Value Until Time 14
+  24,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0;                                      !- Value Until Time 15
 
 OS:Schedule:Ruleset,
-  {7b5cb05b-8570-4a70-9465-c8dfb622763b}, !- Handle
+  {cbb14a5b-8f49-4fc9-9b74-d4fc5a4b164e}, !- Handle
   0700|2300|QuickServiceRestaurant|default|elec_equip, !- Name
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Schedule Type Limits Name
-  {940c0d93-dafe-49f8-9385-804cd4a98eda}, !- Default Day Schedule Name
-  {77a1e4f4-65b6-4dcb-9bd8-f0f329c4bce5}, !- Summer Design Day Schedule Name
-  {e28e8c82-e02a-4136-be58-1619aff3a0e1}; !- Winter Design Day Schedule Name
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Schedule Type Limits Name
+  {f3e9e8c9-da1a-4f76-8176-39b478e8ba8a}, !- Default Day Schedule Name
+  {5bf0f4d6-7562-41e2-8da6-d3d3ac55cb59}, !- Summer Design Day Schedule Name
+  {34fdd3d3-0dad-43ea-b0a8-d3d1f681f36a}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Handle
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Handle
   Equipment Schedule Type Limits,         !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
@@ -320,9 +544,9 @@ OS:ScheduleTypeLimits,
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {940c0d93-dafe-49f8-9385-804cd4a98eda}, !- Handle
+  {f3e9e8c9-da1a-4f76-8176-39b478e8ba8a}, !- Handle
   0700|2300|QuickServiceRestaurant|default|elec_equip |default, !- Name
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Schedule Type Limits Name
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   6,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -347,9 +571,9 @@ OS:Schedule:Day,
   0.25;                                   !- Value Until Time 7
 
 OS:Schedule:Day,
-  {77a1e4f4-65b6-4dcb-9bd8-f0f329c4bce5}, !- Handle
+  {5bf0f4d6-7562-41e2-8da6-d3d3ac55cb59}, !- Handle
   0700|2300|QuickServiceRestaurant|default|elec_equip Summer Design Day, !- Name
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Schedule Type Limits Name
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   6,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -374,128 +598,155 @@ OS:Schedule:Day,
   0.25;                                   !- Value Until Time 7
 
 OS:Schedule:Day,
-  {e28e8c82-e02a-4136-be58-1619aff3a0e1}, !- Handle
+  {34fdd3d3-0dad-43ea-b0a8-d3d1f681f36a}, !- Handle
   0700|2300|QuickServiceRestaurant|default|elec_equip Winter Design Day, !- Name
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Schedule Type Limits Name
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0.1;                                    !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {9f62cac1-9279-471f-a321-6dc8eb6c4fd8}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|work_eff, !- Name
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Schedule Type Limits Name
-  {b9a8a5ec-3b7e-42bb-8c95-8eb6b39ac863}, !- Default Day Schedule Name
-  {08adfc94-a4cd-449a-a955-bb61cbe66a0b}, !- Summer Design Day Schedule Name
-  {df34ef59-d4e2-4f8d-ae1f-ffaa28cae086}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Handle
-  Fraction Schedule Type Limits,          !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  1,                                      !- Upper Limit Value {BasedOnField A4}
-  Continuous,                             !- Numeric Type
-  Dimensionless;                          !- Unit Type
+  {126dae36-f63d-4ea0-baf5-146dfd4569eb}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|gas_equip, !- Name
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Schedule Type Limits Name
+  {0ace3d87-ccc5-48aa-94b9-2a9b0c6250c5}, !- Default Day Schedule Name
+  {3b6b13e4-5d3a-4c4a-a6cb-1b80a1ee3dfc}, !- Summer Design Day Schedule Name
+  {6311fae3-39ee-4dfc-9944-f0f21eec06fa}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {b9a8a5ec-3b7e-42bb-8c95-8eb6b39ac863}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|work_eff |default, !- Name
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Schedule Type Limits Name
+  {0ace3d87-ccc5-48aa-94b9-2a9b0c6250c5}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|gas_equip |default, !- Name
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  5,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.02,                                   !- Value Until Time 1
+  6,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.03,                                   !- Value Until Time 2
+  7,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.09,                                   !- Value Until Time 3
+  8,                                      !- Hour 4
+  0,                                      !- Minute 4
+  0.14,                                   !- Value Until Time 4
+  10,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.1,                                    !- Value Until Time 5
+  11,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.22,                                   !- Value Until Time 6
+  12,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.27,                                   !- Value Until Time 7
+  13,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.24,                                   !- Value Until Time 8
+  14,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.21,                                   !- Value Until Time 9
+  15,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.14,                                   !- Value Until Time 10
+  16,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.13,                                   !- Value Until Time 11
+  17,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.15,                                   !- Value Until Time 12
+  20,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.17,                                   !- Value Until Time 13
+  21,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.15,                                   !- Value Until Time 14
+  22,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0.14,                                   !- Value Until Time 15
+  23,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0.12,                                   !- Value Until Time 16
+  24,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0.02;                                   !- Value Until Time 17
+
+OS:Schedule:Day,
+  {3b6b13e4-5d3a-4c4a-a6cb-1b80a1ee3dfc}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|gas_equip Summer Design Day, !- Name
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  5,                                      !- Hour 1
+  0,                                      !- Minute 1
+  0.02,                                   !- Value Until Time 1
+  6,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.03,                                   !- Value Until Time 2
+  7,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.09,                                   !- Value Until Time 3
+  8,                                      !- Hour 4
+  0,                                      !- Minute 4
+  0.14,                                   !- Value Until Time 4
+  10,                                     !- Hour 5
+  0,                                      !- Minute 5
+  0.1,                                    !- Value Until Time 5
+  11,                                     !- Hour 6
+  0,                                      !- Minute 6
+  0.22,                                   !- Value Until Time 6
+  12,                                     !- Hour 7
+  0,                                      !- Minute 7
+  0.27,                                   !- Value Until Time 7
+  13,                                     !- Hour 8
+  0,                                      !- Minute 8
+  0.24,                                   !- Value Until Time 8
+  14,                                     !- Hour 9
+  0,                                      !- Minute 9
+  0.21,                                   !- Value Until Time 9
+  15,                                     !- Hour 10
+  0,                                      !- Minute 10
+  0.14,                                   !- Value Until Time 10
+  16,                                     !- Hour 11
+  0,                                      !- Minute 11
+  0.13,                                   !- Value Until Time 11
+  17,                                     !- Hour 12
+  0,                                      !- Minute 12
+  0.15,                                   !- Value Until Time 12
+  20,                                     !- Hour 13
+  0,                                      !- Minute 13
+  0.17,                                   !- Value Until Time 13
+  21,                                     !- Hour 14
+  0,                                      !- Minute 14
+  0.15,                                   !- Value Until Time 14
+  22,                                     !- Hour 15
+  0,                                      !- Minute 15
+  0.14,                                   !- Value Until Time 15
+  23,                                     !- Hour 16
+  0,                                      !- Minute 16
+  0.12,                                   !- Value Until Time 16
+  24,                                     !- Hour 17
+  0,                                      !- Minute 17
+  0.02;                                   !- Value Until Time 17
+
+OS:Schedule:Day,
+  {6311fae3-39ee-4dfc-9944-f0f21eec06fa}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|gas_equip Winter Design Day, !- Name
+  {ffcaddd6-650d-43db-9cc3-7c45cbab64c3}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  0;                                      !- Value Until Time 1
-
-OS:Schedule:Day,
-  {08adfc94-a4cd-449a-a955-bb61cbe66a0b}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|work_eff Summer Design Day, !- Name
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0;                                      !- Value Until Time 1
-
-OS:Schedule:Day,
-  {df34ef59-d4e2-4f8d-ae1f-ffaa28cae086}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|work_eff Winter Design Day, !- Name
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0;                                      !- Value Until Time 1
+  0.02;                                   !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {b1dd4f41-31be-4bd2-aedf-8a502e4d9e8f}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|hvac, !- Name
-  {5c543657-65d4-4570-9baf-673a49eec22c}, !- Schedule Type Limits Name
-  {645f3860-ad47-43d6-9bd0-351ab869ee0b}, !- Default Day Schedule Name
-  {1a12ba28-1281-4657-ad3b-bd9b077cea57}, !- Summer Design Day Schedule Name
-  {adbf5747-7d38-4f97-8684-62e754a21f2f}; !- Winter Design Day Schedule Name
+  {f66ac627-947d-4760-8a83-769c0f9a237d}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|lighting, !- Name
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Schedule Type Limits Name
+  {50a23b07-8d5a-48e2-9cf2-2634f01cdb54}, !- Default Day Schedule Name
+  {b875499c-07d8-4344-afa8-32467e07fd00}, !- Summer Design Day Schedule Name
+  {88f18bd1-af25-4f73-91ea-5bf6c9ce92a5}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {5c543657-65d4-4570-9baf-673a49eec22c}, !- Handle
-  HVAC Operation Schedule Type Limits,    !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  1,                                      !- Upper Limit Value {BasedOnField A4}
-  Discrete,                               !- Numeric Type
-  Availability;                           !- Unit Type
-
-OS:Schedule:Day,
-  {645f3860-ad47-43d6-9bd0-351ab869ee0b}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|hvac |default, !- Name
-  {5c543657-65d4-4570-9baf-673a49eec22c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  1,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  5,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0,                                      !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Day,
-  {1a12ba28-1281-4657-ad3b-bd9b077cea57}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|hvac Summer Design Day, !- Name
-  {5c543657-65d4-4570-9baf-673a49eec22c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  1,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  5,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0,                                      !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Day,
-  {adbf5747-7d38-4f97-8684-62e754a21f2f}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|hvac Winter Design Day, !- Name
-  {5c543657-65d4-4570-9baf-673a49eec22c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  1,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  5,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0,                                      !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Ruleset,
-  {cdf3fbf5-08c4-4f04-b8cb-79abc22a90c0}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|ext_lighting, !- Name
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Schedule Type Limits Name
-  {98c42c6d-1e63-4052-9e37-dd3ca1ed0f96}, !- Default Day Schedule Name
-  {aedf20df-450d-49e1-819c-f451817515f5}, !- Summer Design Day Schedule Name
-  {f96ad1e6-0569-41a7-8e53-fe35c227edac}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Handle
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Handle
   Lights Schedule Type Limits,            !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
@@ -503,42 +754,100 @@ OS:ScheduleTypeLimits,
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {98c42c6d-1e63-4052-9e37-dd3ca1ed0f96}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|ext_lighting |default, !- Name
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Schedule Type Limits Name
+  {50a23b07-8d5a-48e2-9cf2-2634f01cdb54}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|lighting |default, !- Name
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
+  1,                                      !- Hour 1
   0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
+  0.45,                                   !- Value Until Time 1
+  5,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.15,                                   !- Value Until Time 2
+  6,                                      !- Hour 3
+  0,                                      !- Minute 3
+  0.45,                                   !- Value Until Time 3
+  24,                                     !- Hour 4
+  0,                                      !- Minute 4
+  0.9;                                    !- Value Until Time 4
 
 OS:Schedule:Day,
-  {aedf20df-450d-49e1-819c-f451817515f5}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|ext_lighting Summer Design Day, !- Name
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Schedule Type Limits Name
+  {b875499c-07d8-4344-afa8-32467e07fd00}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|lighting Summer Design Day, !- Name
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
+  1,                                      !- Hour 1
   0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
+  1,                                      !- Value Until Time 1
+  5,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0.15,                                   !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
 
 OS:Schedule:Day,
-  {f96ad1e6-0569-41a7-8e53-fe35c227edac}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|ext_lighting Winter Design Day, !- Name
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Schedule Type Limits Name
+  {88f18bd1-af25-4f73-91ea-5bf6c9ce92a5}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|lighting Winter Design Day, !- Name
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
+  0.15;                                   !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {547a097c-667d-4727-890f-c9108131c2fa}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|air_velocity, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  {3b95382b-6919-42b2-91db-80742f1dc64d}, !- Default Day Schedule Name
-  {57870d9c-661b-4690-a199-d008bd1f82c6}, !- Summer Design Day Schedule Name
-  {756a650c-5625-4907-8a74-172784f2ceb7}; !- Winter Design Day Schedule Name
+  {17a4b77c-bcdf-4e66-af9e-b28475d67f67}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|work_eff, !- Name
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Schedule Type Limits Name
+  {40616341-7b56-49c5-b0af-f5469cfcb9b4}, !- Default Day Schedule Name
+  {8cbe0046-1d18-42a5-99b2-183677f3a6f9}, !- Summer Design Day Schedule Name
+  {45b17863-f400-4904-81d4-29701105b2ed}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Handle
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Handle
+  Fraction Schedule Type Limits,          !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  1,                                      !- Upper Limit Value {BasedOnField A4}
+  Continuous,                             !- Numeric Type
+  Dimensionless;                          !- Unit Type
+
+OS:Schedule:Day,
+  {40616341-7b56-49c5-b0af-f5469cfcb9b4}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|work_eff |default, !- Name
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {8cbe0046-1d18-42a5-99b2-183677f3a6f9}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|work_eff Summer Design Day, !- Name
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {45b17863-f400-4904-81d4-29701105b2ed}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|work_eff Winter Design Day, !- Name
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0;                                      !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {a934b515-e092-4ba4-8b61-1834e7ab5351}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|rh, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  {1d67ac4f-4aa7-45f6-969a-562b85d7fe7b}, !- Default Day Schedule Name
+  {ca78d25f-ca0d-4ace-8e03-5e396217c9da}, !- Summer Design Day Schedule Name
+  {75853dc8-ea5d-48be-ad28-06b25729cddd}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Handle
   Dimensionless Schedule Type Limits,     !- Name
   ,                                       !- Lower Limit Value {BasedOnField A4}
   ,                                       !- Upper Limit Value {BasedOnField A4}
@@ -546,77 +855,438 @@ OS:ScheduleTypeLimits,
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {3b95382b-6919-42b2-91db-80742f1dc64d}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|air_velocity |default, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.200152;                               !- Value Until Time 1
-
-OS:Schedule:Day,
-  {57870d9c-661b-4690-a199-d008bd1f82c6}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|air_velocity Summer Design Day, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.200152;                               !- Value Until Time 1
-
-OS:Schedule:Day,
-  {756a650c-5625-4907-8a74-172784f2ceb7}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|air_velocity Winter Design Day, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.200152;                               !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {1a5133fa-39b9-4e48-bb40-f98463dd6141}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|rh, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  {03be464b-e93f-4e4b-8d32-37832abf631a}, !- Default Day Schedule Name
-  {27a6ab70-29b6-40c0-be1f-40e3d34f6efd}, !- Summer Design Day Schedule Name
-  {61398faf-57f8-4883-ad3a-80802d6423fb}; !- Winter Design Day Schedule Name
-
-OS:Schedule:Day,
-  {03be464b-e93f-4e4b-8d32-37832abf631a}, !- Handle
+  {1d67ac4f-4aa7-45f6-969a-562b85d7fe7b}, !- Handle
   0700|2300|QuickServiceRestaurant|default|rh |default, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   50;                                     !- Value Until Time 1
 
 OS:Schedule:Day,
-  {27a6ab70-29b6-40c0-be1f-40e3d34f6efd}, !- Handle
+  {ca78d25f-ca0d-4ace-8e03-5e396217c9da}, !- Handle
   0700|2300|QuickServiceRestaurant|default|rh Summer Design Day, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   50;                                     !- Value Until Time 1
 
 OS:Schedule:Day,
-  {61398faf-57f8-4883-ad3a-80802d6423fb}, !- Handle
+  {75853dc8-ea5d-48be-ad28-06b25729cddd}, !- Handle
   0700|2300|QuickServiceRestaurant|default|rh Winter Design Day, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   50;                                     !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {84dec7e7-50e9-42d0-aaeb-b7e562e19133}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|occ, !- Name
-  {ecae1604-7693-4e4b-bbd3-d7331466bdab}, !- Schedule Type Limits Name
-  {26f063b5-d692-499e-a6ad-a6d9098c6696}, !- Default Day Schedule Name
-  {109f445c-af00-40d4-955a-ed6c2dc6bc42}, !- Summer Design Day Schedule Name
-  {4085b767-1838-4d45-8463-ad6e49e64c5f}; !- Winter Design Day Schedule Name
+  {22b859a6-d566-40a9-8a4c-e82a7314228c}, !- Handle
+  0700|2300|QuickServiceRestaurant|Kitchen|htg_setpoint, !- Name
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Schedule Type Limits Name
+  {eed556cc-7b53-4d36-946a-cb1f4f5a1cfa}, !- Default Day Schedule Name
+  {3d87e7ac-eea6-48fb-b79f-89255d3dc169}, !- Summer Design Day Schedule Name
+  {2a59bcd4-a5f2-40d5-aa76-ccf6d39fa710}; !- Winter Design Day Schedule Name
 
 OS:ScheduleTypeLimits,
-  {ecae1604-7693-4e4b-bbd3-d7331466bdab}, !- Handle
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Handle
+  Thermostat Heating Setpoint Schedule Type Limits, !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  100,                                    !- Upper Limit Value {BasedOnField A4}
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Schedule:Day,
+  {eed556cc-7b53-4d36-946a-cb1f4f5a1cfa}, !- Handle
+  0700|2300|QuickServiceRestaurant|Kitchen|htg_setpoint |default, !- Name
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  19.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {3d87e7ac-eea6-48fb-b79f-89255d3dc169}, !- Handle
+  0700|2300|QuickServiceRestaurant|Kitchen|htg_setpoint Summer Design Day, !- Name
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  19.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {2a59bcd4-a5f2-40d5-aa76-ccf6d39fa710}, !- Handle
+  0700|2300|QuickServiceRestaurant|Kitchen|htg_setpoint Winter Design Day, !- Name
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  19.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {a1bf327a-cd6a-4b61-9163-d9d3bca4dd39}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|activity, !- Name
+  {9660a357-013c-4a99-a479-b3bc17054da6}, !- Schedule Type Limits Name
+  {ab25fbc0-f897-4d49-9691-37a471993e28}, !- Default Day Schedule Name
+  {4c6d92e2-f00e-4eda-b97a-f9092db8822b}, !- Summer Design Day Schedule Name
+  {9d20842c-5b44-4091-93de-30e395539eed}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {9660a357-013c-4a99-a479-b3bc17054da6}, !- Handle
+  People Activity Type Limits,            !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  ,                                       !- Upper Limit Value {BasedOnField A4}
+  Continuous,                             !- Numeric Type
+  ActivityLevel;                          !- Unit Type
+
+OS:Schedule:Day,
+  {ab25fbc0-f897-4d49-9691-37a471993e28}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|activity |default, !- Name
+  {9660a357-013c-4a99-a479-b3bc17054da6}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  120;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {4c6d92e2-f00e-4eda-b97a-f9092db8822b}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|activity Summer Design Day, !- Name
+  {9660a357-013c-4a99-a479-b3bc17054da6}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  120;                                    !- Value Until Time 1
+
+OS:Schedule:Day,
+  {9d20842c-5b44-4091-93de-30e395539eed}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|activity Winter Design Day, !- Name
+  {9660a357-013c-4a99-a479-b3bc17054da6}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  120;                                    !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {12a9c8c7-8f07-4b05-8d31-e5ecbc80d91e}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|thermal_ctrl, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  {a6568b61-d65e-4ec2-9976-0b69e5074ff2}, !- Default Day Schedule Name
+  {2188d45f-263c-4413-8cd6-5205608552dd}, !- Summer Design Day Schedule Name
+  {644e066a-c48f-45b4-b299-713f1f4bbc9a}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {a6568b61-d65e-4ec2-9976-0b69e5074ff2}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|thermal_ctrl |default, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  4;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {2188d45f-263c-4413-8cd6-5205608552dd}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|thermal_ctrl Summer Design Day, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  4;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {644e066a-c48f-45b4-b299-713f1f4bbc9a}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|thermal_ctrl Winter Design Day, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  4;                                      !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {59a43932-f559-4abc-a1be-6f551d7b3ab1}, !- Handle
+  0700|2300|QuickServiceRestaurant|Kitchen|clg_setpoint, !- Name
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Schedule Type Limits Name
+  {45eb9f91-a434-4b7e-b610-fa739c574496}, !- Default Day Schedule Name
+  {bfd7990b-f5b1-435a-92ed-12c065de9a11}, !- Summer Design Day Schedule Name
+  {ae13ab94-70e8-4f2b-bf89-2ce5780a08de}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Handle
+  Thermostat Cooling Setpoint Schedule Type Limits, !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  100,                                    !- Upper Limit Value {BasedOnField A4}
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Schedule:Day,
+  {45eb9f91-a434-4b7e-b610-fa739c574496}, !- Handle
+  0700|2300|QuickServiceRestaurant|Kitchen|clg_setpoint |default, !- Name
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  26.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {bfd7990b-f5b1-435a-92ed-12c065de9a11}, !- Handle
+  0700|2300|QuickServiceRestaurant|Kitchen|clg_setpoint Summer Design Day, !- Name
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  26.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {ae13ab94-70e8-4f2b-bf89-2ce5780a08de}, !- Handle
+  0700|2300|QuickServiceRestaurant|Kitchen|clg_setpoint Winter Design Day, !- Name
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  26.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {cd99fefd-b64e-4c15-a310-187e3676b223}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh_target_temp, !- Name
+  {cabb803b-054e-4e8f-b366-44304201b844}, !- Schedule Type Limits Name
+  {9e175dcb-5d82-4464-bb57-5ebb3f84e12e}, !- Default Day Schedule Name
+  {28091a57-5a06-4db8-81c3-e59bbbe0b8d5}, !- Summer Design Day Schedule Name
+  {49f2877c-0fee-4b07-8ad9-28842ef4f913}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {cabb803b-054e-4e8f-b366-44304201b844}, !- Handle
+  Temperature Schedule Type Limits,       !- Name
+  ,                                       !- Lower Limit Value {BasedOnField A4}
+  ,                                       !- Upper Limit Value {BasedOnField A4}
+  Continuous,                             !- Numeric Type
+  Temperature;                            !- Unit Type
+
+OS:Schedule:Day,
+  {9e175dcb-5d82-4464-bb57-5ebb3f84e12e}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh_target_temp |default, !- Name
+  {cabb803b-054e-4e8f-b366-44304201b844}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  55.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {28091a57-5a06-4db8-81c3-e59bbbe0b8d5}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh_target_temp Summer Design Day, !- Name
+  {cabb803b-054e-4e8f-b366-44304201b844}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  55.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Day,
+  {49f2877c-0fee-4b07-8ad9-28842ef4f913}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|swh_target_temp Winter Design Day, !- Name
+  {cabb803b-054e-4e8f-b366-44304201b844}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  55.0000000000001;                       !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {7951ff01-c315-4f09-b940-de4ec5cf6916}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|hvac, !- Name
+  {ccf2f666-767f-466a-b267-0988ad192e57}, !- Schedule Type Limits Name
+  {de15c510-80e4-434c-b179-6c9aa8693495}, !- Default Day Schedule Name
+  {9d9438fc-905d-4a50-8eff-ba800ed64917}, !- Summer Design Day Schedule Name
+  {1f827680-40e3-4d30-8788-16d43a52bc03}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {ccf2f666-767f-466a-b267-0988ad192e57}, !- Handle
+  HVAC Operation Schedule Type Limits,    !- Name
+  0,                                      !- Lower Limit Value {BasedOnField A4}
+  1,                                      !- Upper Limit Value {BasedOnField A4}
+  Discrete,                               !- Numeric Type
+  Availability;                           !- Unit Type
+
+OS:Schedule:Day,
+  {de15c510-80e4-434c-b179-6c9aa8693495}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|hvac |default, !- Name
+  {ccf2f666-767f-466a-b267-0988ad192e57}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  5,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
+
+OS:Schedule:Day,
+  {9d9438fc-905d-4a50-8eff-ba800ed64917}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|hvac Summer Design Day, !- Name
+  {ccf2f666-767f-466a-b267-0988ad192e57}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  5,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
+
+OS:Schedule:Day,
+  {1f827680-40e3-4d30-8788-16d43a52bc03}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|hvac Winter Design Day, !- Name
+  {ccf2f666-767f-466a-b267-0988ad192e57}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  1,                                      !- Hour 1
+  0,                                      !- Minute 1
+  1,                                      !- Value Until Time 1
+  5,                                      !- Hour 2
+  0,                                      !- Minute 2
+  0,                                      !- Value Until Time 2
+  24,                                     !- Hour 3
+  0,                                      !- Minute 3
+  1;                                      !- Value Until Time 3
+
+OS:Schedule:Ruleset,
+  {7c5ffa31-5632-45fa-b4d1-1df991c04dc6}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|air_velocity, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  {15723d89-81de-4570-9211-b8e932768a61}, !- Default Day Schedule Name
+  {9050dee5-eebb-40d7-829b-eee16b1b1e08}, !- Summer Design Day Schedule Name
+  {7eb07c2d-4982-40ec-b4c9-d9f6f52b4112}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {15723d89-81de-4570-9211-b8e932768a61}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|air_velocity |default, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.200152;                               !- Value Until Time 1
+
+OS:Schedule:Day,
+  {9050dee5-eebb-40d7-829b-eee16b1b1e08}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|air_velocity Summer Design Day, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.200152;                               !- Value Until Time 1
+
+OS:Schedule:Day,
+  {7eb07c2d-4982-40ec-b4c9-d9f6f52b4112}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|air_velocity Winter Design Day, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.200152;                               !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {6a0df469-c63c-4f52-90c1-4ec79a00e305}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|clothing, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  {1ac923b4-7362-4ed7-9667-bd52c86638c9}, !- Default Day Schedule Name
+  {933567ef-2523-46b5-bdf7-5c9a2f825197}, !- Summer Design Day Schedule Name
+  {f5e9ecbd-33ac-4eba-b247-4e6d9cbe8c8e}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {1ac923b4-7362-4ed7-9667-bd52c86638c9}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|clothing |default, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {933567ef-2523-46b5-bdf7-5c9a2f825197}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|clothing Summer Design Day, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {f5e9ecbd-33ac-4eba-b247-4e6d9cbe8c8e}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|clothing Winter Design Day, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Rule,
+  {b9c91522-822c-48a0-9860-9de12209596e}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|clothing |5/1-9/30|Mon/Tue/Wed/Thu/Fri/Sat/Sun Rule, !- Name
+  {6a0df469-c63c-4f52-90c1-4ec79a00e305}, !- Schedule Ruleset Name
+  0,                                      !- Rule Order
+  {a8f55f10-76e9-49e8-bde5-99be64c85c9b}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  Yes,                                    !- Apply Monday
+  Yes,                                    !- Apply Tuesday
+  Yes,                                    !- Apply Wednesday
+  Yes,                                    !- Apply Thursday
+  Yes,                                    !- Apply Friday
+  Yes,                                    !- Apply Saturday
+  ,                                       !- Apply Holiday
+  DateRange,                              !- Date Specification Type
+  5,                                      !- Start Month
+  1,                                      !- Start Day
+  9,                                      !- End Month
+  30;                                     !- End Day
+
+OS:Schedule:Day,
+  {a8f55f10-76e9-49e8-bde5-99be64c85c9b}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|clothing |5/1-9/30|Mon/Tue/Wed/Thu/Fri/Sat/Sun, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  0.5;                                    !- Value Until Time 1
+
+OS:Schedule:Rule,
+  {d361d63b-32bf-4059-9280-f6f13cc23837}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|clothing |10/1-12/31|Mon/Tue/Wed/Thu/Fri/Sat/Sun Rule, !- Name
+  {6a0df469-c63c-4f52-90c1-4ec79a00e305}, !- Schedule Ruleset Name
+  1,                                      !- Rule Order
+  {6b3e3b49-1465-45bc-8350-aaff299d5292}, !- Day Schedule Name
+  Yes,                                    !- Apply Sunday
+  Yes,                                    !- Apply Monday
+  Yes,                                    !- Apply Tuesday
+  Yes,                                    !- Apply Wednesday
+  Yes,                                    !- Apply Thursday
+  Yes,                                    !- Apply Friday
+  Yes,                                    !- Apply Saturday
+  ,                                       !- Apply Holiday
+  DateRange,                              !- Date Specification Type
+  10,                                     !- Start Month
+  1,                                      !- Start Day
+  12,                                     !- End Month
+  31;                                     !- End Day
+
+OS:Schedule:Day,
+  {6b3e3b49-1465-45bc-8350-aaff299d5292}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|clothing |10/1-12/31|Mon/Tue/Wed/Thu/Fri/Sat/Sun, !- Name
+  {8dfffae0-c365-40c8-be23-6aaa5de69d26}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {b2da13a3-4262-41d5-8fd7-f7aec41f4e7d}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|occ, !- Name
+  {c1c85dff-136c-44cc-97e1-971cef043e96}, !- Schedule Type Limits Name
+  {ff1090ff-d7f9-4608-8778-86d8145af4d5}, !- Default Day Schedule Name
+  {9566756c-de46-4254-8c52-295064a02df0}, !- Summer Design Day Schedule Name
+  {8904e30a-c0d9-413a-96cd-97833eba5381}; !- Winter Design Day Schedule Name
+
+OS:ScheduleTypeLimits,
+  {c1c85dff-136c-44cc-97e1-971cef043e96}, !- Handle
   Occupancy Schedule Type Limits,         !- Name
   0,                                      !- Lower Limit Value {BasedOnField A4}
   1,                                      !- Upper Limit Value {BasedOnField A4}
@@ -624,9 +1294,9 @@ OS:ScheduleTypeLimits,
   Dimensionless;                          !- Unit Type
 
 OS:Schedule:Day,
-  {26f063b5-d692-499e-a6ad-a6d9098c6696}, !- Handle
+  {ff1090ff-d7f9-4608-8778-86d8145af4d5}, !- Handle
   0700|2300|QuickServiceRestaurant|default|occ |default, !- Name
-  {ecae1604-7693-4e4b-bbd3-d7331466bdab}, !- Schedule Type Limits Name
+  {c1c85dff-136c-44cc-97e1-971cef043e96}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   1,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -684,9 +1354,9 @@ OS:Schedule:Day,
   0.2;                                    !- Value Until Time 18
 
 OS:Schedule:Day,
-  {109f445c-af00-40d4-955a-ed6c2dc6bc42}, !- Handle
+  {9566756c-de46-4254-8c52-295064a02df0}, !- Handle
   0700|2300|QuickServiceRestaurant|default|occ Summer Design Day, !- Name
-  {ecae1604-7693-4e4b-bbd3-d7331466bdab}, !- Schedule Type Limits Name
+  {c1c85dff-136c-44cc-97e1-971cef043e96}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   1,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -723,20 +1393,20 @@ OS:Schedule:Day,
   0.2;                                    !- Value Until Time 11
 
 OS:Schedule:Day,
-  {4085b767-1838-4d45-8463-ad6e49e64c5f}, !- Handle
+  {8904e30a-c0d9-413a-96cd-97833eba5381}, !- Handle
   0700|2300|QuickServiceRestaurant|default|occ Winter Design Day, !- Name
-  {ecae1604-7693-4e4b-bbd3-d7331466bdab}, !- Schedule Type Limits Name
+  {c1c85dff-136c-44cc-97e1-971cef043e96}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   0;                                      !- Value Until Time 1
 
 OS:Schedule:Rule,
-  {96bd3ab1-4a31-467d-a717-07a4ed127a71}, !- Handle
+  {922d5491-a757-4035-872a-6278d7c9de28}, !- Handle
   0700|2300|QuickServiceRestaurant|default|occ |1/1-12/31|Sat/Sun Rule, !- Name
-  {84dec7e7-50e9-42d0-aaeb-b7e562e19133}, !- Schedule Ruleset Name
+  {b2da13a3-4262-41d5-8fd7-f7aec41f4e7d}, !- Schedule Ruleset Name
   0,                                      !- Rule Order
-  {3cebb788-abe3-4f0a-b53b-9b7fb483cb4d}, !- Day Schedule Name
+  {d002c359-1a7e-4c13-b848-e1a699b61167}, !- Day Schedule Name
   Yes,                                    !- Apply Sunday
   ,                                       !- Apply Monday
   ,                                       !- Apply Tuesday
@@ -752,9 +1422,9 @@ OS:Schedule:Rule,
   31;                                     !- End Day
 
 OS:Schedule:Day,
-  {3cebb788-abe3-4f0a-b53b-9b7fb483cb4d}, !- Handle
+  {d002c359-1a7e-4c13-b848-e1a699b61167}, !- Handle
   0700|2300|QuickServiceRestaurant|default|occ |1/1-12/31|Sat/Sun, !- Name
-  {ecae1604-7693-4e4b-bbd3-d7331466bdab}, !- Schedule Type Limits Name
+  {c1c85dff-136c-44cc-97e1-971cef043e96}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   1,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -800,671 +1470,122 @@ OS:Schedule:Day,
   0.2;                                    !- Value Until Time 14
 
 OS:Schedule:Ruleset,
-  {b43840b4-e8e9-4066-abf4-02e207f54892}, !- Handle
+  {e0aae87e-a083-42ff-892f-fff4cf8d57f4}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|ext_lighting, !- Name
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Schedule Type Limits Name
+  {d52c6e64-348f-47cc-baff-1c0e42e56047}, !- Default Day Schedule Name
+  {f810413b-38dc-40af-a306-08c0586d6513}, !- Summer Design Day Schedule Name
+  {dfb44f80-4afe-4a84-b93e-b885666502c0}; !- Winter Design Day Schedule Name
+
+OS:Schedule:Day,
+  {d52c6e64-348f-47cc-baff-1c0e42e56047}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|ext_lighting |default, !- Name
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {f810413b-38dc-40af-a306-08c0586d6513}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|ext_lighting Summer Design Day, !- Name
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Day,
+  {dfb44f80-4afe-4a84-b93e-b885666502c0}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|ext_lighting Winter Design Day, !- Name
+  {ca2cc656-9e2d-44ad-9e14-39804cf70472}, !- Schedule Type Limits Name
+  ,                                       !- Interpolate to Timestep
+  24,                                     !- Hour 1
+  0,                                      !- Minute 1
+  1;                                      !- Value Until Time 1
+
+OS:Schedule:Ruleset,
+  {447424de-992f-4af4-93ec-3d56f176e1b4}, !- Handle
   0700|2300|QuickServiceRestaurant|default|clg_setpoint, !- Name
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Schedule Type Limits Name
-  {4f174f87-b0b8-466c-a08d-838d46766b21}, !- Default Day Schedule Name
-  {5c66c11c-b586-4991-89dc-14f75c79a31e}, !- Summer Design Day Schedule Name
-  {9fc73f95-6fcc-4cf3-bb28-6a85796b96e1}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Handle
-  Thermostat Cooling Setpoint Schedule Type Limits, !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  100,                                    !- Upper Limit Value {BasedOnField A4}
-  Continuous,                             !- Numeric Type
-  Temperature;                            !- Unit Type
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Schedule Type Limits Name
+  {b3d58c2e-862a-4f10-9379-17cd86b52374}, !- Default Day Schedule Name
+  {a2f44b75-1d90-4d48-acd2-2083ec7cc35a}, !- Summer Design Day Schedule Name
+  {8cd8439c-f80d-466b-b3d5-cfe2751266fd}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {4f174f87-b0b8-466c-a08d-838d46766b21}, !- Handle
+  {b3d58c2e-862a-4f10-9379-17cd86b52374}, !- Handle
   0700|2300|QuickServiceRestaurant|default|clg_setpoint |default, !- Name
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Schedule Type Limits Name
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   24.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Day,
-  {5c66c11c-b586-4991-89dc-14f75c79a31e}, !- Handle
+  {a2f44b75-1d90-4d48-acd2-2083ec7cc35a}, !- Handle
   0700|2300|QuickServiceRestaurant|default|clg_setpoint Summer Design Day, !- Name
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Schedule Type Limits Name
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   24.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Day,
-  {9fc73f95-6fcc-4cf3-bb28-6a85796b96e1}, !- Handle
+  {8cd8439c-f80d-466b-b3d5-cfe2751266fd}, !- Handle
   0700|2300|QuickServiceRestaurant|default|clg_setpoint Winter Design Day, !- Name
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Schedule Type Limits Name
+  {41a6532a-4a5e-453f-9dc6-0ce19bee5de6}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
   24.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {1661f9b0-11d8-4407-a49e-ad2469ea5690}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|thermal_ctrl, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  {a510555f-6e35-44b6-b75e-86140242b2bf}, !- Default Day Schedule Name
-  {1504f2a8-3bb1-44db-a3a9-9bb6b1ba4d39}, !- Summer Design Day Schedule Name
-  {25ac5fa1-d228-4bbc-8565-1641d3ef61c2}; !- Winter Design Day Schedule Name
+  {45f0826b-3fa8-4d99-b998-9ce742c1bd1a}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|htg_setpoint, !- Name
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Schedule Type Limits Name
+  {caa5a1b6-2e43-451d-a20c-e210d9980d62}, !- Default Day Schedule Name
+  {b984dea9-0554-4f9d-adb0-d828a83cd9a5}, !- Summer Design Day Schedule Name
+  {0009ce5b-4ff6-4b2a-8008-80ec3dc728fc}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {a510555f-6e35-44b6-b75e-86140242b2bf}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|thermal_ctrl |default, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
+  {caa5a1b6-2e43-451d-a20c-e210d9980d62}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|htg_setpoint |default, !- Name
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  4;                                      !- Value Until Time 1
+  21.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Day,
-  {1504f2a8-3bb1-44db-a3a9-9bb6b1ba4d39}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|thermal_ctrl Summer Design Day, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
+  {b984dea9-0554-4f9d-adb0-d828a83cd9a5}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|htg_setpoint Summer Design Day, !- Name
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  4;                                      !- Value Until Time 1
+  21.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Day,
-  {25ac5fa1-d228-4bbc-8565-1641d3ef61c2}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|thermal_ctrl Winter Design Day, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
+  {0009ce5b-4ff6-4b2a-8008-80ec3dc728fc}, !- Handle
+  0700|2300|QuickServiceRestaurant|default|htg_setpoint Winter Design Day, !- Name
+  {c4c57a72-c6bc-4484-88b0-b6f3a97779f8}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   24,                                     !- Hour 1
   0,                                      !- Minute 1
-  4;                                      !- Value Until Time 1
+  21.0000000000001;                       !- Value Until Time 1
 
 OS:Schedule:Ruleset,
-  {5e32bd92-44a2-4a8f-864b-56066fd320ae}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|gas_equip, !- Name
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Schedule Type Limits Name
-  {9be4d2fb-0804-478a-949b-b1539fd4a621}, !- Default Day Schedule Name
-  {83fd99e0-26f1-4461-881d-6758e64d7a22}, !- Summer Design Day Schedule Name
-  {fd7442d7-78ea-4c37-a291-9231d5917277}; !- Winter Design Day Schedule Name
-
-OS:Schedule:Day,
-  {9be4d2fb-0804-478a-949b-b1539fd4a621}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|gas_equip |default, !- Name
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  5,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0.02,                                   !- Value Until Time 1
-  6,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0.03,                                   !- Value Until Time 2
-  7,                                      !- Hour 3
-  0,                                      !- Minute 3
-  0.09,                                   !- Value Until Time 3
-  8,                                      !- Hour 4
-  0,                                      !- Minute 4
-  0.14,                                   !- Value Until Time 4
-  10,                                     !- Hour 5
-  0,                                      !- Minute 5
-  0.1,                                    !- Value Until Time 5
-  11,                                     !- Hour 6
-  0,                                      !- Minute 6
-  0.22,                                   !- Value Until Time 6
-  12,                                     !- Hour 7
-  0,                                      !- Minute 7
-  0.27,                                   !- Value Until Time 7
-  13,                                     !- Hour 8
-  0,                                      !- Minute 8
-  0.24,                                   !- Value Until Time 8
-  14,                                     !- Hour 9
-  0,                                      !- Minute 9
-  0.21,                                   !- Value Until Time 9
-  15,                                     !- Hour 10
-  0,                                      !- Minute 10
-  0.14,                                   !- Value Until Time 10
-  16,                                     !- Hour 11
-  0,                                      !- Minute 11
-  0.13,                                   !- Value Until Time 11
-  17,                                     !- Hour 12
-  0,                                      !- Minute 12
-  0.15,                                   !- Value Until Time 12
-  20,                                     !- Hour 13
-  0,                                      !- Minute 13
-  0.17,                                   !- Value Until Time 13
-  21,                                     !- Hour 14
-  0,                                      !- Minute 14
-  0.15,                                   !- Value Until Time 14
-  22,                                     !- Hour 15
-  0,                                      !- Minute 15
-  0.14,                                   !- Value Until Time 15
-  23,                                     !- Hour 16
-  0,                                      !- Minute 16
-  0.12,                                   !- Value Until Time 16
-  24,                                     !- Hour 17
-  0,                                      !- Minute 17
-  0.02;                                   !- Value Until Time 17
-
-OS:Schedule:Day,
-  {83fd99e0-26f1-4461-881d-6758e64d7a22}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|gas_equip Summer Design Day, !- Name
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  5,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0.02,                                   !- Value Until Time 1
-  6,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0.03,                                   !- Value Until Time 2
-  7,                                      !- Hour 3
-  0,                                      !- Minute 3
-  0.09,                                   !- Value Until Time 3
-  8,                                      !- Hour 4
-  0,                                      !- Minute 4
-  0.14,                                   !- Value Until Time 4
-  10,                                     !- Hour 5
-  0,                                      !- Minute 5
-  0.1,                                    !- Value Until Time 5
-  11,                                     !- Hour 6
-  0,                                      !- Minute 6
-  0.22,                                   !- Value Until Time 6
-  12,                                     !- Hour 7
-  0,                                      !- Minute 7
-  0.27,                                   !- Value Until Time 7
-  13,                                     !- Hour 8
-  0,                                      !- Minute 8
-  0.24,                                   !- Value Until Time 8
-  14,                                     !- Hour 9
-  0,                                      !- Minute 9
-  0.21,                                   !- Value Until Time 9
-  15,                                     !- Hour 10
-  0,                                      !- Minute 10
-  0.14,                                   !- Value Until Time 10
-  16,                                     !- Hour 11
-  0,                                      !- Minute 11
-  0.13,                                   !- Value Until Time 11
-  17,                                     !- Hour 12
-  0,                                      !- Minute 12
-  0.15,                                   !- Value Until Time 12
-  20,                                     !- Hour 13
-  0,                                      !- Minute 13
-  0.17,                                   !- Value Until Time 13
-  21,                                     !- Hour 14
-  0,                                      !- Minute 14
-  0.15,                                   !- Value Until Time 14
-  22,                                     !- Hour 15
-  0,                                      !- Minute 15
-  0.14,                                   !- Value Until Time 15
-  23,                                     !- Hour 16
-  0,                                      !- Minute 16
-  0.12,                                   !- Value Until Time 16
-  24,                                     !- Hour 17
-  0,                                      !- Minute 17
-  0.02;                                   !- Value Until Time 17
-
-OS:Schedule:Day,
-  {fd7442d7-78ea-4c37-a291-9231d5917277}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|gas_equip Winter Design Day, !- Name
-  {78979330-94e0-44a0-9491-f0969a7909ea}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.02;                                   !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {5b0197c1-5d66-4d2e-866d-90f042037e20}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|lighting, !- Name
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Schedule Type Limits Name
-  {0a32de14-64e9-45d9-bd15-3b8fe08e3379}, !- Default Day Schedule Name
-  {40275c70-dcd4-4a9a-b507-9b9189940013}, !- Summer Design Day Schedule Name
-  {b37e4f21-1d26-455a-9e25-f0858f46c5fb}; !- Winter Design Day Schedule Name
-
-OS:Schedule:Day,
-  {0a32de14-64e9-45d9-bd15-3b8fe08e3379}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|lighting |default, !- Name
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  1,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0.45,                                   !- Value Until Time 1
-  5,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0.15,                                   !- Value Until Time 2
-  6,                                      !- Hour 3
-  0,                                      !- Minute 3
-  0.45,                                   !- Value Until Time 3
-  24,                                     !- Hour 4
-  0,                                      !- Minute 4
-  0.9;                                    !- Value Until Time 4
-
-OS:Schedule:Day,
-  {40275c70-dcd4-4a9a-b507-9b9189940013}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|lighting Summer Design Day, !- Name
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  1,                                      !- Hour 1
-  0,                                      !- Minute 1
-  1,                                      !- Value Until Time 1
-  5,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0.15,                                   !- Value Until Time 2
-  24,                                     !- Hour 3
-  0,                                      !- Minute 3
-  1;                                      !- Value Until Time 3
-
-OS:Schedule:Day,
-  {b37e4f21-1d26-455a-9e25-f0858f46c5fb}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|lighting Winter Design Day, !- Name
-  {e47b0ef5-d02c-48bd-b440-e599b1cbca64}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.15;                                   !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {0600aa06-c9de-4619-9b2f-ee70909970d6}, !- Handle
-  0700|2300|QuickServiceRestaurant|Kitchen|htg_setpoint, !- Name
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Schedule Type Limits Name
-  {39d10f5b-34f7-4473-a698-3d36d06d2b03}, !- Default Day Schedule Name
-  {1fc4b88d-8065-4963-8bfe-7d8fc514f8fa}, !- Summer Design Day Schedule Name
-  {75c99e33-e10e-461f-bd79-6ea56faeb7a2}; !- Winter Design Day Schedule Name
-
-OS:Schedule:Day,
-  {39d10f5b-34f7-4473-a698-3d36d06d2b03}, !- Handle
-  0700|2300|QuickServiceRestaurant|Kitchen|htg_setpoint |default, !- Name
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  19.0000000000001;                       !- Value Until Time 1
-
-OS:Schedule:Day,
-  {1fc4b88d-8065-4963-8bfe-7d8fc514f8fa}, !- Handle
-  0700|2300|QuickServiceRestaurant|Kitchen|htg_setpoint Summer Design Day, !- Name
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  19.0000000000001;                       !- Value Until Time 1
-
-OS:Schedule:Day,
-  {75c99e33-e10e-461f-bd79-6ea56faeb7a2}, !- Handle
-  0700|2300|QuickServiceRestaurant|Kitchen|htg_setpoint Winter Design Day, !- Name
-  {83d45c27-6876-4e13-829b-edbe7ab54609}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  19.0000000000001;                       !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {0bea72c7-395d-4fba-987d-368e5f377445}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh, !- Name
-  {e7462502-77c0-42f0-ab74-9766d6822898}, !- Schedule Type Limits Name
-  {f968abe2-22a0-45e1-ada4-83f6443283cb}, !- Default Day Schedule Name
-  {24196883-59e1-48cf-9d79-3278b0a19263}, !- Summer Design Day Schedule Name
-  {58d1bb15-0494-4feb-a4b7-002a35782712}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {e7462502-77c0-42f0-ab74-9766d6822898}, !- Handle
-  Water Use Schedule Type Limits,         !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  1,                                      !- Upper Limit Value {BasedOnField A4}
-  Continuous,                             !- Numeric Type
-  Dimensionless;                          !- Unit Type
-
-OS:Schedule:Day,
-  {f968abe2-22a0-45e1-ada4-83f6443283cb}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh |default, !- Name
-  {e7462502-77c0-42f0-ab74-9766d6822898}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0,                                      !- Value Until Time 1
-  8,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0.15,                                   !- Value Until Time 2
-  9,                                      !- Hour 3
-  0,                                      !- Minute 3
-  0.33,                                   !- Value Until Time 3
-  10,                                     !- Hour 4
-  0,                                      !- Minute 4
-  0.13,                                   !- Value Until Time 4
-  11,                                     !- Hour 5
-  0,                                      !- Minute 5
-  0.1,                                    !- Value Until Time 5
-  12,                                     !- Hour 6
-  0,                                      !- Minute 6
-  0.72,                                   !- Value Until Time 6
-  13,                                     !- Hour 7
-  0,                                      !- Minute 7
-  0.31,                                   !- Value Until Time 7
-  14,                                     !- Hour 8
-  0,                                      !- Minute 8
-  0.98,                                   !- Value Until Time 8
-  15,                                     !- Hour 9
-  0,                                      !- Minute 9
-  0.92,                                   !- Value Until Time 9
-  16,                                     !- Hour 10
-  0,                                      !- Minute 10
-  0.22,                                   !- Value Until Time 10
-  17,                                     !- Hour 11
-  0,                                      !- Minute 11
-  0.31,                                   !- Value Until Time 11
-  18,                                     !- Hour 12
-  0,                                      !- Minute 12
-  0.23,                                   !- Value Until Time 12
-  19,                                     !- Hour 13
-  0,                                      !- Minute 13
-  0.16,                                   !- Value Until Time 13
-  20,                                     !- Hour 14
-  0,                                      !- Minute 14
-  0.1,                                    !- Value Until Time 14
-  21,                                     !- Hour 15
-  0,                                      !- Minute 15
-  0.4,                                    !- Value Until Time 15
-  22,                                     !- Hour 16
-  0,                                      !- Minute 16
-  0.42,                                   !- Value Until Time 16
-  23,                                     !- Hour 17
-  0,                                      !- Minute 17
-  0.43,                                   !- Value Until Time 17
-  24,                                     !- Hour 18
-  0,                                      !- Minute 18
-  0.15;                                   !- Value Until Time 18
-
-OS:Schedule:Day,
-  {24196883-59e1-48cf-9d79-3278b0a19263}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh Summer Design Day, !- Name
-  {e7462502-77c0-42f0-ab74-9766d6822898}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0,                                      !- Value Until Time 1
-  8,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0.15,                                   !- Value Until Time 2
-  9,                                      !- Hour 3
-  0,                                      !- Minute 3
-  0.33,                                   !- Value Until Time 3
-  10,                                     !- Hour 4
-  0,                                      !- Minute 4
-  0.13,                                   !- Value Until Time 4
-  11,                                     !- Hour 5
-  0,                                      !- Minute 5
-  0.1,                                    !- Value Until Time 5
-  12,                                     !- Hour 6
-  0,                                      !- Minute 6
-  0.72,                                   !- Value Until Time 6
-  13,                                     !- Hour 7
-  0,                                      !- Minute 7
-  0.31,                                   !- Value Until Time 7
-  14,                                     !- Hour 8
-  0,                                      !- Minute 8
-  0.98,                                   !- Value Until Time 8
-  15,                                     !- Hour 9
-  0,                                      !- Minute 9
-  0.92,                                   !- Value Until Time 9
-  16,                                     !- Hour 10
-  0,                                      !- Minute 10
-  0.22,                                   !- Value Until Time 10
-  17,                                     !- Hour 11
-  0,                                      !- Minute 11
-  0.31,                                   !- Value Until Time 11
-  18,                                     !- Hour 12
-  0,                                      !- Minute 12
-  0.23,                                   !- Value Until Time 12
-  19,                                     !- Hour 13
-  0,                                      !- Minute 13
-  0.16,                                   !- Value Until Time 13
-  20,                                     !- Hour 14
-  0,                                      !- Minute 14
-  0.1,                                    !- Value Until Time 14
-  21,                                     !- Hour 15
-  0,                                      !- Minute 15
-  0.4,                                    !- Value Until Time 15
-  22,                                     !- Hour 16
-  0,                                      !- Minute 16
-  0.42,                                   !- Value Until Time 16
-  23,                                     !- Hour 17
-  0,                                      !- Minute 17
-  0.43,                                   !- Value Until Time 17
-  24,                                     !- Hour 18
-  0,                                      !- Minute 18
-  0.15;                                   !- Value Until Time 18
-
-OS:Schedule:Day,
-  {58d1bb15-0494-4feb-a4b7-002a35782712}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh Winter Design Day, !- Name
-  {e7462502-77c0-42f0-ab74-9766d6822898}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  6,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0,                                      !- Value Until Time 1
-  8,                                      !- Hour 2
-  0,                                      !- Minute 2
-  0.15,                                   !- Value Until Time 2
-  9,                                      !- Hour 3
-  0,                                      !- Minute 3
-  0.33,                                   !- Value Until Time 3
-  10,                                     !- Hour 4
-  0,                                      !- Minute 4
-  0.13,                                   !- Value Until Time 4
-  11,                                     !- Hour 5
-  0,                                      !- Minute 5
-  0.1,                                    !- Value Until Time 5
-  12,                                     !- Hour 6
-  0,                                      !- Minute 6
-  0.72,                                   !- Value Until Time 6
-  13,                                     !- Hour 7
-  0,                                      !- Minute 7
-  0.31,                                   !- Value Until Time 7
-  14,                                     !- Hour 8
-  0,                                      !- Minute 8
-  0.98,                                   !- Value Until Time 8
-  15,                                     !- Hour 9
-  0,                                      !- Minute 9
-  0.92,                                   !- Value Until Time 9
-  16,                                     !- Hour 10
-  0,                                      !- Minute 10
-  0.22,                                   !- Value Until Time 10
-  17,                                     !- Hour 11
-  0,                                      !- Minute 11
-  0.31,                                   !- Value Until Time 11
-  18,                                     !- Hour 12
-  0,                                      !- Minute 12
-  0.23,                                   !- Value Until Time 12
-  19,                                     !- Hour 13
-  0,                                      !- Minute 13
-  0.16,                                   !- Value Until Time 13
-  20,                                     !- Hour 14
-  0,                                      !- Minute 14
-  0.1,                                    !- Value Until Time 14
-  21,                                     !- Hour 15
-  0,                                      !- Minute 15
-  0.4,                                    !- Value Until Time 15
-  22,                                     !- Hour 16
-  0,                                      !- Minute 16
-  0.42,                                   !- Value Until Time 16
-  23,                                     !- Hour 17
-  0,                                      !- Minute 17
-  0.43,                                   !- Value Until Time 17
-  24,                                     !- Hour 18
-  0,                                      !- Minute 18
-  0.15;                                   !- Value Until Time 18
-
-OS:Schedule:Rule,
-  {ebf5f88d-07af-4b12-8f52-216f1fac885c}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh |1/1-12/31|Sat/Sun Rule, !- Name
-  {0bea72c7-395d-4fba-987d-368e5f377445}, !- Schedule Ruleset Name
-  0,                                      !- Rule Order
-  {1b0e6244-3080-4fd6-8305-79292f183567}, !- Day Schedule Name
-  Yes,                                    !- Apply Sunday
-  ,                                       !- Apply Monday
-  ,                                       !- Apply Tuesday
-  ,                                       !- Apply Wednesday
-  ,                                       !- Apply Thursday
-  ,                                       !- Apply Friday
-  Yes,                                    !- Apply Saturday
-  ,                                       !- Apply Holiday
-  DateRange,                              !- Date Specification Type
-  1,                                      !- Start Month
-  1,                                      !- Start Day
-  12,                                     !- End Month
-  31;                                     !- End Day
-
-OS:Schedule:Day,
-  {1b0e6244-3080-4fd6-8305-79292f183567}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh |1/1-12/31|Sat/Sun, !- Name
-  {e7462502-77c0-42f0-ab74-9766d6822898}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  7,                                      !- Hour 1
-  0,                                      !- Minute 1
-  0,                                      !- Value Until Time 1
-  10,                                     !- Hour 2
-  0,                                      !- Minute 2
-  0.15,                                   !- Value Until Time 2
-  11,                                     !- Hour 3
-  0,                                      !- Minute 3
-  0.1,                                    !- Value Until Time 3
-  12,                                     !- Hour 4
-  0,                                      !- Minute 4
-  0.72,                                   !- Value Until Time 4
-  13,                                     !- Hour 5
-  0,                                      !- Minute 5
-  0.6,                                    !- Value Until Time 5
-  14,                                     !- Hour 6
-  0,                                      !- Minute 6
-  0.98,                                   !- Value Until Time 6
-  15,                                     !- Hour 7
-  0,                                      !- Minute 7
-  0.92,                                   !- Value Until Time 7
-  17,                                     !- Hour 8
-  0,                                      !- Minute 8
-  0.25,                                   !- Value Until Time 8
-  18,                                     !- Hour 9
-  0,                                      !- Minute 9
-  0.23,                                   !- Value Until Time 9
-  19,                                     !- Hour 10
-  0,                                      !- Minute 10
-  0.16,                                   !- Value Until Time 10
-  20,                                     !- Hour 11
-  0,                                      !- Minute 11
-  0.1,                                    !- Value Until Time 11
-  21,                                     !- Hour 12
-  0,                                      !- Minute 12
-  0.4,                                    !- Value Until Time 12
-  22,                                     !- Hour 13
-  0,                                      !- Minute 13
-  0.42,                                   !- Value Until Time 13
-  23,                                     !- Hour 14
-  0,                                      !- Minute 14
-  0.43,                                   !- Value Until Time 14
-  24,                                     !- Hour 15
-  0,                                      !- Minute 15
-  0;                                      !- Value Until Time 15
-
-OS:Schedule:Ruleset,
-  {cd7bec2b-29d8-4a82-af73-3ef9c62416fb}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|clothing, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  {7eb5ddf8-618e-41bc-a24b-cb82f143636e}, !- Default Day Schedule Name
-  {bcd8bcc9-1fc8-4cd7-b7e5-624e606bc17b}, !- Summer Design Day Schedule Name
-  {ebc1e3cf-b90d-406d-9302-82f0b4b53de7}; !- Winter Design Day Schedule Name
-
-OS:Schedule:Day,
-  {7eb5ddf8-618e-41bc-a24b-cb82f143636e}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|clothing |default, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
-
-OS:Schedule:Day,
-  {bcd8bcc9-1fc8-4cd7-b7e5-624e606bc17b}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|clothing Summer Design Day, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
-
-OS:Schedule:Day,
-  {ebc1e3cf-b90d-406d-9302-82f0b4b53de7}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|clothing Winter Design Day, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
-
-OS:Schedule:Rule,
-  {9b401957-959a-453d-984d-5ab5382018c7}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|clothing |5/1-9/30|Mon/Tue/Wed/Thu/Fri/Sat/Sun Rule, !- Name
-  {cd7bec2b-29d8-4a82-af73-3ef9c62416fb}, !- Schedule Ruleset Name
-  0,                                      !- Rule Order
-  {f4a963ba-1973-44af-b350-112ae7c55b24}, !- Day Schedule Name
-  Yes,                                    !- Apply Sunday
-  Yes,                                    !- Apply Monday
-  Yes,                                    !- Apply Tuesday
-  Yes,                                    !- Apply Wednesday
-  Yes,                                    !- Apply Thursday
-  Yes,                                    !- Apply Friday
-  Yes,                                    !- Apply Saturday
-  ,                                       !- Apply Holiday
-  DateRange,                              !- Date Specification Type
-  5,                                      !- Start Month
-  1,                                      !- Start Day
-  9,                                      !- End Month
-  30;                                     !- End Day
-
-OS:Schedule:Day,
-  {f4a963ba-1973-44af-b350-112ae7c55b24}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|clothing |5/1-9/30|Mon/Tue/Wed/Thu/Fri/Sat/Sun, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  0.5;                                    !- Value Until Time 1
-
-OS:Schedule:Rule,
-  {204b1f96-aa44-40e3-aa1a-129146ee683d}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|clothing |10/1-12/31|Mon/Tue/Wed/Thu/Fri/Sat/Sun Rule, !- Name
-  {cd7bec2b-29d8-4a82-af73-3ef9c62416fb}, !- Schedule Ruleset Name
-  1,                                      !- Rule Order
-  {898a544e-8acb-47ca-b315-7c2a05c2938b}, !- Day Schedule Name
-  Yes,                                    !- Apply Sunday
-  Yes,                                    !- Apply Monday
-  Yes,                                    !- Apply Tuesday
-  Yes,                                    !- Apply Wednesday
-  Yes,                                    !- Apply Thursday
-  Yes,                                    !- Apply Friday
-  Yes,                                    !- Apply Saturday
-  ,                                       !- Apply Holiday
-  DateRange,                              !- Date Specification Type
-  10,                                     !- Start Month
-  1,                                      !- Start Day
-  12,                                     !- End Month
-  31;                                     !- End Day
-
-OS:Schedule:Day,
-  {898a544e-8acb-47ca-b315-7c2a05c2938b}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|clothing |10/1-12/31|Mon/Tue/Wed/Thu/Fri/Sat/Sun, !- Name
-  {f0ca46d3-3da9-4ea0-b975-f01e18b9463c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  1;                                      !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {76ed4a6d-b105-47bc-88b5-f7904086fa9f}, !- Handle
+  {aedc6b5c-f43e-40b7-a629-7416ff3a1121}, !- Handle
   0700|2300|QuickServiceRestaurant|default|infiltration, !- Name
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Schedule Type Limits Name
-  {fbbe565d-8e71-4bfe-9ec9-9887d9639839}, !- Default Day Schedule Name
-  {602c64b4-8c01-41fb-b177-50140b85cbef}, !- Summer Design Day Schedule Name
-  {32509e22-6e8d-459d-9d26-f1556ea91607}; !- Winter Design Day Schedule Name
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Schedule Type Limits Name
+  {823f759e-4fa3-4d84-862c-a7be266e8933}, !- Default Day Schedule Name
+  {25cadcad-41d6-40e3-bfc1-dbfac89a9855}, !- Summer Design Day Schedule Name
+  {8e588407-610b-4fc7-b944-d62f0ad1a33d}; !- Winter Design Day Schedule Name
 
 OS:Schedule:Day,
-  {fbbe565d-8e71-4bfe-9ec9-9887d9639839}, !- Handle
+  {823f759e-4fa3-4d84-862c-a7be266e8933}, !- Handle
   0700|2300|QuickServiceRestaurant|default|infiltration |default, !- Name
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Schedule Type Limits Name
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   5,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1474,9 +1595,9 @@ OS:Schedule:Day,
   0.5;                                    !- Value Until Time 2
 
 OS:Schedule:Day,
-  {602c64b4-8c01-41fb-b177-50140b85cbef}, !- Handle
+  {25cadcad-41d6-40e3-bfc1-dbfac89a9855}, !- Handle
   0700|2300|QuickServiceRestaurant|default|infiltration Summer Design Day, !- Name
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Schedule Type Limits Name
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   5,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1486,9 +1607,9 @@ OS:Schedule:Day,
   0.5;                                    !- Value Until Time 2
 
 OS:Schedule:Day,
-  {32509e22-6e8d-459d-9d26-f1556ea91607}, !- Handle
+  {8e588407-610b-4fc7-b944-d62f0ad1a33d}, !- Handle
   0700|2300|QuickServiceRestaurant|default|infiltration Winter Design Day, !- Name
-  {bab2c2dc-536d-47e2-817d-1abe236eed00}, !- Schedule Type Limits Name
+  {d82a2f0f-03c1-4d49-a523-ac2f0539cf32}, !- Schedule Type Limits Name
   ,                                       !- Interpolate to Timestep
   5,                                      !- Hour 1
   0,                                      !- Minute 1
@@ -1496,158 +1617,37 @@ OS:Schedule:Day,
   24,                                     !- Hour 2
   0,                                      !- Minute 2
   0.5;                                    !- Value Until Time 2
-
-OS:Schedule:Ruleset,
-  {796d20be-0767-40c1-9917-1b8bfb8242d6}, !- Handle
-  0700|2300|QuickServiceRestaurant|Kitchen|clg_setpoint, !- Name
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Schedule Type Limits Name
-  {b40a365c-3ade-41e5-868e-4433d8bee85d}, !- Default Day Schedule Name
-  {6361a45e-5369-4892-8ead-5f26c7891200}, !- Summer Design Day Schedule Name
-  {f5e62238-c24c-462d-bf5c-b72d3f1e11e3}; !- Winter Design Day Schedule Name
-
-OS:Schedule:Day,
-  {b40a365c-3ade-41e5-868e-4433d8bee85d}, !- Handle
-  0700|2300|QuickServiceRestaurant|Kitchen|clg_setpoint |default, !- Name
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  26.0000000000001;                       !- Value Until Time 1
-
-OS:Schedule:Day,
-  {6361a45e-5369-4892-8ead-5f26c7891200}, !- Handle
-  0700|2300|QuickServiceRestaurant|Kitchen|clg_setpoint Summer Design Day, !- Name
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  26.0000000000001;                       !- Value Until Time 1
-
-OS:Schedule:Day,
-  {f5e62238-c24c-462d-bf5c-b72d3f1e11e3}, !- Handle
-  0700|2300|QuickServiceRestaurant|Kitchen|clg_setpoint Winter Design Day, !- Name
-  {f21c0ab0-2d6e-4824-a5bb-dd3ac233e40d}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  26.0000000000001;                       !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {b8d34e4e-a8ec-46a8-8f60-21e859886c44}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|activity, !- Name
-  {86a529c0-74c2-4e8b-9d08-052e8b48fadc}, !- Schedule Type Limits Name
-  {7839a732-915e-4f71-8e39-b2ed65f07a7a}, !- Default Day Schedule Name
-  {f28a43b7-70d8-4e62-ad99-0945e993029f}, !- Summer Design Day Schedule Name
-  {372ef87e-b2e1-4da0-ab2f-ada64cc7c45e}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {86a529c0-74c2-4e8b-9d08-052e8b48fadc}, !- Handle
-  People Activity Type Limits,            !- Name
-  0,                                      !- Lower Limit Value {BasedOnField A4}
-  ,                                       !- Upper Limit Value {BasedOnField A4}
-  Continuous,                             !- Numeric Type
-  ActivityLevel;                          !- Unit Type
-
-OS:Schedule:Day,
-  {7839a732-915e-4f71-8e39-b2ed65f07a7a}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|activity |default, !- Name
-  {86a529c0-74c2-4e8b-9d08-052e8b48fadc}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  120;                                    !- Value Until Time 1
-
-OS:Schedule:Day,
-  {f28a43b7-70d8-4e62-ad99-0945e993029f}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|activity Summer Design Day, !- Name
-  {86a529c0-74c2-4e8b-9d08-052e8b48fadc}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  120;                                    !- Value Until Time 1
-
-OS:Schedule:Day,
-  {372ef87e-b2e1-4da0-ab2f-ada64cc7c45e}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|activity Winter Design Day, !- Name
-  {86a529c0-74c2-4e8b-9d08-052e8b48fadc}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  120;                                    !- Value Until Time 1
-
-OS:Schedule:Ruleset,
-  {e746a213-eb6f-4c48-96dd-4c8098fe682d}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh_target_temp, !- Name
-  {9ee12aed-0fe0-44f3-823d-5a4f07ee286c}, !- Schedule Type Limits Name
-  {38e3e464-578e-4447-950d-e026cbc1d161}, !- Default Day Schedule Name
-  {3f812bb9-a1d4-42c2-9a91-7373cfffed30}, !- Summer Design Day Schedule Name
-  {483bb9de-ae99-4e63-8ca9-efc4deb20893}; !- Winter Design Day Schedule Name
-
-OS:ScheduleTypeLimits,
-  {9ee12aed-0fe0-44f3-823d-5a4f07ee286c}, !- Handle
-  Temperature Schedule Type Limits,       !- Name
-  ,                                       !- Lower Limit Value {BasedOnField A4}
-  ,                                       !- Upper Limit Value {BasedOnField A4}
-  Continuous,                             !- Numeric Type
-  Temperature;                            !- Unit Type
-
-OS:Schedule:Day,
-  {38e3e464-578e-4447-950d-e026cbc1d161}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh_target_temp |default, !- Name
-  {9ee12aed-0fe0-44f3-823d-5a4f07ee286c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  55.0000000000001;                       !- Value Until Time 1
-
-OS:Schedule:Day,
-  {3f812bb9-a1d4-42c2-9a91-7373cfffed30}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh_target_temp Summer Design Day, !- Name
-  {9ee12aed-0fe0-44f3-823d-5a4f07ee286c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  55.0000000000001;                       !- Value Until Time 1
-
-OS:Schedule:Day,
-  {483bb9de-ae99-4e63-8ca9-efc4deb20893}, !- Handle
-  0700|2300|QuickServiceRestaurant|default|swh_target_temp Winter Design Day, !- Name
-  {9ee12aed-0fe0-44f3-823d-5a4f07ee286c}, !- Schedule Type Limits Name
-  ,                                       !- Interpolate to Timestep
-  24,                                     !- Hour 1
-  0,                                      !- Minute 1
-  55.0000000000001;                       !- Value Until Time 1
 
 OS:DefaultScheduleSet,
-  {7657490b-ac87-40c3-9bd2-996c59e39a45}, !- Handle
+  {50856d2a-6250-4a80-97ba-d82e9f57bd96}, !- Handle
   QuickServiceRestaurant|Dining|DOE Ref 2004|ASHRAE 169-2006-5A|SchSet, !- Name
   ,                                       !- Hours of Operation Schedule Name
-  {84dec7e7-50e9-42d0-aaeb-b7e562e19133}, !- Number of People Schedule Name
-  {b8d34e4e-a8ec-46a8-8f60-21e859886c44}, !- People Activity Level Schedule Name
-  {5b0197c1-5d66-4d2e-866d-90f042037e20}, !- Lighting Schedule Name
-  {7b5cb05b-8570-4a70-9465-c8dfb622763b}, !- Electric Equipment Schedule Name
-  {5e32bd92-44a2-4a8f-864b-56066fd320ae}, !- Gas Equipment Schedule Name
-  {0bea72c7-395d-4fba-987d-368e5f377445}, !- Hot Water Equipment Schedule Name
-  {76ed4a6d-b105-47bc-88b5-f7904086fa9f}, !- Infiltration Schedule Name
+  {b2da13a3-4262-41d5-8fd7-f7aec41f4e7d}, !- Number of People Schedule Name
+  {a1bf327a-cd6a-4b61-9163-d9d3bca4dd39}, !- People Activity Level Schedule Name
+  {f66ac627-947d-4760-8a83-769c0f9a237d}, !- Lighting Schedule Name
+  {cbb14a5b-8f49-4fc9-9b74-d4fc5a4b164e}, !- Electric Equipment Schedule Name
+  {126dae36-f63d-4ea0-baf5-146dfd4569eb}, !- Gas Equipment Schedule Name
+  {72d9f6d5-844a-4a5c-b923-edcde0715e92}, !- Hot Water Equipment Schedule Name
+  {aedc6b5c-f43e-40b7-a629-7416ff3a1121}, !- Infiltration Schedule Name
   ,                                       !- Steam Equipment Schedule Name
   ;                                       !- Other Equipment Schedule Name
 
 OS:DefaultScheduleSet,
-  {4cfe4976-191f-49ee-981f-52cfeca0b4f4}, !- Handle
+  {9d95c4ce-f471-41ca-a090-6ed6c87c2aed}, !- Handle
   QuickServiceRestaurant|Kitchen|DOE Ref 2004|ASHRAE 169-2006-5A|SchSet, !- Name
   ,                                       !- Hours of Operation Schedule Name
-  {84dec7e7-50e9-42d0-aaeb-b7e562e19133}, !- Number of People Schedule Name
-  {b8d34e4e-a8ec-46a8-8f60-21e859886c44}, !- People Activity Level Schedule Name
-  {5b0197c1-5d66-4d2e-866d-90f042037e20}, !- Lighting Schedule Name
-  {7b5cb05b-8570-4a70-9465-c8dfb622763b}, !- Electric Equipment Schedule Name
-  {5e32bd92-44a2-4a8f-864b-56066fd320ae}, !- Gas Equipment Schedule Name
-  {0bea72c7-395d-4fba-987d-368e5f377445}, !- Hot Water Equipment Schedule Name
-  {76ed4a6d-b105-47bc-88b5-f7904086fa9f}, !- Infiltration Schedule Name
+  {b2da13a3-4262-41d5-8fd7-f7aec41f4e7d}, !- Number of People Schedule Name
+  {a1bf327a-cd6a-4b61-9163-d9d3bca4dd39}, !- People Activity Level Schedule Name
+  {f66ac627-947d-4760-8a83-769c0f9a237d}, !- Lighting Schedule Name
+  {cbb14a5b-8f49-4fc9-9b74-d4fc5a4b164e}, !- Electric Equipment Schedule Name
+  {126dae36-f63d-4ea0-baf5-146dfd4569eb}, !- Gas Equipment Schedule Name
+  {72d9f6d5-844a-4a5c-b923-edcde0715e92}, !- Hot Water Equipment Schedule Name
+  {aedc6b5c-f43e-40b7-a629-7416ff3a1121}, !- Infiltration Schedule Name
   ,                                       !- Steam Equipment Schedule Name
   ;                                       !- Other Equipment Schedule Name
 
 OS:People:Definition,
-  {e448a559-f975-4c31-b83c-ab3eb2437227}, !- Handle
+  {3c9b36fe-d4a3-4a8f-bf49-b92778c94783}, !- Handle
   Dining|PeopleDef,                       !- Name
   People/Area,                            !- Number of People Calculation Method
   ,                                       !- Number of People {people}
@@ -1656,13 +1656,13 @@ OS:People:Definition,
   0.3;                                    !- Fraction Radiant
 
 OS:People,
-  {a4f70ded-2c5d-4bbc-ad01-92b2beb9da74}, !- Handle
+  {f464b20e-612e-4ba2-8850-cd7820237094}, !- Handle
   Dining|PeopleInst,                      !- Name
-  {e448a559-f975-4c31-b83c-ab3eb2437227}, !- People Definition Name
-  {2e08a0cf-3ea8-4db0-b5e8-6b448ca9ae11}; !- Space or SpaceType Name
+  {3c9b36fe-d4a3-4a8f-bf49-b92778c94783}, !- People Definition Name
+  {3f036ace-d167-4f48-8a21-68cc0b966c2e}; !- Space or SpaceType Name
 
 OS:People:Definition,
-  {a52e9667-29bf-4e5c-bc12-b68ade49c6cf}, !- Handle
+  {e72d5f96-844d-4577-b051-9e8f6f9a609d}, !- Handle
   Kitchen|PeopleDef,                      !- Name
   People/Area,                            !- Number of People Calculation Method
   ,                                       !- Number of People {people}
@@ -1671,13 +1671,13 @@ OS:People:Definition,
   0.3;                                    !- Fraction Radiant
 
 OS:People,
-  {6b0ab45b-adff-4b8b-a1e9-e383d8805dc7}, !- Handle
+  {a4acd8df-c4cc-4ecf-9bde-b6d3d96f6b4b}, !- Handle
   Kitchen|PeopleInst,                     !- Name
-  {a52e9667-29bf-4e5c-bc12-b68ade49c6cf}, !- People Definition Name
-  {9bb759d2-70ee-4da1-ab1f-f7e3a20ab32a}; !- Space or SpaceType Name
+  {e72d5f96-844d-4577-b051-9e8f6f9a609d}, !- People Definition Name
+  {931f769d-7107-400b-83f5-cbc28c3cf343}; !- Space or SpaceType Name
 
 OS:DesignSpecification:OutdoorAir,
-  {ab8b6eec-23ec-4bda-bbc2-a75a10ac511c}, !- Handle
+  {f93b4d59-378f-4e55-9285-6f46ef674c41}, !- Handle
   QuickServiceRestaurant|Dining|DOE Ref 2004|ASHRAE 169-2006-5A|OutdoorAir, !- Name
   Sum,                                    !- Outdoor Air Method
   0.009438948864,                         !- Outdoor Air Flow per Person {m3/s-person}
@@ -1687,7 +1687,7 @@ OS:DesignSpecification:OutdoorAir,
   ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
 
 OS:DesignSpecification:OutdoorAir,
-  {c52af2e9-26a4-43f8-8860-6d954b818fb4}, !- Handle
+  {1eb6d1a3-4550-4536-b7b1-c2bff3257aac}, !- Handle
   QuickServiceRestaurant|Kitchen|DOE Ref 2004|ASHRAE 169-2006-5A|OutdoorAir, !- Name
   Sum,                                    !- Outdoor Air Method
   0.007079211648,                         !- Outdoor Air Flow per Person {m3/s-person}
@@ -1697,10 +1697,10 @@ OS:DesignSpecification:OutdoorAir,
   ;                                       !- Outdoor Air Flow Rate Fraction Schedule Name
 
 OS:SpaceInfiltration:DesignFlowRate,
-  {ad63c7e0-d760-4231-995a-5967ee31c5b0}, !- Handle
+  {796a9f9d-1f1c-4ff4-8243-86ebd8af079c}, !- Handle
   Dining|Infiltration,                    !- Name
-  {2e08a0cf-3ea8-4db0-b5e8-6b448ca9ae11}, !- Space or SpaceType Name
-  {76ed4a6d-b105-47bc-88b5-f7904086fa9f}, !- Schedule Name
+  {3f036ace-d167-4f48-8a21-68cc0b966c2e}, !- Space or SpaceType Name
+  {aedc6b5c-f43e-40b7-a629-7416ff3a1121}, !- Schedule Name
   Flow/ExteriorArea,                      !- Design Flow Rate Calculation Method
   ,                                       !- Design Flow Rate {m3/s}
   ,                                       !- Flow per Space Floor Area {m3/s-m2}
@@ -1712,10 +1712,10 @@ OS:SpaceInfiltration:DesignFlowRate,
   ;                                       !- Velocity Squared Term Coefficient
 
 OS:SpaceInfiltration:DesignFlowRate,
-  {f3726f11-639f-4817-8369-962a47f23e3f}, !- Handle
+  {385dcf0e-29b2-4c46-89df-465c8e741e23}, !- Handle
   Kitchen|Infiltration,                   !- Name
-  {9bb759d2-70ee-4da1-ab1f-f7e3a20ab32a}, !- Space or SpaceType Name
-  {76ed4a6d-b105-47bc-88b5-f7904086fa9f}, !- Schedule Name
+  {931f769d-7107-400b-83f5-cbc28c3cf343}, !- Space or SpaceType Name
+  {aedc6b5c-f43e-40b7-a629-7416ff3a1121}, !- Schedule Name
   Flow/ExteriorArea,                      !- Design Flow Rate Calculation Method
   ,                                       !- Design Flow Rate {m3/s}
   ,                                       !- Flow per Space Floor Area {m3/s-m2}
@@ -1727,57 +1727,57 @@ OS:SpaceInfiltration:DesignFlowRate,
   ;                                       !- Velocity Squared Term Coefficient
 
 OS:DefaultConstructionSet,
-  {9be92782-547a-438d-a836-9a85fc880826}, !- Handle
+  {00c14bdd-aff0-460f-99ce-7878efe6f74d}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|QuickServiceRestaurant, !- Name
-  {6fd230ab-a816-49a9-8c88-cba04c1147b0}, !- Default Exterior Surface Constructions Name
-  {ed027602-e609-40e6-8713-62c90697fc75}, !- Default Interior Surface Constructions Name
-  {90c9b35d-d14a-499a-ab4e-cafe9fc0664e}, !- Default Ground Contact Surface Constructions Name
-  {7bfcf1df-4414-4a15-821a-d54931a01c5a}, !- Default Exterior SubSurface Constructions Name
-  {852c8204-2d5e-4f8e-a7c7-2a1a617ce644}, !- Default Interior SubSurface Constructions Name
-  {38bd2b17-178d-428c-ab16-907945d7b9a1}, !- Interior Partition Construction Name
+  {7586db7a-ab8c-44c6-ad0b-dfef03459562}, !- Default Exterior Surface Constructions Name
+  {86b4e1f8-971d-4d7d-831e-e7dacbe8fe80}, !- Default Interior Surface Constructions Name
+  {9d2b75d6-a378-4d71-af02-a10ab7aa2af2}, !- Default Ground Contact Surface Constructions Name
+  {22505889-392c-4a93-951d-ce8534245c07}, !- Default Exterior SubSurface Constructions Name
+  {9565e5e9-0914-449e-8395-eb022148e526}, !- Default Interior SubSurface Constructions Name
+  {7ed815a1-c106-41a2-b15e-4778c59de6bf}, !- Interior Partition Construction Name
   ,                                       !- Space Shading Construction Name
   ,                                       !- Building Shading Construction Name
   ;                                       !- Site Shading Construction Name
 
 OS:DefaultSurfaceConstructions,
-  {6fd230ab-a816-49a9-8c88-cba04c1147b0}, !- Handle
+  {7586db7a-ab8c-44c6-ad0b-dfef03459562}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|QuickServiceRestaurant|ext_surf, !- Name
-  {e2f166ad-ea94-41ec-a1e7-2ce4e17ce668}, !- Floor Construction Name
-  {b9354d47-50f0-4132-9d67-1267539bdd5a}, !- Wall Construction Name
-  {918aec83-7925-4697-b7c5-52e5f8d97cc8}; !- Roof Ceiling Construction Name
+  {2c760b7b-e78a-468f-98f0-9031bbeda04d}, !- Floor Construction Name
+  {30f400de-3f26-4557-8ef0-0b1d8386be6d}, !- Wall Construction Name
+  {47005526-0a7f-4cf7-9582-abc3fb926054}; !- Roof Ceiling Construction Name
 
 OS:DefaultSurfaceConstructions,
-  {ed027602-e609-40e6-8713-62c90697fc75}, !- Handle
+  {86b4e1f8-971d-4d7d-831e-e7dacbe8fe80}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|QuickServiceRestaurant|int_surf, !- Name
-  {5582411a-f144-4d0a-b973-d4e60b55b55d}, !- Floor Construction Name
-  {0abba201-85ca-400e-a6f6-21d40f812631}, !- Wall Construction Name
-  {3deb2370-05d8-499a-bc7c-a865d7077ba5}; !- Roof Ceiling Construction Name
+  {901a1ac6-cf65-4d52-8544-e34cb29cd9d8}, !- Floor Construction Name
+  {9b63ec62-bc7f-472c-ada7-400a4261d8b9}, !- Wall Construction Name
+  {0e56f199-c356-47e3-bf95-3d0ab6e4e175}; !- Roof Ceiling Construction Name
 
 OS:DefaultSurfaceConstructions,
-  {90c9b35d-d14a-499a-ab4e-cafe9fc0664e}, !- Handle
+  {9d2b75d6-a378-4d71-af02-a10ab7aa2af2}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|QuickServiceRestaurant|ground_surf, !- Name
-  {e2f166ad-ea94-41ec-a1e7-2ce4e17ce668}, !- Floor Construction Name
-  {e2f166ad-ea94-41ec-a1e7-2ce4e17ce668}, !- Wall Construction Name
-  {e2f166ad-ea94-41ec-a1e7-2ce4e17ce668}; !- Roof Ceiling Construction Name
+  {2c760b7b-e78a-468f-98f0-9031bbeda04d}, !- Floor Construction Name
+  {2c760b7b-e78a-468f-98f0-9031bbeda04d}, !- Wall Construction Name
+  {2c760b7b-e78a-468f-98f0-9031bbeda04d}; !- Roof Ceiling Construction Name
 
 OS:DefaultSubSurfaceConstructions,
-  {7bfcf1df-4414-4a15-821a-d54931a01c5a}, !- Handle
+  {22505889-392c-4a93-951d-ce8534245c07}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|QuickServiceRestaurant|ext_sub, !- Name
-  {93709f55-c5fa-4d82-9cba-953ab3eb26e0}, !- Fixed Window Construction Name
-  {93709f55-c5fa-4d82-9cba-953ab3eb26e0}, !- Operable Window Construction Name
-  {113026ab-e773-4be2-96f5-99da02b060dc}, !- Door Construction Name
+  {4aa5818f-6614-4087-8f8d-dc5974d63e82}, !- Fixed Window Construction Name
+  {4aa5818f-6614-4087-8f8d-dc5974d63e82}, !- Operable Window Construction Name
+  {377d6235-639e-486f-afa0-53e270156adb}, !- Door Construction Name
   ,                                       !- Glass Door Construction Name
-  {6d2f4b94-95d2-4a63-826e-195667432181}, !- Overhead Door Construction Name
-  {e4972794-3e60-46f2-8e18-915dfb10ff3f}, !- Skylight Construction Name
-  {fc2464e3-1b85-4377-8510-b13efb11f378}, !- Tubular Daylight Dome Construction Name
-  {fc2464e3-1b85-4377-8510-b13efb11f378}; !- Tubular Daylight Diffuser Construction Name
+  {d8b5fadd-bbf7-425b-a7c3-b433a0f488c1}, !- Overhead Door Construction Name
+  {532e4eca-f65b-4734-a5b2-900801c92b98}, !- Skylight Construction Name
+  {675a8602-2715-4829-8271-54204a976a83}, !- Tubular Daylight Dome Construction Name
+  {675a8602-2715-4829-8271-54204a976a83}; !- Tubular Daylight Diffuser Construction Name
 
 OS:DefaultSubSurfaceConstructions,
-  {852c8204-2d5e-4f8e-a7c7-2a1a617ce644}, !- Handle
+  {9565e5e9-0914-449e-8395-eb022148e526}, !- Handle
   DOE Ref 2004|ASHRAE 169-2006-5A|QuickServiceRestaurant|int_sub, !- Name
-  {fc2464e3-1b85-4377-8510-b13efb11f378}, !- Fixed Window Construction Name
-  {fc2464e3-1b85-4377-8510-b13efb11f378}, !- Operable Window Construction Name
-  {bceef127-8762-4563-9d98-66114931b1d8}, !- Door Construction Name
+  {675a8602-2715-4829-8271-54204a976a83}, !- Fixed Window Construction Name
+  {675a8602-2715-4829-8271-54204a976a83}, !- Operable Window Construction Name
+  {fd97636e-934a-4291-a547-04a5561134df}, !- Door Construction Name
   ,                                       !- Glass Door Construction Name
   ,                                       !- Overhead Door Construction Name
   ,                                       !- Skylight Construction Name
@@ -1785,21 +1785,21 @@ OS:DefaultSubSurfaceConstructions,
   ;                                       !- Tubular Daylight Diffuser Construction Name
 
 OS:Construction,
-  {b9354d47-50f0-4132-9d67-1267539bdd5a}, !- Handle
+  {30f400de-3f26-4557-8ef0-0b1d8386be6d}, !- Handle
   ASHRAE 90.1-2004 ExtWall WoodFrame ClimateZone 1-7, !- Name
   ,                                       !- Surface Rendering Name
-  {f1a78dc5-7378-485e-bf26-40d096b7a0ef}, !- Layer 1
-  {6ac809fa-8daf-48b6-81b4-11d18a7f7d19}, !- Layer 2
-  {12898367-c911-4755-86a3-9aaea1d931e9}; !- Layer 3
+  {9580f1b1-3390-423b-aee8-65b83c54b73e}, !- Layer 1
+  {ef8248d2-cb9b-44d3-98c8-e8ae6d769855}, !- Layer 2
+  {cba71e4c-30a9-4149-9e29-5bb712529bbe}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {9ab6858a-14a8-4bab-9134-ed333de67e8f}, !- Handle
-  {b9354d47-50f0-4132-9d67-1267539bdd5a}, !- Construction Name
+  {98d750be-65d9-4239-8b90-3b18cf4621a4}, !- Handle
+  {30f400de-3f26-4557-8ef0-0b1d8386be6d}, !- Construction Name
   ExteriorWall,                           !- Intended Surface Type
   WoodFramed;                             !- Standards Construction Type
 
 OS:Material,
-  {f1a78dc5-7378-485e-bf26-40d096b7a0ef}, !- Handle
+  {9580f1b1-3390-423b-aee8-65b83c54b73e}, !- Handle
   Wood Siding,                            !- Name
   MediumSmooth,                           !- Roughness
   0.01,                                   !- Thickness {m}
@@ -1811,7 +1811,7 @@ OS:Material,
   0.78;                                   !- Visible Absorptance
 
 OS:Material,
-  {6ac809fa-8daf-48b6-81b4-11d18a7f7d19}, !- Handle
+  {ef8248d2-cb9b-44d3-98c8-e8ae6d769855}, !- Handle
   Wood Frame NonRes Wall Insulation-1.98, !- Name
   MediumRough,                            !- Roughness
   0.0812847864409826,                     !- Thickness {m}
@@ -1823,7 +1823,7 @@ OS:Material,
   0.7;                                    !- Visible Absorptance
 
 OS:Material,
-  {12898367-c911-4755-86a3-9aaea1d931e9}, !- Handle
+  {cba71e4c-30a9-4149-9e29-5bb712529bbe}, !- Handle
   1/2IN Gypsum,                           !- Name
   Smooth,                                 !- Roughness
   0.0127,                                 !- Thickness {m}
@@ -1835,19 +1835,19 @@ OS:Material,
   0.4;                                    !- Visible Absorptance
 
 OS:Construction,
-  {e2f166ad-ea94-41ec-a1e7-2ce4e17ce668}, !- Handle
+  {2c760b7b-e78a-468f-98f0-9031bbeda04d}, !- Handle
   ExtSlab 4in ClimateZone 1-8,            !- Name
   ,                                       !- Surface Rendering Name
-  {2632acce-5883-49b4-836b-7ceba485ca17}; !- Layer 1
+  {033faece-2de7-4712-8aa6-d0a448db52f2}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {2912ca82-d716-40bb-a74e-ab818cfcb4a9}, !- Handle
-  {e2f166ad-ea94-41ec-a1e7-2ce4e17ce668}, !- Construction Name
+  {29b76544-7669-453f-83e3-9a45d2d93c6f}, !- Handle
+  {2c760b7b-e78a-468f-98f0-9031bbeda04d}, !- Construction Name
   ExteriorFloor,                          !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {2632acce-5883-49b4-836b-7ceba485ca17}, !- Handle
+  {033faece-2de7-4712-8aa6-d0a448db52f2}, !- Handle
   MAT-CC05 4 HW CONCRETE,                 !- Name
   Rough,                                  !- Roughness
   0.1016,                                 !- Thickness {m}
@@ -1859,21 +1859,21 @@ OS:Material,
   0.85;                                   !- Visible Absorptance
 
 OS:Construction,
-  {918aec83-7925-4697-b7c5-52e5f8d97cc8}, !- Handle
+  {47005526-0a7f-4cf7-9582-abc3fb926054}, !- Handle
   ASHRAE 90.1-2004 ExtRoof IEAD ClimateZone 5-6, !- Name
   ,                                       !- Surface Rendering Name
-  {7b506128-ea45-40d3-826c-97160e3411c0}, !- Layer 1
-  {a165a329-281c-4978-b1ce-011ddec45cbe}, !- Layer 2
-  {a9c3daf1-838f-47bd-a2c2-84df14391dad}; !- Layer 3
+  {1e834867-2e23-4b77-a165-4c9c4da236b2}, !- Layer 1
+  {b2f4001c-80c2-42ec-a231-9e5c23def764}, !- Layer 2
+  {150a7835-2f3e-4e29-8b47-52dc5e6a8642}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {800594de-6f95-4d91-bd5d-d8b0155e0c5a}, !- Handle
-  {918aec83-7925-4697-b7c5-52e5f8d97cc8}, !- Construction Name
+  {f67cf6c2-eae0-4671-aa3e-bc422f76a253}, !- Handle
+  {47005526-0a7f-4cf7-9582-abc3fb926054}, !- Construction Name
   ExteriorRoof,                           !- Intended Surface Type
   IEAD;                                   !- Standards Construction Type
 
 OS:Material,
-  {7b506128-ea45-40d3-826c-97160e3411c0}, !- Handle
+  {1e834867-2e23-4b77-a165-4c9c4da236b2}, !- Handle
   Roof Membrane,                          !- Name
   VeryRough,                              !- Roughness
   0.0095,                                 !- Thickness {m}
@@ -1885,7 +1885,7 @@ OS:Material,
   0.7;                                    !- Visible Absorptance
 
 OS:Material,
-  {a165a329-281c-4978-b1ce-011ddec45cbe}, !- Handle
+  {b2f4001c-80c2-42ec-a231-9e5c23def764}, !- Handle
   IEAD NonRes Roof Insulation-2.85,       !- Name
   MediumRough,                            !- Roughness
   0.127338688569477,                      !- Thickness {m}
@@ -1897,7 +1897,7 @@ OS:Material,
   0.7;                                    !- Visible Absorptance
 
 OS:Material,
-  {a9c3daf1-838f-47bd-a2c2-84df14391dad}, !- Handle
+  {150a7835-2f3e-4e29-8b47-52dc5e6a8642}, !- Handle
   Metal Decking,                          !- Name
   MediumSmooth,                           !- Roughness
   0.0015,                                 !- Thickness {m}
@@ -1909,21 +1909,21 @@ OS:Material,
   0.6;                                    !- Visible Absorptance
 
 OS:Construction,
-  {0abba201-85ca-400e-a6f6-21d40f812631}, !- Handle
+  {9b63ec62-bc7f-472c-ada7-400a4261d8b9}, !- Handle
   Interior Wall,                          !- Name
   ,                                       !- Surface Rendering Name
-  {c5ea9ac4-92c6-4335-a1e4-ad750dd782d8}, !- Layer 1
-  {505ab467-e21b-4334-a948-7d73f9c4f976}, !- Layer 2
-  {c5ea9ac4-92c6-4335-a1e4-ad750dd782d8}; !- Layer 3
+  {2ff8735e-b548-4e90-b832-1c51ddc99b1f}, !- Layer 1
+  {d45a9192-8f8c-4ca9-8efd-a0c8797f4896}, !- Layer 2
+  {2ff8735e-b548-4e90-b832-1c51ddc99b1f}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {ac4af358-a9cc-4795-9c63-722ff8d46702}, !- Handle
-  {0abba201-85ca-400e-a6f6-21d40f812631}, !- Construction Name
+  {324cacfe-d2a2-4a23-8ad9-3dbf89898471}, !- Handle
+  {9b63ec62-bc7f-472c-ada7-400a4261d8b9}, !- Construction Name
   InteriorWall,                           !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {c5ea9ac4-92c6-4335-a1e4-ad750dd782d8}, !- Handle
+  {2ff8735e-b548-4e90-b832-1c51ddc99b1f}, !- Handle
   G01a 19mm gypsum board,                 !- Name
   MediumSmooth,                           !- Roughness
   0.019,                                  !- Thickness {m}
@@ -1935,26 +1935,26 @@ OS:Material,
   0.4;                                    !- Visible Absorptance
 
 OS:Material:AirGap,
-  {505ab467-e21b-4334-a948-7d73f9c4f976}, !- Handle
+  {d45a9192-8f8c-4ca9-8efd-a0c8797f4896}, !- Handle
   F04 Wall air space resistance,          !- Name
   0.15;                                   !- Thermal Resistance {m2-K/W}
 
 OS:Construction,
-  {5582411a-f144-4d0a-b973-d4e60b55b55d}, !- Handle
+  {901a1ac6-cf65-4d52-8544-e34cb29cd9d8}, !- Handle
   Interior Floor,                         !- Name
   ,                                       !- Surface Rendering Name
-  {df64a64d-f053-4919-a627-47ff0cbdf276}, !- Layer 1
-  {2824452d-cf34-4636-af7a-4ca433e85f93}, !- Layer 2
-  {35095d58-a2eb-4ac0-806f-10d06f139d60}; !- Layer 3
+  {6f2d922b-be46-4661-bc6a-40514ebf11df}, !- Layer 1
+  {e5db1a2b-dbb2-495f-9b36-936240b3551b}, !- Layer 2
+  {596f4e92-0484-41bd-b875-533fd8d30d43}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {29d727a7-292a-4282-ba2c-04215f843a31}, !- Handle
-  {5582411a-f144-4d0a-b973-d4e60b55b55d}, !- Construction Name
+  {d2580efc-6cc8-45f5-84bc-a63392dd4f94}, !- Handle
+  {901a1ac6-cf65-4d52-8544-e34cb29cd9d8}, !- Construction Name
   InteriorFloor,                          !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {df64a64d-f053-4919-a627-47ff0cbdf276}, !- Handle
+  {6f2d922b-be46-4661-bc6a-40514ebf11df}, !- Handle
   F16 Acoustic tile,                      !- Name
   MediumSmooth,                           !- Roughness
   0.0191,                                 !- Thickness {m}
@@ -1966,12 +1966,12 @@ OS:Material,
   0.3;                                    !- Visible Absorptance
 
 OS:Material:AirGap,
-  {2824452d-cf34-4636-af7a-4ca433e85f93}, !- Handle
+  {e5db1a2b-dbb2-495f-9b36-936240b3551b}, !- Handle
   F05 Ceiling air space resistance,       !- Name
   0.18;                                   !- Thermal Resistance {m2-K/W}
 
 OS:Material,
-  {35095d58-a2eb-4ac0-806f-10d06f139d60}, !- Handle
+  {596f4e92-0484-41bd-b875-533fd8d30d43}, !- Handle
   M11 100mm lightweight concrete,         !- Name
   MediumRough,                            !- Roughness
   0.1016,                                 !- Thickness {m}
@@ -1983,53 +1983,53 @@ OS:Material,
   0.5;                                    !- Visible Absorptance
 
 OS:Construction,
-  {3deb2370-05d8-499a-bc7c-a865d7077ba5}, !- Handle
+  {0e56f199-c356-47e3-bf95-3d0ab6e4e175}, !- Handle
   Interior Ceiling,                       !- Name
   ,                                       !- Surface Rendering Name
-  {35095d58-a2eb-4ac0-806f-10d06f139d60}, !- Layer 1
-  {2824452d-cf34-4636-af7a-4ca433e85f93}, !- Layer 2
-  {df64a64d-f053-4919-a627-47ff0cbdf276}; !- Layer 3
+  {596f4e92-0484-41bd-b875-533fd8d30d43}, !- Layer 1
+  {e5db1a2b-dbb2-495f-9b36-936240b3551b}, !- Layer 2
+  {6f2d922b-be46-4661-bc6a-40514ebf11df}; !- Layer 3
 
 OS:StandardsInformation:Construction,
-  {40d0d5a5-3264-41ae-8045-c95d9357bd60}, !- Handle
-  {3deb2370-05d8-499a-bc7c-a865d7077ba5}, !- Construction Name
+  {5a5f3188-a115-4f01-97ce-5a3a2bab7974}, !- Handle
+  {0e56f199-c356-47e3-bf95-3d0ab6e4e175}, !- Construction Name
   InteriorCeiling,                        !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Construction,
-  {93709f55-c5fa-4d82-9cba-953ab3eb26e0}, !- Handle
+  {4aa5818f-6614-4087-8f8d-dc5974d63e82}, !- Handle
   ASHRAE 90.1-2004 ExtWindow ClimateZone 4-6, !- Name
   ,                                       !- Surface Rendering Name
-  {0f45f172-b7e2-4a71-952c-cd920ecd2e91}; !- Layer 1
+  {6d464701-5983-45c2-af43-f854c0e48061}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {dba58c1c-837b-44f0-9183-85db6eddc109}, !- Handle
-  {93709f55-c5fa-4d82-9cba-953ab3eb26e0}, !- Construction Name
+  {f2c8b8eb-1908-4b1f-8083-a7f8dedcc58f}, !- Handle
+  {4aa5818f-6614-4087-8f8d-dc5974d63e82}, !- Construction Name
   ExteriorWindow,                         !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:WindowMaterial:SimpleGlazingSystem,
-  {0f45f172-b7e2-4a71-952c-cd920ecd2e91}, !- Handle
+  {6d464701-5983-45c2-af43-f854c0e48061}, !- Handle
   Fixed Window 3.24/0.39/0.31,            !- Name
   3.23646,                                !- U-Factor {W/m2-K}
   0.39,                                   !- Solar Heat Gain Coefficient
   0.31;                                   !- Visible Transmittance
 
 OS:Construction,
-  {113026ab-e773-4be2-96f5-99da02b060dc}, !- Handle
+  {377d6235-639e-486f-afa0-53e270156adb}, !- Handle
   Exterior Door,                          !- Name
   ,                                       !- Surface Rendering Name
-  {1652b925-e3ec-480d-a7a2-193a66db6634}, !- Layer 1
-  {45d3159e-006a-48d9-b108-fbddc81a9f55}; !- Layer 2
+  {af4d5228-eedd-473c-bc81-2c7057af39ba}, !- Layer 1
+  {95898e3a-a9c4-40d1-9eb1-4768c9aa06e4}; !- Layer 2
 
 OS:StandardsInformation:Construction,
-  {959e7dfb-175b-4b2a-909c-a41b31bc6ef7}, !- Handle
-  {113026ab-e773-4be2-96f5-99da02b060dc}, !- Construction Name
+  {1bb60923-2030-43c0-a9c7-7da7c81d4ba8}, !- Handle
+  {377d6235-639e-486f-afa0-53e270156adb}, !- Construction Name
   ExteriorDoor,                           !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {1652b925-e3ec-480d-a7a2-193a66db6634}, !- Handle
+  {af4d5228-eedd-473c-bc81-2c7057af39ba}, !- Handle
   F08 Metal surface,                      !- Name
   Smooth,                                 !- Roughness
   0.0008,                                 !- Thickness {m}
@@ -2041,7 +2041,7 @@ OS:Material,
   0.7;                                    !- Visible Absorptance
 
 OS:Material,
-  {45d3159e-006a-48d9-b108-fbddc81a9f55}, !- Handle
+  {95898e3a-a9c4-40d1-9eb1-4768c9aa06e4}, !- Handle
   I01 25mm insulation board,              !- Name
   MediumRough,                            !- Roughness
   0.0254,                                 !- Thickness {m}
@@ -2053,20 +2053,20 @@ OS:Material,
   0.6;                                    !- Visible Absorptance
 
 OS:Construction,
-  {6d2f4b94-95d2-4a63-826e-195667432181}, !- Handle
+  {d8b5fadd-bbf7-425b-a7c3-b433a0f488c1}, !- Handle
   Exterior Door - Non-Swinging,           !- Name
   ,                                       !- Surface Rendering Name
-  {1652b925-e3ec-480d-a7a2-193a66db6634}, !- Layer 1
-  {9c825bea-85e1-4da7-a7a0-cdd87a999987}; !- Layer 2
+  {af4d5228-eedd-473c-bc81-2c7057af39ba}, !- Layer 1
+  {5c98c5c3-9ec0-43d7-9a30-78621372e49b}; !- Layer 2
 
 OS:StandardsInformation:Construction,
-  {840a22b0-19fb-4bb3-b616-ae6cc6989b2b}, !- Handle
-  {6d2f4b94-95d2-4a63-826e-195667432181}, !- Construction Name
+  {c1a154ed-a777-4f83-af33-fd7ef35fe5e8}, !- Handle
+  {d8b5fadd-bbf7-425b-a7c3-b433a0f488c1}, !- Construction Name
   ExteriorDoor,                           !- Intended Surface Type
   NonSwinging;                            !- Standards Construction Type
 
 OS:Material,
-  {9c825bea-85e1-4da7-a7a0-cdd87a999987}, !- Handle
+  {5c98c5c3-9ec0-43d7-9a30-78621372e49b}, !- Handle
   I02 50mm insulation board,              !- Name
   MediumRough,                            !- Roughness
   0.0508,                                 !- Thickness {m}
@@ -2078,38 +2078,38 @@ OS:Material,
   0.6;                                    !- Visible Absorptance
 
 OS:Construction,
-  {e4972794-3e60-46f2-8e18-915dfb10ff3f}, !- Handle
+  {532e4eca-f65b-4734-a5b2-900801c92b98}, !- Handle
   ASHRAE 90.1-2004 Skylight ClimateZone 4-5, !- Name
   ,                                       !- Surface Rendering Name
-  {68a1f26e-a1c1-40ea-a2a8-b11551a8bcf8}; !- Layer 1
+  {33700af2-2d7f-4aa0-8651-7cfb7065102f}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {ac50584c-cb7c-4c0f-80ef-b53ba92a0d5f}, !- Handle
-  {e4972794-3e60-46f2-8e18-915dfb10ff3f}, !- Construction Name
+  {86bf12a4-8818-4fb5-8482-4148f05875a8}, !- Handle
+  {532e4eca-f65b-4734-a5b2-900801c92b98}, !- Construction Name
   ExteriorWindow,                         !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:WindowMaterial:SimpleGlazingSystem,
-  {68a1f26e-a1c1-40ea-a2a8-b11551a8bcf8}, !- Handle
+  {33700af2-2d7f-4aa0-8651-7cfb7065102f}, !- Handle
   Skylight no curb 2.1-5 per 90.12004 CZ 4-5, !- Name
   3.91800170536831,                       !- U-Factor {W/m2-K}
   0.39,                                   !- Solar Heat Gain Coefficient
   0.2;                                    !- Visible Transmittance
 
 OS:Construction,
-  {fc2464e3-1b85-4377-8510-b13efb11f378}, !- Handle
+  {675a8602-2715-4829-8271-54204a976a83}, !- Handle
   Interior Window,                        !- Name
   ,                                       !- Surface Rendering Name
-  {a758d7ec-eeb5-4512-8483-1acd380a9dc0}; !- Layer 1
+  {1d3c5336-8428-4443-9744-b9f489533a6b}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {ef46d1cf-51aa-49ce-a6fb-c418532b468b}, !- Handle
-  {fc2464e3-1b85-4377-8510-b13efb11f378}, !- Construction Name
+  {030e98c0-c34a-4f9a-b0bf-e5f0cdcb09e0}, !- Handle
+  {675a8602-2715-4829-8271-54204a976a83}, !- Construction Name
   InteriorWindow,                         !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:WindowMaterial:Glazing,
-  {a758d7ec-eeb5-4512-8483-1acd380a9dc0}, !- Handle
+  {1d3c5336-8428-4443-9744-b9f489533a6b}, !- Handle
   Clear 3mm,                              !- Name
   SpectralAverage,                        !- Optical Data Type
   ,                                       !- Window Glass Spectral Data Set Name
@@ -2128,19 +2128,19 @@ OS:WindowMaterial:Glazing,
   No;                                     !- Solar Diffusing
 
 OS:Construction,
-  {bceef127-8762-4563-9d98-66114931b1d8}, !- Handle
+  {fd97636e-934a-4291-a547-04a5561134df}, !- Handle
   Interior Door,                          !- Name
   ,                                       !- Surface Rendering Name
-  {c37c1a85-067f-40bf-9c17-4fcc7dd09f06}; !- Layer 1
+  {5dd9fbff-d47c-4d5a-9c55-867bde2d3557}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {e5d0f997-5492-45d7-b190-5a981baeaf33}, !- Handle
-  {bceef127-8762-4563-9d98-66114931b1d8}, !- Construction Name
+  {ca572b78-9751-4ce0-a497-cc5e1449c51a}, !- Handle
+  {fd97636e-934a-4291-a547-04a5561134df}, !- Construction Name
   InteriorDoor,                           !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
 OS:Material,
-  {c37c1a85-067f-40bf-9c17-4fcc7dd09f06}, !- Handle
+  {5dd9fbff-d47c-4d5a-9c55-867bde2d3557}, !- Handle
   G05 25mm wood,                          !- Name
   MediumSmooth,                           !- Roughness
   0.0254,                                 !- Thickness {m}
@@ -2152,14 +2152,14 @@ OS:Material,
   0.5;                                    !- Visible Absorptance
 
 OS:Construction,
-  {38bd2b17-178d-428c-ab16-907945d7b9a1}, !- Handle
+  {7ed815a1-c106-41a2-b15e-4778c59de6bf}, !- Handle
   Interior Partition,                     !- Name
   ,                                       !- Surface Rendering Name
-  {c37c1a85-067f-40bf-9c17-4fcc7dd09f06}; !- Layer 1
+  {5dd9fbff-d47c-4d5a-9c55-867bde2d3557}; !- Layer 1
 
 OS:StandardsInformation:Construction,
-  {077a59b3-e209-46aa-b14f-6509d2deb12e}, !- Handle
-  {38bd2b17-178d-428c-ab16-907945d7b9a1}, !- Construction Name
+  {439b198c-8236-41bb-bc4b-c80c8f78707c}, !- Handle
+  {7ed815a1-c106-41a2-b15e-4778c59de6bf}, !- Construction Name
   InteriorPartition,                      !- Intended Surface Type
   ;                                       !- Standards Construction Type
 
