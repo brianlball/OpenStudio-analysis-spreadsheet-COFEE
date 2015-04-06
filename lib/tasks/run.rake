@@ -3,6 +3,7 @@ def properties_by_building_type(building_type)
   # load from json
   require 'json'
   json = File.read('../cofee-rails/lib/assets/space_type_hash.json')
+  #json = File.read('../../GitHub/cofee-rails/lib/assets/space_type_hash.json')   # this is path I need to use - dfg
   lookup = JSON.parse(json, symbolize_names: true)
   lookup[building_type.to_sym]
 end
@@ -15,6 +16,7 @@ def populate_test_hash
   # note - date is only for me looking at what vintages have been tested. There isn't currently a measure argument that uses this, it gets pulled out of teh analytic record similar to area and num floors
   # comments at end of hash entry - eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes: list dominant loads, errors, and other comments here
 
+
   hash['999999_d'] = ['AssistedLiving', '2004', HVAC_SYSTEM_TYPE] # eui 96, unmet_htg_and_clg 354/691, dur_sec 154, notes: no errors, dominant end use is equip
   hash['999999_e'] = ['AutoRepair', '2004', HVAC_SYSTEM_TYPE] # eui 115, unmet_htg_and_clg 673/6202, dur_sec 244, notes: no errors, dominant end use is equip, very high unmet cooling maybe due to garage on main system?
   hash['999999_f'] = ['AutoSales', '2004', HVAC_SYSTEM_TYPE] # eui 141, unmet_htg_and_clg 1675/2097, dur_sec 176, notes: no errors, dominant end use is heating
@@ -24,11 +26,11 @@ def populate_test_hash
   hash['999999_j'] = ['GasStation', '2004', HVAC_SYSTEM_TYPE] # eui 71, unmet_htg_and_clg 1561/1411, dur_sec 163, notes: no errors, dominant end use is heating then lighting and swh
   hash['999999_k'] = ['Hospital', '2004', HVAC_SYSTEM_TYPE] # eui 104, unmet_htg_and_clg 384/1158, dur_sec 232, notes: no errors, equip is dominant load, EUI seems low
   hash['999999_l'] = ['Laboratory', '2004', HVAC_SYSTEM_TYPE] # eui 62, unmet_htg_and_clg 1879/1844, dur_sec 247, notes: no errors, equip is dominant load then heating and lighting
-  hash['213097'] = ['LargeHotel', '1985', HVAC_SYSTEM_TYPE] # eui 112, unmet_htg_and_clg 15/0, dur_sec 272, notes: no errors, dominant end use is equip then swh heating and lighting
+  #hash['213097'] = ['LargeHotel', '1985', HVAC_SYSTEM_TYPE] # eui 112, unmet_htg_and_clg 15/0, dur_sec 272, notes: no errors, dominant end use is equip then swh heating and lighting
   hash['999999_ac'] = ['MidriseApartment', '2004', HVAC_SYSTEM_TYPE] # eui 74, unmet_htg_and_clg 0,0, dur_sec 159, notes: no errors, dominant end use is swh then heating equip and lighting
-  hash['37149'] = ['Office', '1987', HVAC_SYSTEM_TYPE] # eui 71, unmet_htg_and_clg 1569/1521, dur_sec 205, notes: no errors, dominant end use is heating then lighting and equip
-  hash['183871'] = ['Office', '1989', HVAC_SYSTEM_TYPE] # eui 72, unmet_htg_and_clg 1517/1494, dur_sec 182, notes: no errors, dominant end use is heating then lighting and equip
-  hash['272799'] = ['Office', '2000', HVAC_SYSTEM_TYPE] # eui 67, unmet_htg_and_clg 1637/2820, dur_sec 214, notes: no errors, dominant end uses are heating lighting and equip
+  #hash['37149'] = ['Office', '1987', HVAC_SYSTEM_TYPE] # eui 71, unmet_htg_and_clg 1569/1521, dur_sec 205, notes: no errors, dominant end use is heating then lighting and equip
+  #hash['183871'] = ['Office', '1989', HVAC_SYSTEM_TYPE] # eui 72, unmet_htg_and_clg 1517/1494, dur_sec 182, notes: no errors, dominant end use is heating then lighting and equip
+  #hash['272799'] = ['Office', '2000', HVAC_SYSTEM_TYPE] # eui 67, unmet_htg_and_clg 1637/2820, dur_sec 214, notes: no errors, dominant end uses are heating lighting and equip
   hash['999999_a'] = ['OfficeData', '2004', HVAC_SYSTEM_TYPE] # 52, unmet_htg_and_clg 1746/2227, dur_sec 234, notes: no errors, dominant end use is equip then lighting and heating
   hash['999999_m'] = ['Outpatient', '2004', HVAC_SYSTEM_TYPE] # 100, unmet_htg_and_clg 677/2996, dur_sec 232, notes: no errors, dominant end use is equip then heating
   hash['999999_p'] = ['PrimarySchool', '2004', HVAC_SYSTEM_TYPE] # eui 76, unmet_htg_and_clg 1216/3863, dur_sec 309, notes: no errors, dominant end uses are equip and heating then lighting, swh seems higher than expected
@@ -127,14 +129,14 @@ def populate_test_hash
   hash['999995'] = ['OfficeData', '2004', HVAC_SYSTEM_TYPE] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
 
   # test different system types
-  hash['999999_u'] = ['OfficeData', '2004SysType1', 'SysType 1'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash['999999_v'] = ['OfficeData', '2004SysType2', 'SysType 2'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash['999999_w'] = ['OfficeData', '2004SysType3', 'SysType 3'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash['999999_x'] = ['OfficeData', '2004SysType4', 'SysType 4'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash['999999_y'] = ['OfficeData', '2004SysType5', 'SysType 5'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash['999999_z'] = ['OfficeData', '2004SysType6', 'SysType 6'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash['999999_aa'] = ['OfficeData', '2004SysType7', 'SysType 7'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
-  hash['999999_ab'] = ['OfficeData', '2004SysType8', 'SysType 8'] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash['999999_u'] = ['OfficeData', '2004SysType1', 1] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash['999999_v'] = ['OfficeData', '2004SysType2', 2] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash['999999_w'] = ['OfficeData', '2004SysType3', 3] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash['999999_x'] = ['OfficeData', '2004SysType4', 4] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash['999999_y'] = ['OfficeData', '2004SysType5', 5] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash['999999_z'] = ['OfficeData', '2004SysType6', 6] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash['999999_aa'] = ['OfficeData', '2004SysType7', 7] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
+  hash['999999_ab'] = ['OfficeData', '2004SysType8', 8] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
 
   return hash
 end
@@ -528,7 +530,7 @@ def create_json(structure_id, building_type, year, system_type)
   # written for whole building system type. Will have to update when there can be multiple in workflow
   case system_type
 
-    when 'SysType 1'
+    when 1
       measures << {
         name: 'add_system01_by_space_type',
         desc: 'Add System 01 By Space Type',
@@ -537,7 +539,7 @@ def create_json(structure_id, building_type, year, system_type)
         arguments: []
       }
 
-    when 'SysType 2'
+    when 2
       measures << {
         name: 'add_system02_by_space_type',
         desc: 'Add System 02 By Space Type',
@@ -546,7 +548,7 @@ def create_json(structure_id, building_type, year, system_type)
         arguments: []
       }
 
-    when 'SysType 3'
+    when 3
       measures << {
         name: 'add_system03_by_space_type',
         desc: 'Add System 03 By Space Type',
@@ -555,7 +557,7 @@ def create_json(structure_id, building_type, year, system_type)
         arguments: []
       }
 
-    when 'SysType 4'
+    when 4
       measures << {
         name: 'add_system04_by_space_type',
         desc: 'Add System 04 By Space Type',
@@ -564,7 +566,7 @@ def create_json(structure_id, building_type, year, system_type)
         arguments: []
       }
 
-    when 'SysType 5'
+    when 5
       measures << {
         name: 'add_system05_by_space_type',
         desc: 'Add System 05 By Space Type',
@@ -573,7 +575,7 @@ def create_json(structure_id, building_type, year, system_type)
         arguments: []
       }
 
-    when 'SysType 6'
+    when 6
       measures << {
         name: 'add_system06_by_space_type',
         desc: 'Add System 06 By Space Type',
@@ -582,7 +584,7 @@ def create_json(structure_id, building_type, year, system_type)
         arguments: []
       }
 
-    when 'SysType 7'
+    when 7
       measures << {
         name: 'add_system07_by_space_type',
         desc: 'Add System 07 By Space Type',
@@ -591,7 +593,7 @@ def create_json(structure_id, building_type, year, system_type)
         arguments: []
       }
 
-    when 'SysType 8'
+    when 8
       measures << {
         name: 'add_system08_by_space_type',
         desc: 'Add System 08 By Space Type',
@@ -913,10 +915,10 @@ end
 namespace :test_models do
   RAILS = false
   MEASURES_ROOT_DIRECTORY = '../cofee-measures'
-  # MEASURES_ROOT_DIRECTORY = "../../GitHub/cofee-measures"  # this is path I need to use - dfg
+  #MEASURES_ROOT_DIRECTORY = "../../GitHub/cofee-measures"  # this is path I need to use - dfg
   WEATHER_FILE_NAME = 'Lawrence109_2013CST.epw'
   WEATHER_FILES_DIRECTORY = 'weather_183871'
-  HVAC_SYSTEM_TYPE = 'SysType 7'
+  HVAC_SYSTEM_TYPE = 7
 
   ANALYSIS_TYPE = 'single_run'
   # HOSTNAME = 'http://localhost:8080'
