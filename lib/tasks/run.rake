@@ -3,7 +3,6 @@ def properties_by_building_type(building_type)
   # load from json
   require 'json'
   json = File.read('../cofee-rails/lib/assets/space_type_hash.json')
-  #json = File.read('../../GitHub/cofee-rails/lib/assets/space_type_hash.json')   # this is path I need to use - dfg
   lookup = JSON.parse(json, symbolize_names: true)
   lookup[building_type.to_sym]
 end
@@ -44,6 +43,7 @@ def populate_test_hash
   hash['999999_o'] = ['Warehouse', '2004', HVAC_SYSTEM_TYPE]  # eui 43, unmet_htg_and_clg 694/644, dur_sec 137, notes: no errors, dominant end use is heating
   # hash[46568] = "DK_????"
 
+=begin
   # pre 1980
   test_vintage = '1970'
   hash["1970_d_#{test_vintage}"] = ['AssistedLiving', test_vintage, HVAC_SYSTEM_TYPE]
@@ -121,6 +121,7 @@ def populate_test_hash
   hash["999999_c_#{test_vintage}"] = ['StripMall', test_vintage, HVAC_SYSTEM_TYPE]
   hash["999999_t_#{test_vintage}"] = ['SuperMarket', test_vintage, HVAC_SYSTEM_TYPE]
   hash["999999_o_#{test_vintage}"] = ['Warehouse', test_vintage, HVAC_SYSTEM_TYPE]
+=end
 
   # add in other 9999* test files. That will test 1,2,3 story. 999999 tests 4 story
   hash['999998'] = ['OfficeData', '2004', HVAC_SYSTEM_TYPE] # eui TBD, unmet_htg_and_clg TBD/TBD, dur_sec TBD, notes:
@@ -915,15 +916,14 @@ end
 namespace :test_models do
   RAILS = false
   MEASURES_ROOT_DIRECTORY = '../cofee-measures'
-  #MEASURES_ROOT_DIRECTORY = "../../GitHub/cofee-measures"  # this is path I need to use - dfg
   WEATHER_FILE_NAME = 'Lawrence109_2013CST.epw'
   WEATHER_FILES_DIRECTORY = 'weather_183871'
   HVAC_SYSTEM_TYPE = 7
 
   ANALYSIS_TYPE = 'single_run'
   # HOSTNAME = 'http://localhost:8080'
-  # HOSTNAME = 'http://bball-130553.nrel.gov:8080' #nrel24a
-  HOSTNAME = 'http://bball-130590.nrel.gov:8080' # nrel24b
+  HOSTNAME = 'http://bball-130553.nrel.gov:8080' #nrel24a
+  # HOSTNAME = 'http://bball-130590.nrel.gov:8080' # nrel24b
 
   # create_json(structure_id, building_type, year, system_type)
   desc 'run create analysis.json scripts'
